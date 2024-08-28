@@ -1,0 +1,57 @@
+@import "./src/main.scss";
+.opening {
+  &_container {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+  }
+  &_left {
+    width: 50%;
+  }
+  &_header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  &_text {
+    font-size: 1.1rem;
+    text-align: justify;
+  }
+
+  &_right{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    margin: 0 30px;
+
+  }
+  &_photo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px; /* Match border radius of the container */
+    border: 10px solid $color-darkorange(255, 255, 255, 0.8); /* Fat border with slight transparency */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    position: absolute;
+    z-index: 0;
+    margin: 20px 10px;
+  }
+  .bmw {
+    background-image: url("../Assets/DOMEKBASEN.jpg");
+    position: relative;
+  }
+  .ktm {
+    background-image: url("../Assets/Realizacja.png");
+    position: relative;
+  }
+  .button-AboutMe {
+    margin-top: 30px;
+    display: flex;
+  }
+}
+
+
+
+

@@ -1,0 +1,28 @@
+@import "./src/main.scss";
+
+.form {
+    line-height: 30px;
+    margin-bottom: 30px;
+  
+    &_input {
+      &_header {
+        font-family: $font-header;
+      }
+  
+      &_text {
+        height: 40px;
+  
+        &_main {
+          height: 80px;
+          width: 500px
+        }
+  
+        margin-bottom: 10px;
+        resize: none;
+      }
+    }
+  
+    &_fieldset {
+      margin-bottom: 20px;
+    }
+  }

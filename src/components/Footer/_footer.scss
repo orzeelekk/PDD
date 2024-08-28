@@ -1,0 +1,46 @@
+@import "./src/main.scss";
+
+.footer {
+  padding: 20px 0;
+  background-color: $color-darkorange;
+  &_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $font-header;
+    &_left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 600px;
+      margin: 0;
+      align-items: flex-start;
+    }
+
+  }
+
+
+  .footer_item .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill:  #ffffff;
+}
+
+.footer_info_phone,
+.footer_info_mail,
+.footer_info_address,
+.footer_copy {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer_info_phone:hover,
+.footer_info_mail:hover,
+.footer_info_address:hover,
+.footer_copy:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+}

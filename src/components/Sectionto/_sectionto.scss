@@ -1,0 +1,70 @@
+@import "./src/main.scss";
+.sectionto {
+
+  &_button {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &_elements {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+
+  &_description {
+
+    background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 30px; /* Rounded corners for a cloud-like shape */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Optional: Apply a blur effect for a more glass-like appearance */
+    font-size: 13px;
+
+
+  }
+
+  .button-to {
+    width: 320px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &_text{
+      font-weight: bold;
+      color: black;
+      background-color: white;
+      padding: 5px;
+      border-radius: 3px;
+      border: none;
+      &:hover {
+        color: $color-darkoragne2;
+      }
+    }
+  }
+  &_1 {
+    background-image: url("../Assets/Mapa dojazd.jpg");
+    display: flex;
+    flex-direction: column;
+  }
+  &_2 {
+    background-image: url("../Assets/WIZ 3 kopia.jpg");
+    display: flex;
+    flex-direction: column;
+  }
+  &_3 {
+    background-image: url("../Assets/pompaciepla.jpg");
+    display: flex;
+    flex-direction: column;
+  }
+  &_4 {
+    background-image: url("../Assets/shakehand.jpg");
+    display: flex;
+    flex-direction: column;
+  }
+
+}

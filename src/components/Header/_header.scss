@@ -1,0 +1,92 @@
+@import "./src/main.scss";
+@import "./src/components/General/_colors.scss";
+
+.header {
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100px;
+  background-color:rgba(255, 255, 255, 0.8);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &_logo {
+    img {
+      height: 90px;
+
+    }
+  }
+
+  &_navi {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    &_link {
+      font-family: $font-header;
+      color: black;
+      position: relative;  
+      margin-left: 20px;  
+      cursor: pointer;     
+      padding-bottom: 5px; 
+      &:hover {
+          color: $color-darkorange
+      }
+      &::after {
+        content: "";                 
+      position: absolute;         
+      left: 0;
+      bottom: 0;
+      width: 0;                    
+      height: 3px;                 
+      background-color: $color-orange;
+      transition: width 0.3s ease; 
+      }
+      &:hover::after {
+        width: 100%;                 
+     }
+    }
+  }
+
+  &_socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+  }
+  &_road {
+    height: 2px;
+    background-color: $color-orange
+
+  }
+}
+
+.facebook-icon {
+  fill: black;        
+  transition: fill 0.3s ease; 
+  cursor: pointer;
+}
+
+.facebook-icon:hover {
+  fill: $color-darkorange;
+}
+
+
+
+
+
