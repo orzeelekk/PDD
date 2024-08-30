@@ -14,19 +14,19 @@ const AboutMeSection = () => {
                         Wybierz swój segment 
                     </div>
                     <div class="ChoseHouse_bottom">
-                        <a class="house_icon green">
+                        <a href="" class="house_icon green">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                                 <path d="M32 12L4 36h8v24h16V44h8v16h16V36h8L32 12z"/>
                             </svg>
                             <h1>Dostępne</h1>
                         </a>
-                        <a class="house_icon yellow">
+                        <a href="" class="house_icon yellow">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                                 <path d="M32 12L4 36h8v24h16V44h8v16h16V36h8L32 12z"/>
                             </svg>
                             <h1>Rezerwacja</h1>
                         </a>
-                        <a class="house_icon red">
+                        <a href="" class="house_icon red">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
                                 <path d="M32 12L4 36h8v24h16V44h8v16h16V36h8L32 12z"/>
                             </svg>
@@ -38,7 +38,7 @@ const AboutMeSection = () => {
             </div>
     
                 <div className="houseplan">
-                    <a>Domek - 1</a>
+                    <h1>Domek - 1</h1>
                 </div>
             
                 <div className="houseinfo container">

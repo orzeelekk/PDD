@@ -38,19 +38,19 @@ const CarouselRealizacje = () => {
                         </section>
                         <section className="slide slide_realizacje_2">
                             <div className="slide_content">
-                                <a className="slide_button button-option">Aparatamenty w prestiżowym wieżowcu Złota 44</a>
+                                <a href="" className="slide_button button-option">Aparatamenty w prestiżowym wieżowcu Złota 44</a>
                                 <p className="slide_text">Wykończenie pod klucz mieszkań w wieżowcu Złota 44 w centrum Warszawy.</p>
                             </div>
                         </section>
                         <section className="slide slide_realizacje_3">
                             <div className="slide_content">
-                                <a className="slide_button button-option">Osiedle domów wolnostojących na prestiżowym osiedlu w Emilanowie Leśnym</a>
+                                <a href="" className="slide_button button-option">Osiedle domów wolnostojących na prestiżowym osiedlu w Emilanowie Leśnym</a>
                                 <p className="slide_text">Wykonanie stanu developerskiego domów na prestiżowym osiedlu w Emilianowie w Józefowie pod Warszawą</p>
                             </div>
                         </section>
                         <section className="slide slide_realizacje_4">
                             <div className="slide_content">
-                                <a className="slide_button button-option">Osiedle domów w Kołobrzegu</a>
+                                <a href="" className="slide_button button-option">Osiedle domów w Kołobrzegu</a>
                                 <p className="slide_text">Kompleksowa budowa domów wraz z wykończeniem pod klucz w Kołobrzegu.</p>
                             </div>
                         </section>

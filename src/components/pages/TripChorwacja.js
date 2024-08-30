@@ -2,7 +2,6 @@ import React from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
 import Chorwacja from "../Chorwacja/Chorwacja";
-import FILM_WEGRY from "../Assets/FILM_WEGRY.jpg";
 
 const TripChorwacja = () => {
     return (

@@ -29,7 +29,7 @@ const Sectionto = () => {
                         </div>
                         <div className="button-to sectionto_3"><
                             a className="button-to_text">Nowoczesne budownictwo</a>
-                            <h3 className="sectionto_description">
+                            <h3 href="" className="sectionto_description">
                             Poza nowoczesnym designem domki są <br/>
                             wyposażone w pompę ciepła i system rekuperacji. <br/>
                             Dzięki tym rozwiązaniom możesz cieszyć się<br/>
@@ -37,7 +37,7 @@ const Sectionto = () => {
                             </h3>
                         </div>
                         <div className="button-to sectionto_4">
-                            <a className="button-to_text">Niska cena</a>
+                            <a href="" className="button-to_text">Niska cena</a>
                             <h3 className="sectionto_description">
                             Naszym głównym celem jest budowa<br/>
                             domów w cenie mieszkania w centrum. <br/>

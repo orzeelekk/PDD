@@ -11,7 +11,7 @@ import TRIP_WEGRY from "../Assets/TRIP_WEGRY.jpg"
 
 const Dropdown = ({ dropdown }) => {
     return (
-        <ul className={`dropdown ${dropdown ? "show" : ""}`}>
+        <ul rel="noopener" className={`dropdown ${dropdown ? "show" : ""}`}>
             {contryItems.map((submenu, index) => (
                 <li key={index} >
                     <a href={submenu.url}>{submenu.title}</a>
