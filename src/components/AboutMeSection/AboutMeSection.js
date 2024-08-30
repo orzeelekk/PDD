@@ -1,48 +1,56 @@
 import React from 'react';
 import "./_aboutMeSection.scss";
-import "./_form.scss";
 import { daneTechniczne } from "./daneTechniczne";
-import DaneTechniczne from "./DaneTechniczne";
-import Form from "./Form";
+import SpecDomki from "./SpecDomki";
 
 const AboutMeSection = () => {
 
     return (
         <>
-        <section className="aboutme container">
-        <div className="box aboutme_info">
-                    <h1 className="opening_header">Wybierz swój segment:</h1>
-                    <p className="opening_text">
-                        o - Dostępne <br/>
-                        @ - Rezerwacja <br/>
-                        X - Sprzedane
-                    </p>
-                    <h1 className="opening_header">Ogólne parametry domów:</h1>
-                    <p className="opening_text">
-                        Powierzchnia zabudowy - 123m2 <br/>
-                        Powierzchnia działki - 321m2 <br/>
-                        Powierzchnia przeszklenia - 321m2 <br/>
-    
-                    </p>
-                </div>
-            <div className="aboutme_container">
-     
-            </div>
-        
-            <div className="motoinfoo container">
-                    <h1 className="opening_header">Szczegółowa specyfikacja poszczególnych domów:</h1>
-                    <div className="motoinfo_box">
-                        {daneTechniczne.map((menu, index) => {
-                            return <DaneTechniczne items={menu} key={index} />;
-                        })}
+        <section className="aboutme">
+            <div className="aboutme_container container">
+                <div class="ChoseHouse">
+                    <div class="ChoseHouse_top">
+                        Wybierz swój segment 
                     </div>
-                    <Form/>
+                    <div class="ChoseHouse_bottom">
+                        <a class="house_icon green">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                <path d="M32 12L4 36h8v24h16V44h8v16h16V36h8L32 12z"/>
+                            </svg>
+                            <h1>Dostępne</h1>
+                        </a>
+                        <a class="house_icon yellow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                <path d="M32 12L4 36h8v24h16V44h8v16h16V36h8L32 12z"/>
+                            </svg>
+                            <h1>Rezerwacja</h1>
+                        </a>
+                        <a class="house_icon red">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                                <path d="M32 12L4 36h8v24h16V44h8v16h16V36h8L32 12z"/>
+                            </svg>
+                            <h1>Sprzedane</h1>
+                        </a>
+                </div>
+        </div>
+                
             </div>
+    
+                <div className="houseplan">
+                    <a>Domek - 1</a>
+                </div>
             
-            
+                <div className="houseinfo container">
+                        <h1 className="houseinfo_header">Szczegółowa specyfikacja poszczególnych domów</h1>
+                        <div className="houseinfo_box">
+                            {daneTechniczne.map((menu, index) => {
+                                return <SpecDomki items={menu} key={index} />;
+                            })}
+                        </div>
+                </div>
         </section>
   
-   
         </>
     );
 };

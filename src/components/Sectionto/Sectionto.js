@@ -44,7 +44,6 @@ const Sectionto = () => {
                             Ceny mieszkań wahają się między<br/>
                             800tys. zł a 900 tys. zł.
                             </h3>
-                        
                         </div>
                     </div>
             </section>

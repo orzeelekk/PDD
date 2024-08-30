@@ -1,14 +1,16 @@
 import React from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
-import AboutMeSection from "../AboutMeSection";
+import PhotosRealisation from "../PhotosRealisation";
+import MapSection from "../MapSection"
 
 
 const AboutMe = () => {
     return (
         <div>
             <Header/>
-            <AboutMeSection/>
+            <PhotosRealisation/>
+            <MapSection/>
             <Footer/>
         </div>
     );

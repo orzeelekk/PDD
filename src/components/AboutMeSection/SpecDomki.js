@@ -1,12 +1,13 @@
 import Dropdown from './Dropdown';
 import {useState} from "react";
+import "./_aboutMeSection.scss";
 
-const DaneTechniczne = ({ items }) => {
+const SpecDomki = ({ items }) => {
     const [dropdown, setDropdown] = useState(false);
 
     return (
         <>
-            <button type="button" className={"button-option"}
+            <button type="button" className={"button_spec"}
                     aria-expanded={dropdown ? "true" : "false"}
                     onClick={() => setDropdown((prev) => !prev)}
             >
@@ -17,4 +18,4 @@ const DaneTechniczne = ({ items }) => {
     );
 };
 
-export default DaneTechniczne;
+export default SpecDomki;

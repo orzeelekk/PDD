@@ -6,6 +6,7 @@ import Sectionto from "../Sectionto";
 import Footer from "../Footer";
 import AboutMeSection from "../AboutMeSection";
 import MapSection from "../MapSection";
+import Form from "../Form";
 
 
 
@@ -17,8 +18,8 @@ const Home = () => {
             <Opening/>
             <Sectionto/>
             <AboutMeSection/>
-            <MapSection/>
-
+            <MapSection/>  
+            <Form/>
             <Footer/>
         </div>
     );

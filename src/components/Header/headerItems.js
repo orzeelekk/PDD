@@ -11,12 +11,12 @@ export const headerItems = [
     },
     {
         title: 'INWESTYCJE',
-        url: '/Trip',
+        url: '/AboutMe',
         changeAnimation: "move3",
     },
     {
         title: 'O NAS',
-        url: '/Map',
+        url: '/Trip',
         changeAnimation: "move4",
     },
     {

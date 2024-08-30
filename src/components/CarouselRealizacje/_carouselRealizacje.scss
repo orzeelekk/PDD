@@ -66,15 +66,18 @@
   background-repeat: no-repeat;
 
   &_realizacje_1 {
-    background-image: url("../Assets/CHOSZCZOWKA.jpg");
+    background-image: url("../Assets/FOCUS1.jpg");
   }
 
   &_realizacje_2 {
-    background-image: url("../Assets/EmilianowLesny.jpg");
+    background-image: url("../Assets/ZLOTA1.jpg");
   }
 
   &_realizacje_3 {
-    background-image: url("../Assets/ZLOTA.jpg");
+    background-image: url("../Assets/EMILIANOWLESNY1.jpg")
+  }
+  &_realizacje_4 {
+    background-image: url("../Assets/KOLOBRZEG1.jpg")
   }
 
   &_content {
@@ -96,3 +99,4 @@
     font-size: 14px;
   }
 }
+
