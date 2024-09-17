@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './_photos.scss';
+import './_photosRealizacje.scss';
 
 import Zlota1 from '../Assets/ZLOTA1.jpg';
 import Zlota2 from '../Assets/ZLOTA2.jpg';
@@ -56,7 +56,7 @@ const photoGroups = {
   ],
 };
 
-const Photos = () => {
+const PhotosRealizacje = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [photoGroup, setPhotoGroup] = useState([]);
@@ -107,21 +107,32 @@ const Photos = () => {
           <button className="close-btn" onClick={closeViewer}>
             &times;
           </button>
-          <button className="nav-btn" onClick={prevImage}>
-            &#10094;
-          </button>
+          
+          {/* Left Arrow */}
+          <svg onClick={prevImage} id="leftArrow" className="arrow left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g stroke-linejoin="round" stroke-linecap="round">
+              <circle r="46" cx="50" cy="50" />
+              <polyline points="60 25, 30 50, 60 75"></polyline>
+            </g>
+          </svg>
+
           <img
             src={selectedImage}
             alt="Selected"
             className="selected-image"
           />
-          <button className="nav-btn" onClick={nextImage}>
-            &#10095;
-          </button>
+          
+          {/* Right Arrow */}
+          <svg onClick={nextImage} id="rightArrow" className="arrow right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g stroke-linejoin="round" stroke-linecap="round">
+              <circle r="46" cx="50" cy="50" />
+              <polyline points="40 25, 70 50, 40 75"></polyline>
+            </g>
+          </svg>
         </div>
       )}
     </div>
   );
 };
 
-export default Photos;
+export default PhotosRealizacje;

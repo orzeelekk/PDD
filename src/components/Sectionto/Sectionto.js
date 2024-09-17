@@ -8,7 +8,7 @@ const Sectionto = () => {
                 <h1 className="sectionto_h1 opening_header">Co nas wyróżnia?</h1>
                     <div className="sectionto_elements">
                         <div className="button-to sectionto_1">
-                            <a href="Trip" className="button-to_text">Lokalizacja</a>
+                            <a href="https://maps.app.goo.gl/yCMyntkBxhTtviXX8" className="button-to_text">Lokalizacja</a>
                             <h3 className="sectionto_description">
                             Osiedle oferuje doskonały dojazd zarówno<br/>
                             do Warszawy, jak i Mińska Mazowieckiego. <br/>

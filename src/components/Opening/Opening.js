@@ -22,7 +22,7 @@ const Opening = () => {
                         Pracujemy rzetelnie, dokładnie i w stu procentach terminowo. Naszą firmę cechuje dbałość o najmniejszy szczegół, potrafimy zadowolić nawet najbardziej wymagających Inwestorów.
                         Pracownicy przykładają wagę do wypełniania swoich obowiązków na najwyższym poziomie, dlatego też możemy pochwalić się takimi projektami jak wykończenia prestiżowych apartamentów. Budujemy od zera, remontujemy od podstaw!
                         </h3>
-                        <a href="/Film" className="button-AboutMe button-option">Galeria zdjec</a>
+                        <a href="/Realizacje" className="button-AboutMe button-option">Galeria zdjec</a>
                     </div>
                     <div className="opening_right">
                         <div style={{

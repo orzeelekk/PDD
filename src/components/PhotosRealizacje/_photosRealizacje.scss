@@ -1,0 +1,124 @@
+@import "./src/main.scss";
+
+.photo-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .photo-group {
+    margin-bottom:30px;
+    padding: 10px;
+    border-radius: 30px;
+    &:first-child {
+      margin-top: 30px;
+    }
+  }
+
+  .photo-group 
+  h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: $color-darkgreen2;
+  }
+
+  
+  .photos {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    
+    
+  }
+
+  .photo {
+    padding:5px;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+    border-radius: 10%; 
+    background: none;
+    appearance: none;
+    border-width: 1px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -1px,#D6D6E7 0 -1px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+  
+    &:focus {
+      box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    }
+    
+    &:hover {
+      box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+      transform: translateY(-2px);
+      background-color: $color-darkorange; // Solid white background on hover
+  
+    }
+    
+    &:active {
+      box-shadow: #D6D6E7 0 3px 7px inset;
+      transform: translateY(2px);
+    }
+  
+    svg {
+      width: 64px;
+      height: 64px;
+      fill: currentColor;
+      transition: transform 0.2 ease;
+  }
+}
+  
+.viewer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 5px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: auto; // Ensure the viewer has a width that adapts to the image
+  height: auto; // Ensure the viewer height adapts to the image
+}
+
+.selected-image {
+  max-width: 90vw;
+  max-height: 70vh;
+  object-fit: contain;
+  position: relative; // Set position to relative so that buttons can be positioned absolutely
+}
+
+.close-btn {
+  position: absolute;
+  top: -8px;
+  right: -3px;
+  background: transparent;
+  border: none;
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 10;
+  color: black;
+}

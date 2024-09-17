@@ -6,12 +6,12 @@ export const headerItems = [
     },
     {
         title: 'REALIZACJE',
-        url: '/Film',
+        url: '/Realizacje',
         changeAnimation: "move2",
     },
     {
         title: 'INWESTYCJE',
-        url: '/AboutMe',
+        url: '/Inwestycje',
         changeAnimation: "move3",
     },
     {

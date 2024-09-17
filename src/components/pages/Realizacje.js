@@ -1,23 +1,18 @@
 import React from 'react';
 import Header from "../Header";
 import Footer from "../Footer";
-import Photos from "../Photos"
+import PhotosRealizacje from "../PhotosRealizacje"
 import CarouselRealizacje from "../CarouselRealizacje";
 
-const Film = () => {
+const Realizacje = () => {
     return (
         <div>
             <Header/>
-            
             <CarouselRealizacje/>
-            <Photos/>
-
-
-
-            
+            <PhotosRealizacje/>
             <Footer/>
         </div>
     );
 };
 
-export default Film;
+export default Realizacje;
