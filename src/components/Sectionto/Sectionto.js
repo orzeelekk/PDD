@@ -8,7 +8,7 @@ const Sectionto = () => {
                 <h1 className="sectionto_h1 opening_header">Co nas wyróżnia?</h1>
                     <div className="sectionto_elements">
                         <div className="button-to sectionto_1">
-                            <a href="https://maps.app.goo.gl/yCMyntkBxhTtviXX8" className="button-to_text">Lokalizacja</a>
+                            <a target="_blank"href="https://maps.app.goo.gl/yCMyntkBxhTtviXX8" className="button-to_text">Lokalizacja</a>
                             <h3 className="sectionto_description">
                             Osiedle oferuje doskonały dojazd zarówno<br/>
                             do Warszawy, jak i Mińska Mazowieckiego. <br/>
@@ -18,7 +18,7 @@ const Sectionto = () => {
                             </h3>
                         </div>
                         <div className="button-to sectionto_2">
-                            <a href="Map" className="button-to_text">Zabudowa wolnostojąca</a>
+                            <a href="/Inwestycje" className="button-to_text">Zabudowa wolnostojąca</a>
                             <h3 className="sectionto_description">
                             W przeciwieństwie do konkurencji, <br/>
                             jako jedni z niewielu budujemy domy<br/>
@@ -27,8 +27,8 @@ const Sectionto = () => {
                             zewnętrzne miejsce parkingowe.
                             </h3>
                         </div>
-                        <div className="button-to sectionto_3"><
-                            a className="button-to_text">Nowoczesne budownictwo</a>
+                        <div className="button-to sectionto_3">
+                            <a href="/Inwestycje" className="button-to_text">Nowoczesne budownictwo</a>
                             <h3 href="" className="sectionto_description">
                             Poza nowoczesnym designem domki są <br/>
                             wyposażone w pompę ciepła i system rekuperacji. <br/>
@@ -37,7 +37,7 @@ const Sectionto = () => {
                             </h3>
                         </div>
                         <div className="button-to sectionto_4">
-                            <a href="" className="button-to_text">Niska cena</a>
+                            <a href="/Inwestycje" className="button-to_text">Niska cena</a>
                             <h3 className="sectionto_description">
                             Naszym głównym celem jest budowa<br/>
                             domów w cenie mieszkania w centrum. <br/>

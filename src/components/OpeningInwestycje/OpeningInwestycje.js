@@ -117,7 +117,6 @@ const photoGroupsDziennik = {
             top: offsetPosition,
             behavior: 'smooth',
           });
-          
         }
       };
 

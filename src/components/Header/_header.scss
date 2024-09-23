@@ -86,6 +86,16 @@
   fill: $color-darkorange;
 }
 
+.header_logo{
+  fill: black;        
+  transition: fill 0.3s ease; 
+  cursor: pointer;
+}
+
+.header_logo:hover {
+  fill: red;
+}
+
 
 
 

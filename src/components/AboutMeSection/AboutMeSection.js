@@ -31,11 +31,6 @@ const AboutMeSection = () => {
         </div>
                 
             </div>
-    
-                <div className="houseplan">
-                    <h1>Domek - 1</h1>
-                </div>
-            
                 <div className="houseinfo container">
                         <h1 className="houseinfo_header">Szczegółowa specyfikacja poszczególnych domów</h1>
                         <div className="houseinfo_box">

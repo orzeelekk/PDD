@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
 import "./_header.scss";
+import Icon from './Icon'
 import { headerItems } from './headerItems';
 
-import facebook from "../Assets/brand-facebook.svg"
-import instagram from "../Assets/instagram.svg"
 import logo from "../Assets/PDDLogov3.png"
 
 const Header = () => {
     return (
         <>
         <header className="header">
-            <div className="header_container container">
+            <div className="header_container container">                
                 <a className="header_logo" href="/">
-                    <img src={logo} alt="logo"
+                    <img src={logo} alt="jakiś plik" height='100'
                     />
                 </a>
+                
                 <ul className="header_navi">
                     {headerItems.map((menu, index) => {
                         return(
@@ -36,6 +36,8 @@ const Header = () => {
             <div className="header_road">
                 <div className="header_road_line"></div>
             </div>
+            
+            
         </>
     );
 };
