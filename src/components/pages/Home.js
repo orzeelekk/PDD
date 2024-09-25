@@ -4,7 +4,7 @@ import Opening from "../Opening";
 import Carousel from "../Carousel";
 import Sectionto from "../Sectionto";
 import Footer from "../Footer";
-import AboutMeSection from "../AboutMeSection";
+import Wybierz from "../Wybierz";
 import MapSection from "../MapSection";
 import Form from "../Form";
 
@@ -17,7 +17,7 @@ const Home = () => {
             <Carousel/>
             <Opening/>
             <Sectionto/>
-            <AboutMeSection/>
+            <Wybierz/>
             <MapSection/>  
             <Form/>
             <Footer/>

@@ -18,7 +18,7 @@ header, footer {
   margin: 0 auto;
 }
 .email:hover, .logo:hover {
-  color:$color-darkoragne2;
+  color:$main-green2;
 }
 .box {
   display: flex;
@@ -43,7 +43,7 @@ header, footer {
   }
   &_header {
     font-size: 1.2rem;
-    color: $color-darkoragne2;
+    color: $main-green2;
     margin: 10px 0;
   }
   &_link {

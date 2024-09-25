@@ -14,7 +14,6 @@ const Header = () => {
                     <img src={logo} alt="jakiś plik" height='100'
                     />
                 </a>
-                
                 <ul className="header_navi">
                     {headerItems.map((menu, index) => {
                         return(
@@ -36,8 +35,6 @@ const Header = () => {
             <div className="header_road">
                 <div className="header_road_line"></div>
             </div>
-            
-            
         </>
     );
 };

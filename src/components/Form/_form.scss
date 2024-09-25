@@ -18,7 +18,7 @@
   &_instruction {
     margin: 22px 0;
     font-size: 1.2rem;
-    color: $color-darkorange;
+    color: $main-green3;
   }
 }
 
@@ -70,7 +70,7 @@
     line-height: 0.9rem;
     letter-spacing: 3px;
     font-size: 0.6875rem;
-    color: $color-darkorange;
+    color: $main-green3;
   }
 
   &_input {
@@ -111,7 +111,7 @@
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    color: $color-darkorange;
+    color: $main-green3;
     opacity: 0;
     transition: opacity 0.3s ease;
   }
