@@ -6,7 +6,7 @@ const Opening = () => {
 
     return (
         <>
-            <section className="opening">
+            <section className="opening" id="opening">
                 <div className="opening_container container">
                     <div className="opening_left">
                         <h1 className="opening_header">Szukasz rzetelnego realizatora inwestycji budowlanej?</h1>

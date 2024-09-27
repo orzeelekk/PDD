@@ -8,12 +8,13 @@
   top: 0;
   left: 0;
   height: 100px;
-  background-color:rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
+  border-bottom: 3px solid $main-green2;
 
   &_container {
     display: flex;
@@ -25,7 +26,6 @@
   &_logo {
     img {
       height: 90px;
-
     }
   }
 
@@ -33,29 +33,41 @@
     display: flex;
     align-items: center;
     z-index: 1;
+
     &_link {
       font-family: $font-header;
+      background-color: #ffff;
       color: black;
-      position: relative;  
-      margin-left: 20px;  
-      cursor: pointer;     
-      padding-bottom: 5px; 
+      position: relative;
+      margin-left: 20px;
+      cursor: pointer;
+      padding-bottom: 5px;
+      text-decoration: none; // Remove underline to mimic button
+      padding: 10px 15px; // Add padding to mimic button shape
+      border: 2px solid transparent; // Add a transparent border
+      border-radius: 5px; // Optional, add border radius for button feel
+      transition: all 0.3s ease; // Smooth transition effect
+
       &:hover {
-          color: $main-green3;
+        color: $main-green3;
+        background-color: rgba(0, 0, 0, 0.05); // Simulate hover effect of a button
+        border-color: $main-green3; // Simulate button border change
       }
+
       &::after {
-        content: "";                 
-      position: absolute;         
-      left: 0;
-      bottom: 0;
-      width: 0;                    
-      height: 3px;                 
-      background-color: $main-green;
-      transition: width 0.3s ease; 
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 3px;
+        background-color: $main-green;
+        transition: width 0.3s ease;
       }
+
       &:hover::after {
-        width: 100%;                 
-     }
+        width: 100%;
+      }
     }
   }
 
@@ -63,22 +75,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
     img {
       height: 30px;
       margin-right: 10px;
     }
-
-  }
-  &_road {
-    height: 2px;
-    background-color: $main-green;
-
   }
 }
 
 .facebook-icon {
-  fill: black;        
-  transition: fill 0.3s ease; 
+  fill: black;
+  transition: fill 0.3s ease;
   cursor: pointer;
 }
 
@@ -86,17 +93,12 @@
   fill: $main-green3;
 }
 
-.header_logo{
-  fill: black;        
-  transition: fill 0.3s ease; 
+.header_logo {
+  fill: black;
+  transition: fill 0.3s ease;
   cursor: pointer;
 }
 
-.header_logoo:hover {
+.header_logo:hover {
   fill: red;
 }
-
-
-
-
-
