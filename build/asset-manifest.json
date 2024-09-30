@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.a444dabe.css",
-    "main.js": "/static/js/main.3e16035f.js",
+    "main.css": "/static/css/main.f050c7db.css",
+    "main.js": "/static/js/main.48540843.js",
+    "static/media/OsiedlePRZYKLADDOWYMIANY.jpg": "/static/media/OsiedlePRZYKLADDOWYMIANY.ac38cc8451faf3ef9884.jpg",
     "static/media/MAP_WISLA.jpg": "/static/media/MAP_WISLA.028df974946b39900111.jpg",
-    "static/media/OsiedlePRZYKLADDOWYMIANY.jpg": "/static/media/OsiedlePRZYKLADDOWYMIANY.0452a03bf77bf7b19503.jpg",
     "static/media/BUDOWA5.jpg": "/static/media/BUDOWA5.bd8bc35310f802b0ae7f.jpg",
     "static/media/ZLOTA3.jpg": "/static/media/ZLOTA3.a635d872c86303a44af2.jpg",
     "static/media/BUDOWA4.jpg": "/static/media/BUDOWA4.f3dd8a2155a5b976f8cc.jpg",
@@ -24,11 +24,9 @@
     "static/media/BUDOWA2.jpg": "/static/media/BUDOWA2.3b3e104f0616f7b4183f.jpg",
     "static/media/TRIP_WLOCHY.jpg": "/static/media/TRIP_WLOCHY.80ee8ac0289ed678bf3d.jpg",
     "static/media/KOLOBRZEG3.jpg": "/static/media/KOLOBRZEG3.2d864ce2cc8b4ad766ed.jpg",
-    "static/media/FILM_WEGRY.jpg": "/static/media/FILM_WEGRY.a1aa2f369c80c462405b.jpg",
     "static/media/KOLOBRZEG5.jpg": "/static/media/KOLOBRZEG5.edf853c6d4713c30a594.jpg",
     "static/media/Realizacja.png": "/static/media/Realizacja.edf853c6d4713c30a594.png",
     "static/media/PLAC1.jpg": "/static/media/PLAC1.2521754d92544f7643d8.jpg",
-    "static/media/Mapa dojazd.jpg": "/static/media/Mapa dojazd.b6604ebeeb8262d9b133.jpg",
     "static/media/DROGA4.jpg": "/static/media/DROGA4.c8f5cbd13bc412e3d294.jpg",
     "static/media/PLAC3.jpg": "/static/media/PLAC3.8593bad841f944101255.jpg",
     "static/media/PLAC2.jpg": "/static/media/PLAC2.555f840a8ae506f0968d.jpg",
@@ -45,25 +43,25 @@
     "static/media/KOLOBRZEG4.jpg": "/static/media/KOLOBRZEG4.6aa687cca82c80235662.jpg",
     "static/media/EMILIANOWLESNY1.jpg": "/static/media/EMILIANOWLESNY1.9f208f831acd301c8b3e.jpg",
     "static/media/BOISKO2.jpg": "/static/media/BOISKO2.31c7e7991e80331458ea.jpg",
+    "static/media/osiedlepodklad.jpg": "/static/media/osiedlepodklad.baf49d179e857704f790.jpg",
     "static/media/DROGA5.jpg": "/static/media/DROGA5.ba0e552c236d3d7f8f96.jpg",
     "static/media/TRIP_WEGRY.jpg": "/static/media/TRIP_WEGRY.dc665c73c85d3bbb6973.jpg",
     "static/media/BOISKO1.jpg": "/static/media/BOISKO1.6f99d1eca23f4f443664.jpg",
     "static/media/KOLOBRZEG1.jpg": "/static/media/KOLOBRZEG1.47dab86876adbde25165.jpg",
     "static/media/FOCUS2.jpg": "/static/media/FOCUS2.0448d1da661a2e407a2b.jpg",
+    "static/media/Mapa dojazd.jpg": "/static/media/Mapa dojazd.5c1cbd2e9077c339a4bc.jpg",
     "static/media/ZLOTA2.jpg": "/static/media/ZLOTA2.13c03e9fc62d2593b0ac.jpg",
     "static/media/FOCUS1.jpg": "/static/media/FOCUS1.85b57873475ef2a56eb0.jpg",
     "static/media/pompaciepla.jpg": "/static/media/pompaciepla.1293d6d93e5e2e72caeb.jpg",
     "static/media/DOMEKBASEN.jpg": "/static/media/DOMEKBASEN.37b267ebb3afa338d093.jpg",
     "static/media/shakehand.jpg": "/static/media/shakehand.c7521dd4fde79bce1182.jpg",
     "static/media/PDDLogov3.png": "/static/media/PDDLogov3.f9aee5cd05ff4ef7a210.png",
-    "static/media/instagram.svg": "/static/media/instagram.c2056460bbbf6c051f72df6d7c2fa6dc.svg",
     "index.html": "/index.html",
-    "static/media/brand-facebook.svg": "/static/media/brand-facebook.b57fc5d368afe662418342d0fc60219d.svg",
-    "main.a444dabe.css.map": "/static/css/main.a444dabe.css.map",
-    "main.3e16035f.js.map": "/static/js/main.3e16035f.js.map"
+    "main.f050c7db.css.map": "/static/css/main.f050c7db.css.map",
+    "main.48540843.js.map": "/static/js/main.48540843.js.map"
   },
   "entrypoints": [
-    "static/css/main.a444dabe.css",
-    "static/js/main.3e16035f.js"
+    "static/css/main.f050c7db.css",
+    "static/js/main.48540843.js"
   ]
 }
