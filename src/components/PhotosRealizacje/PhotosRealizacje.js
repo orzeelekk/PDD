@@ -87,12 +87,12 @@ const PhotosRealizacje = () => {
     <div className="photo-container container">
       {Object.keys(photoGroups).map((groupName) => (
         <div className="photo-group" key={groupName}>
-          <h2 class>{groupName}</h2>
+          <h2 className>{groupName}</h2>
           <div className="photos">
             {photoGroups[groupName].map((photo, index) => (
               <img
                 src={photo}
-                alt={`${groupName} photo ${index + 1}`}
+                alt={`${groupName} - Image ${index + 1}`}
                 key={index}
                 className="photo"
                 onClick={() => openViewer(groupName, index)}
@@ -108,9 +108,8 @@ const PhotosRealizacje = () => {
             &times;
           </button>
           
-          {/* Left Arrow */}
           <svg onClick={prevImage} id="leftArrow" className="arrow left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <g stroke-linejoin="round" stroke-linecap="round">
+            <g strokeLineJoin="round" strokeLinecap="round">
               <circle r="46" cx="50" cy="50" />
               <polyline points="60 25, 30 50, 60 75"></polyline>
             </g>
