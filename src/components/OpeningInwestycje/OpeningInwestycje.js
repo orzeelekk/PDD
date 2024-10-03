@@ -14,18 +14,18 @@ import DROGA4 from '../Assets/DROGA4.jpg';
 import DROGA5 from '../Assets/DROGA5.jpg';
 
 
-import PLAC1 from '../Assets/PLAC1.jpg';
-import PLAC2 from '../Assets/PLAC2.jpg';
-import PLAC3 from '../Assets/PLAC3.jpg';
-import PLAC4 from '../Assets/PLAC4.jpg';
-import PLAC5 from '../Assets/PLAC5.jpg';
+// import PLAC1 from '../Assets/PLAC1.jpg';
+// import PLAC2 from '../Assets/PLAC2.jpg';
+// import PLAC3 from '../Assets/PLAC3.jpg';
+// import PLAC4 from '../Assets/PLAC4.jpg';
+// import PLAC5 from '../Assets/PLAC5.jpg';
 
 
-import BOISKO1 from '../Assets/BOISKO1.jpg';
-import BOISKO2 from '../Assets/BOISKO2.jpg';
-import BOISKO3 from '../Assets/BOISKO3.jpg';
-import BOISKO4 from '../Assets/BOISKO4.jpg';
-import BOISKO5 from '../Assets/BOISKO5.jpg';
+// import BOISKO1 from '../Assets/BOISKO1.jpg';
+// import BOISKO2 from '../Assets/BOISKO2.jpg';
+// import BOISKO3 from '../Assets/BOISKO3.jpg';
+// import BOISKO4 from '../Assets/BOISKO4.jpg';
+// import BOISKO5 from '../Assets/BOISKO5.jpg';
 
 const photoGroupsDziennik = {
     "Roboty ziemne": [BUDOWA1, BUDOWA2, BUDOWA3, BUDOWA4, BUDOWA5],
