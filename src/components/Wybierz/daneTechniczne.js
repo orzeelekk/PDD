@@ -3,12 +3,11 @@ export const daneTechniczne = [
         title: 'Dom 1',
         submenu: [
             {
-                silnik: "75°V-twin",
-                pojemnosc_skokowa: "1195",
-                moc: "148KM",
-                moment: "125Nm",
-                waga_na_sucho: "217kg",
-                zbiornik: "23l"
+                powierzchnia_terenu: '520-530m2',
+                powierzchnia_zabudowy: '99m2',
+                powierzchnia_uzytkowa: '140m2',
+                kubatura: '757m3',
+                zabudowa: 'Domek wolnostojący',
             }
         ],
     },
@@ -16,12 +15,11 @@ export const daneTechniczne = [
         title: 'Dom 2',
         submenu: [
             {
-                silnik: "single",
-                pojemnosc_skokowa: "652",
-                moc: "53KM",
-                moment: "60Nm",
-                waga_na_sucho: "147kg",
-                zbiornik: "9.5l"
+                powierzchnia_terenu: '520-530m2',
+                powierzchnia_zabudowy: '99m2',
+                powierzchnia_uzytkowa: '140m2',
+                kubatura: '757m3',
+                zabudowa: 'Domek wolnostojący typu blizniak',
             }
         ],
     },

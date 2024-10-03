@@ -7,11 +7,11 @@ const Dropdown = ({ submenus,dropdown }) => {
         <ul className={`dropdown ${dropdown ? "show" : ""}`}>
             {submenus.map((submenu, index) => (
                 <ul key={index} className="menu-items">
-                    <li>Typ silnika: {submenu.silnik}</li>
-                    <li>Moc: {submenu.moc}</li>
-                    <li>Moment obrotowy: {submenu.moment}</li>
-                    <li>Waga na sucho: {submenu.waga_na_sucho}</li>
-                    <li>Pojemność zbiornika paliwa: {submenu.zbiornik}</li>
+                    <li>Powierzchnia terenu: {submenu.powierzchnia_terenu}</li>
+                    <li>Powierzchnia zabudowy: {submenu.powierzchnia_zabudowy}</li>
+                    <li>Powierzchnia użytkowa: {submenu.powierzchnia_uzytkowa}</li>
+                    <li>Kubatura: {submenu.kubatura}</li>
+                    <li>Zabudowa: {submenu.zabudowa}</li>
                 </ul>
             ))}
         </ul>

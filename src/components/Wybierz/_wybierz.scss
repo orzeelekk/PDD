@@ -211,6 +211,10 @@ $background-color-hover: #ffffff; // Solid white background on hover
   transform: translateY(-1px);
 }
 
+#button-dropdown {
+  margin: 20px 0px;
+}
+
 .green-highlight {
   position: absolute;
   width: 150px; // Adjust as necessary
@@ -231,6 +235,22 @@ $background-color-hover: #ffffff; // Solid white background on hover
   height: 100px; // Adjust as necessary
   background-color: rgba(255, 0, 0, 0.3); // Green color with 80% opacity
   z-index: 1; // Ensure it appears above the house plan image
+}
+
+.dropdown {
+  max-height: 0; /* Initially hide the dropdown */
+  overflow: hidden; /* Prevent content from overflowing */
+  transition: max-height 0.5s ease-out; /* Add a smooth transition effect */
+  
+  &.show {
+    max-height: 500px; /* Set a maximum height when the dropdown is visible (adjust this value as necessary) */
+    overflow: visible;
+  }
+}
+.menu-items {
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.1); /* Optional styling */
+  margin-bottom: 10px; /* Space between dropdown items */
 }
 
 
