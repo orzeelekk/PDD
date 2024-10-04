@@ -173,7 +173,7 @@ const photoGroupsDziennik = {
                 {photoGroupsDziennik[groupName].map((photo, index) => (
                   <img
                     src={photo}
-                    alt={`${groupName} photo ${index + 1}`}
+                    alt={"zdjecia_dziennik"}
                     key={index}
                     className="photo"
                     onClick={() => openViewer(groupName, index)}
@@ -192,7 +192,7 @@ const photoGroupsDziennik = {
                 {photoGroupsCena[groupName].map((photo, index) => (
                   <img
                     src={photo}
-                    alt={`${groupName} photo ${index + 1}`}
+                    alt={"zdjecia_cena"}
                     key={index}
                     className="photo"
                     onClick={() => openViewer(groupName, index)}
@@ -211,7 +211,7 @@ const photoGroupsDziennik = {
                 {photoGroupsOkolica[groupName].map((photo, index) => (
                   <img
                     src={photo}
-                    alt={`${groupName} photo ${index + 1}`}
+                    alt={"zdjecia_okolica"}
                     key={index}
                     className="photo"
                     onClick={() => openViewer(groupName, index)}
@@ -230,7 +230,7 @@ const photoGroupsDziennik = {
                 {photoGroupsBudownictwo[groupName].map((photo, index) => (
                   <img
                     src={photo}
-                    alt={`${groupName} photo ${index + 1}`}
+                    alt={"zdjecia_budownictwo"}
                     key={index}
                     className="photo"
                     onClick={() => openViewer(groupName, index)}
@@ -249,7 +249,7 @@ const photoGroupsDziennik = {
                 {photoGroupsDroga[groupName].map((photo, index) => (
                   <img
                     src={photo}
-                    alt={`${groupName} photo ${index + 1}`}
+                    alt={"zdjecia_droga"}
                     key={index}
                     className="photo"
                     onClick={() => openViewer(groupName, index)}
