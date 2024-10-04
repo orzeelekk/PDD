@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from 'prop-types';
+
 
 const Dropdown = ({ submenus,dropdown }) => {
     console.log(submenus)
@@ -16,6 +18,19 @@ const Dropdown = ({ submenus,dropdown }) => {
             ))}
         </ul>
     );
+};
+
+Dropdown.propTypes = {
+    submenus: PropTypes.arrayOf(
+        PropTypes.shape({
+            powierzchnia_terenu: PropTypes.string.isRequired,
+            powierzchnia_zabudowy: PropTypes.string.isRequired,
+            powierzchnia_uzytkowa: PropTypes.string.isRequired,
+            kubatura: PropTypes.string.isRequired,
+            zabudowa: PropTypes.string.isRequired,
+        })
+    ).isRequired, // Expect an array of objects
+    dropdown: PropTypes.bool.isRequired, // Expect a boolean
 };
 
 export default Dropdown;

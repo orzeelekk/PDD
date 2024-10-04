@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.862b382c.css",
-    "main.js": "/static/js/main.65218c8f.js",
+    "main.js": "/static/js/main.1f7dd19b.js",
     "static/media/OsiedlePRZYKLADDOWYMIANY.jpg": "/static/media/OsiedlePRZYKLADDOWYMIANY.ac38cc8451faf3ef9884.jpg",
     "static/media/MAP_WISLA.jpg": "/static/media/MAP_WISLA.028df974946b39900111.jpg",
     "static/media/BUDOWA5.jpg": "/static/media/BUDOWA5.bd8bc35310f802b0ae7f.jpg",
@@ -43,10 +43,10 @@
     "static/media/PDDLogov3.png": "/static/media/PDDLogov3.f9aee5cd05ff4ef7a210.png",
     "index.html": "/index.html",
     "main.862b382c.css.map": "/static/css/main.862b382c.css.map",
-    "main.65218c8f.js.map": "/static/js/main.65218c8f.js.map"
+    "main.1f7dd19b.js.map": "/static/js/main.1f7dd19b.js.map"
   },
   "entrypoints": [
     "static/css/main.862b382c.css",
-    "static/js/main.65218c8f.js"
+    "static/js/main.1f7dd19b.js"
   ]
 }
