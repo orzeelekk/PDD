@@ -92,7 +92,7 @@ const PhotosRealizacje = () => {
             {photoGroups[groupName].map((photo, index) => (
               <img
                 src={photo}
-                alt={`${groupName} photo ${index + 1}`}
+                alt={`Realization photo from ${groupName} - image ${index + 1}`} 
                 key={index}
                 className="photo"
                 onClick={() => openViewer(groupName, index)}
@@ -117,7 +117,7 @@ const PhotosRealizacje = () => {
 
           <img
             src={selectedImage}
-            alt="Selected"
+            alt="Selected_Realizacje"
             className="selected-image"
           />
           

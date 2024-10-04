@@ -21,8 +21,8 @@ const Carousel = () => {
     return (
         <div className="carousel-container ">
             <div className="carousel-wrapper">
-            <svg onClick={prev} id="leftArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                <g stroke-linejoin="round" stroke-linecap="round" >
+            <svg onClick={prev} id="leftArrow" className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                <g strokeLinejoin="round" strokeLinecap="round" >
                     <circle r="46" cx="50" cy="50" />
                     <polyline points="60 25, 30 50, 60 75" ></polyline>
                 </g>
@@ -51,8 +51,8 @@ const Carousel = () => {
                         </section>
                     </div>
                 </div>
-                    <svg onClick={next} id="rightArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                        <g stroke-linejoin="round" stroke-linecap="round" >
+                    <svg onClick={next} id="rightArrow" className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <g strokeLinejoin="round" strokeLinecap="round" >
                             <circle r="46" cx="50" cy="50" />
                             <polyline points="40 25, 70 50, 40 75" ></polyline>
                         </g>

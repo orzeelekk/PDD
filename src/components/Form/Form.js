@@ -44,31 +44,31 @@ function Form() {
     }
 
     return(
-            <section class="contact container" id="contact">
-                        <div class="contact_column">
-                            <h2 class="contact_title">Pytania?</h2>
-                            <p class="contact_instruction">Wyślij wiadomość lub zadzwoń.</p>
-                            <div class="contact_details">
-                                <div class="details_info_left">
-                                    <div class="details_item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <section className="contact container" id="contact">
+                        <div className="contact_column">
+                            <h2 className="contact_title">Pytania?</h2>
+                            <p className="contact_instruction">Wyślij wiadomość lub zadzwoń.</p>
+                            <div className="contact_details">
+                                <div className="details_info_left">
+                                    <div className="details_item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72 13.28 13.28 0 0 0 .57 2.79 2 2 0 0 1-.45 2L8.1 10.11a16 16 0 0 0 6.9 6.9l.58-.58a2 2 0 0 1 2-.45 13.28 13.28 0 0 0 2.79.57 2 2 0 0 1 1.72 2.11z"/>
                                     </svg>
-                                    <span class="details_info_phone">Kontakt telefoniczny: +48 518 330 003, +48 662 234 792</span>
+                                    <span className="details_info_phone">Kontakt telefoniczny: +48 518 330 003, +48 662 234 792</span>
                                 </div>
-                                <div class="details_item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <div className="details_item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M4 4h16v16H4z"/>
                                         <path d="M22 6l-10 7L2 6"/>
                                     </svg>
-                                    <span class="details_info_mail">Kontakt mailowy: polskie.domy.development@outlook.com</span>
+                                    <span className="details_info_mail">Kontakt mailowy: polskie.domy.development@outlook.com</span>
                                 </div>
-                                <div class="details_item">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <div className="details_item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
                                         <circle cx="12" cy="9" r="2.5"/>
                                     </svg>
-                                    <span class="details_info_address">Adres biura sprzedaży: Mińsk Mazowiecki, Warszawska 66/7, 05-300</span>
+                                    <span className="details_info_address">Adres biura sprzedaży: Mińsk Mazowiecki, Warszawska 66/7, 05-300</span>
                                 </div>
                             </div>
                             </div>
@@ -77,7 +77,7 @@ function Form() {
                             }
                         </div>
                         
-                        <div class="contact_column">
+                        <div className="contact_column">
                         <form onSubmit={handleSubmit} className="form">
                             <div className="form_field">
                                 <label className="form_label" htmlFor="name">Name</label>
