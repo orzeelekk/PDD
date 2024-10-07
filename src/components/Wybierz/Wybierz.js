@@ -60,9 +60,9 @@ const Wybierz = () => {
 
             <div className="houseplan">
                 {/* Conditionally render the highlights for the selected houses */}
-                {highlightGreen && <div className="highlight green-highlight" style={{ top: '50px', left: '50px' }}></div>}
-                {highlightYellow && <div className="highlight yellow-highlight" style={{ top: '150px', left: '150px' }}></div>}
-                {highlightRed && <div className="highlight red-highlight" style={{ top: '250px', left: '250px' }}></div>}
+                {highlightGreen && <div className="highlight green-highlight"></div>}
+                {highlightYellow && <div className="highlight yellow-highlight"></div>}
+                {highlightRed && <div className="highlight red-highlight"></div>}
             </div>
 
             <div className="houseinfo container">
