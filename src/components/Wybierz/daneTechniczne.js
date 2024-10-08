@@ -7,7 +7,7 @@ export const daneTechniczne = [
                 powierzchnia_zabudowy: '99m2',
                 powierzchnia_uzytkowa: '140m2',
                 kubatura: '757m3',
-                zabudowa: 'Domek wolnostojący',
+                zabudowa: 'Dom wolnostojący',
             }
         ],
     },
@@ -19,7 +19,7 @@ export const daneTechniczne = [
                 powierzchnia_zabudowy: '99m2',
                 powierzchnia_uzytkowa: '140m2',
                 kubatura: '757m3',
-                zabudowa: 'Domek wolnostojący typu blizniak',
+                zabudowa: 'Dom wolnostojący typu blizniak',
             }
         ],
     },

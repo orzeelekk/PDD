@@ -46,7 +46,7 @@ const Sectionto = () => {
                             Nowoczesne budownictwo
                         </a>
                         <h3 className="sectionto_description">
-                            Poza nowoczesnym designem domki są<br />
+                            Poza nowoczesnym designem domy są<br />
                             wyposażone w pompę ciepła i system rekuperacji.<br />
                             Dzięki tym rozwiązaniom możesz cieszyć się<br />
                             niższymi rachunkami za energię.

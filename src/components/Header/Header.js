@@ -2,17 +2,35 @@ import React from 'react';
 import "./_header.scss";
 import { headerItems } from './headerItems';
 import logo from "../Assets/PDDLogov3.png";
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Header = () => {
+    const navigate = useNavigate();
+    const location = useLocation();
 
-    // Function to handle smooth scrolling with 300px offset
+    // Function to handle smooth scrolling with offset
     const handleScrollToSection = (id) => {
         const section = document.getElementById(id);
-        if (section) {
-            const yOffset = -100; // Offset by 300px
-            const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            
-            window.scrollTo({ top: y, behavior: 'smooth' });
+        const yOffset = -100; // Offset for fixed header
+
+        if (location.pathname !== '/') {
+            // If not on the home page, navigate to the home page
+            navigate('/');
+
+            // Add a slight delay to ensure navigation completes before scrolling
+            setTimeout(() => {
+                const sectionAfterNavigate = document.getElementById(id);
+                if (sectionAfterNavigate) {
+                    const y = sectionAfterNavigate.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                }
+            }, 300); // Adjust delay as needed
+        } else {
+            // If already on the home page, scroll immediately
+            if (section) {
+                const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
         }
     };
 
