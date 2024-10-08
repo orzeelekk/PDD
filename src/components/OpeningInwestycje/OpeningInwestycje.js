@@ -126,7 +126,7 @@ const photoGroupsDziennik = {
             <div className="openingInwestycje_container container">
                     <div className="ChoseOption">
                         <div className="ChoseOption_top">
-                            Osiedle - Dębowa Aleja
+                            OSIEDLE - DĘBOWA ALEJA
                         </div>
                         <div className="ChoseOption_bottom">
                             <span className="ChoseOption_icon green dziennik" onClick={() => { setSelectedCategory('Dziennik'); scrollToSection(dziennikRef); }}>
