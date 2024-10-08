@@ -225,7 +225,6 @@ $background-color-hover: #ffffff; // Solid white background on hover
   height: 8.7%; // Adjust as necessary
   background-color: rgba(0, 255, 0, 0.3); 
   z-index: 1;
-  /* Use percentage for transform to make it relative to the screen size */
   top: 54.2%;   // 50% of the viewport height
   left: 77%;  // 70% of the viewport width
   transform: rotate(14.9deg);
@@ -238,7 +237,6 @@ $background-color-hover: #ffffff; // Solid white background on hover
   background-color: rgba(255, 217, 0, 0.3); // Green color with 80% opacity
   z-index: 1; // Ensure it appears above the house plan image
   transform: rotate(14.9deg);
-    /* Use percentage for transform to make it relative to the screen size */
   top: 49.4%;   // 50% of the viewport height
   left: 67.5%;  // 70% of the viewport width
   transform: rotate(14.9deg);

@@ -40,11 +40,12 @@
   stroke-width: 8px;
   stroke: white;
   fill: transparent;
+  background-color: $color-header;
+  border-radius: 50%;
 
   &:hover {
-    stroke: $main-green2;
+    stroke: $main-greenyellow;
     transition: stroke 1.5s ease;
-    /* Slow fill transition */
   }
 }
 

@@ -1,6 +1,6 @@
 export const daneTechniczne = [
     {
-        title: 'Dom 1',
+        title: 'Dom wolonostojący',
         submenu: [
             {
                 powierzchnia_terenu: '520-530m2',
@@ -12,7 +12,7 @@ export const daneTechniczne = [
         ],
     },
     {
-        title: 'Dom 2',
+        title: 'Dom wolnostojący typu blizniak',
         submenu: [
             {
                 powierzchnia_terenu: '520-530m2',
