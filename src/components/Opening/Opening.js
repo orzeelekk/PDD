@@ -22,7 +22,7 @@ const Opening = () => {
                         Pracujemy rzetelnie, dokładnie i terminowo. Naszą firmę cechuje dbałość o najmniejsze szczegóły, potrafimy zadowolić nawet najbardziej wymagających klientów.
                         Pracownicy przykładają wagę do wypełniania swoich obowiązków, dlatego też możemy pochwalić się takimi prestiżowymi projektami. Budujemy od zera, remontujemy od podstaw!
                         </h3>
-                        <a href="/Realizacje" className="button-AboutMe button-option">Galeria zdjec</a>
+                        <a href="/Realizacje" className="button-AboutMe button-option">Galeria zdjec naszych realizacji</a>
                     </div>
                     <div className="opening_right">
                         <div style={{
