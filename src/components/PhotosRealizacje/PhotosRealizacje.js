@@ -130,11 +130,6 @@ const PhotosRealizacje = () => {
         </div>
       )}
     </div>
-    
-
-        
-
-    
   );
 };
 

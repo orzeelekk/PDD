@@ -28,7 +28,7 @@ const Wybierz = () => {
             <div className="wybierz_container container">
                 <div className="ChoseHouse">
                     <div className="ChoseHouse_top">
-                        Wybierz swój segment 
+                        Wybierz swój dom 
                     </div>
                     <div className="ChoseHouse_bottom">
                         {/* Green House Icon */}
@@ -66,7 +66,7 @@ const Wybierz = () => {
             </div>
 
             <div className="houseinfo container">
-                <h1 className="houseinfo_header">Szczegółowa specyfikacja poszczególnych domów</h1>
+                <h1 className="houseinfo_header">Szczegółowa specyfikacja domów</h1>
                 <div className="houseinfo_box">
                     {daneTechniczne.map((menu, index) => {
                         return <SpecDomki items={menu} key={index} />;

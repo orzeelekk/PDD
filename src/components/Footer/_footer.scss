@@ -1,6 +1,27 @@
 @import "./src/main.scss";
 
 .footer {
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("../Assets/PodkladWidok.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(117, 133, 62, 0.9); // Overlay color with 90% opacity
+    z-index: -1;
+  }
+
   padding: 20px 0;
   background-color: $main-green3;
   &_info {
@@ -16,16 +37,19 @@
       margin: 0;
       align-items: flex-start;
     }
-
   }
 
-
-  .footer_item .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    fill:  #ffffff;
-}
+  .footer_item {
+      height: 25px;
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        fill: #ffffff;
+      }
+    }
 
 .footer_info_phone,
 .footer_info_mail,
@@ -39,8 +63,7 @@
 .footer_info_mail:hover,
 .footer_info_address:hover,
 .footer_copy:hover {
-    text-decoration: underline;
     cursor: pointer;
+    color: $main-green2;
 }
-
 }

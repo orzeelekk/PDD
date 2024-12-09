@@ -1,6 +1,6 @@
 @import "./src/main.scss";
 
-.realizacje {
+.photosbox {
   background-color: $main-green3;
   padding: 90px 0;
   position: relative;
@@ -25,6 +25,13 @@
   &_opener {
     font-weight: bold;
     font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+  
+  }
+  &_text {
+    font-size: 1rem;
     text-align: center;
     color: #fff;
   

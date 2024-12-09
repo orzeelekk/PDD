@@ -10,6 +10,7 @@ function Form() {
     });
     const [errors, setErrors] = useState([]);
     const [submitting, setSubmitting] = useState(false);
+    const [consent, setConsent] = useState(false); // State for checkbox
 
     const handleChange = (e) => {
         const { value, name } = e.target;
@@ -17,6 +18,10 @@ function Form() {
             ...prevData,
             [name]: value
         }));
+    };
+
+    const handleCheckboxChange = (e) => {
+        setConsent(e.target.checked); // Update consent state based on checkbox
     };
 
     const handleSubmit = event => {
@@ -32,6 +37,9 @@ function Form() {
         }
         if (data.Wiadomosc.length < 11) {
             validationErrors.push('Wiadomość musi być dłuzsza niz 10 znaków!');
+        }
+        if (!consent) { // Check if consent is given
+            validationErrors.push('Musisz wyrazić zgodę na przetwarzanie danych osobowych!');
         }
 
         setErrors(validationErrors);
@@ -52,6 +60,9 @@ function Form() {
             console.log('SUCCESS!', response.status, response.text);
             setSubmitting(false);
             alert('Wiadomość wysłana.');
+            // Reset form after successful submission
+            setData({ Imie: '', Mail: '', Wiadomosc: "" });
+            setConsent(false); // Reset checkbox state
         }, (error) => {
             console.log('FAILED...', error);
             setSubmitting(false);
@@ -70,21 +81,21 @@ function Form() {
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72 13.28 13.28 0 0 0 .57 2.79 2 2 0 0 1-.45 2L8.1 10.11a16 16 0 0 0 6.9 6.9l.58-.58a2 2 0 0 1 2-.45 13.28 13.28 0 0 0 2.79.57 2 2 0 0 1 1.72 2.11z" />
                             </svg>
-                            <span className="details_info_phone">Kontakt telefoniczny: +48 518 330 003, +48 662 234 792</span>
+                            <span className="details_info">Kontakt telefoniczny: +48 518 330 003, +48 662 234 792</span>
                         </div>
                         <div className="details_item">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M4 4h16v16H4z" />
                                 <path d="M22 6l-10 7L2 6" />
                             </svg>
-                            <span className="details_info_mail">Kontakt mailowy: polskie.domy.development@outlook.com</span>
+                            <span className="details_info">Kontakt mailowy: polskie.domy.development@outlook.com</span>
                         </div>
                         <div className="details_item">
                             <svg xmlns="http://www.w3.org/2000/svg" className="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
                                 <circle cx="12" cy="9" r="2.5" />
                             </svg>
-                            <span className="details_info_address">Adres biura sprzedaży: Mińsk Mazowiecki, Warszawska 66/7, 05-300</span>
+                            <span className="details_info">Adres biura sprzedaży: Mińsk Mazowiecki, Warszawska 66/7, 05-300</span>
                         </div>
                     </div>
                 </div>
@@ -94,7 +105,7 @@ function Form() {
             <div className="contact_column">
                 <form onSubmit={handleSubmit} className="form">
                     <div className="form_field">
-                        <label className="form_label" htmlFor="name">Name</label>
+                        <label className="form_label" htmlFor="name">Imię</label>
                         <input
                             type="text"
                             className="form_input"
@@ -127,7 +138,12 @@ function Form() {
                     </div>
                     <div className="form_consent">
                         <label className="form_checkbox">
-                            <input type="checkbox" id="consentCheckbox" />
+                            <input 
+                                type="checkbox" 
+                                id="consentCheckbox" 
+                                checked={consent} // Bind checked state to consent
+                                onChange={handleCheckboxChange} // Update consent state on change
+                            />
                             <span className="checkbox"></span>
                             <p className="consent_text">
                                 Wyrażam zgodę na przetwarzanie moich danych osobowych przez spółkę Polskie Domy Development sp. z o. o. zgodnie z Polityką prywatności.

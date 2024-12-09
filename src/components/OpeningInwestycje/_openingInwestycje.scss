@@ -1,41 +1,5 @@
 @import "./src/main.scss";
 
-.openingInwestycje {
-  position: relative;
-  width: 100%; // Set the container width as needed
-  height: 100%; // Set the container height as needed
-  background-image: url("../Assets/osiedlepodklad.jpg");
-  background-size: cover; // Adjust the image size as needed
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 0;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(117, 133, 62, 0.9); // Corrected color format (rgba) with 80% opacity
-    z-index: -1;
-  }
-
-  &_info {
-    margin: 40px;
-    background-color: RGBA(244, 145, 0, .5);
-    color: white;
-  }
-
-  &_header {
-    font-family: $font-header;
-  }
-}
-
-.add {
-  display: flex;
-  justify-content: space-around;
-}
-
 .openingInwestycje_container  {
   color: white;
   padding: 50px 0;
@@ -43,6 +7,11 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+.add {
+  display: flex;
+  justify-content: space-around;
 }
 
 .ChoseOption {
@@ -109,8 +78,6 @@ $background-color-hover: #ffffff; // Solid white background on hover
   &:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
-    background-color: $background-color-hover; // Solid white background on hover
-
   }
   
   &:active {
@@ -131,8 +98,48 @@ $background-color-hover: #ffffff; // Solid white background on hover
   stroke-width: 15; 
   fill: #28a745; 
   margin-bottom: 10px;
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 90px;
+  &:hover {
+    fill: $main-greenyellow;
+  }
+}
+.photobox_inwerstycje {
+  background-color: $main-green3;
+  padding: 90px 0;
+  position: relative;
+  width: 100%; // Set the container width as needed
+  height: 100%; // Set the container height as needed
+  background-image: url("../Assets/PodkladWidok.jpg");
+  background-size: cover; // Adjust the image size as needed
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(117, 133, 62, 0.9); // Corrected color format (rgba) with 80% opacity
+    z-index: -1;
+  }
+  
+  &_opener {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px;
+  
+  }
+  &_text {
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+  
+  }
 }
 
 

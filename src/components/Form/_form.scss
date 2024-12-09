@@ -1,6 +1,6 @@
 @import "./src/main.scss";
 
-  .contact {
+.contact {
   display: flex;
   justify-content: center;
   padding: 80px 100px 100px;
@@ -22,6 +22,14 @@
   }
 }
 
+.details_info {
+  display: flex;
+  align-items: center;
+  /* Aligns text and icon vertically */
+  gap: 10px;
+  /* Space between the icon and text */
+}
+
 .details_info_left {
   display: flex;
   flex-direction: column;
@@ -31,29 +39,22 @@
   align-items: flex-start;
 }
 
-.details_item .icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
-  fill:  #ffffff;
+.details_item {
+  height: 40px;
+  display: flex;
+  align-items: center;
 
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill: #ffffff;
+  }
 }
 
-
-.details_info_phone,
-.fdetails_info_mail,
-.details_info_address,
-.details_copy {
-  color: black;
-  text-decoration: none;
-}
-
-.details_info_phone:hover,
-.details_info_mail:hover,
-.details_info_address:hover,
-.details_copy:hover {
-  text-decoration: underline;
+.details_info:hover {
   cursor: pointer;
+  color: $main-green2;
 }
 
 .form {
@@ -88,7 +89,7 @@
   .form_checkbox input[type="checkbox"] {
     display: none;
   }
-  
+
   .form_checkbox .checkbox {
     width: 24px;
     height: 24px;
@@ -99,7 +100,7 @@
     margin-right: 20px;
     position: relative;
   }
-  
+
   .form_checkbox .checkbox::after {
     content: '';
     position: absolute;
@@ -115,31 +116,30 @@
     opacity: 0;
     transition: opacity 0.3s ease;
   }
-  
-  .form_checkbox input[type="checkbox"]:checked + .checkbox::after {
+
+  .form_checkbox input[type="checkbox"]:checked+.checkbox::after {
     content: '✔️';
     opacity: 1;
   }
 
-    .consent_text {
-      margin: 0 15px;
-      font-size: 0.75rem;
-      color: $color-background;
-      line-height: 17px;
-      width: 80%;
-      margin-bottom: 20px;
-    }
+  .consent_text {
+    margin: 0 15px;
+    font-size: 0.75rem;
+    color: $color-background;
+    line-height: 17px;
+    width: 80%;
+    margin-bottom: 20px;
   }
-  .btn {
-    font-size: 0.8125rem;
-    padding: 20px 97px;
-    align-self: flex-end;
-    margin-top: 20px;
-  }
+}
 
-  .form_pop,
-  .error {
-    margin-top: 20px;
-  }
+.btn {
+  font-size: 0.8125rem;
+  padding: 20px 97px;
+  align-self: flex-end;
+  margin-top: 20px;
+}
 
-  
+.form_pop,
+.error {
+  margin-top: 20px;
+}
