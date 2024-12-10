@@ -20,7 +20,7 @@ const CarouselRealizacje = () => {
     return (
         <div className="carousel-container ">
             <div className="photosbox ">
-                <h1 className="photosbox_opener container">Zapraszamy do galerii zdjęć naszych zrealizowanych projektów</h1>
+                <h1 className="photosbox_opener container">Zapraszamy do galerii zdjęć naszych realizacji</h1>
                 <h3 className="photosbox_text container">Poniżej znajdziesz galerię przedstawiającą wybrane realizacje, które wykonaliśmy w ramach naszych inwestycji. Każdy projekt to połączenie nowoczesnych rozwiązań architektonicznych z dbałością o najwyższą jakość wykonania. Nasze realizacje to nie tylko domy, ale także przestrzenie tworzone z myślą o komforcie i satysfakcji mieszkańców. Zobacz, jak wyglądają gotowe inwestycje – zarówno z zewnątrz, jak i wewnątrz – i przekonaj się o naszej solidności i profesjonalizmie.</h3>
             </div>
 

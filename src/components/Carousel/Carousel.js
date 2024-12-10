@@ -34,19 +34,22 @@ const Carousel = () => {
                         <section className="slide slide_1">
                             <div className="slide_content">
                                 <a href="/Inwestycje" className="slide_button button-option">Osiedle - Dębowa Aleja</a>
-                                <p className="slide_text">Inwestycja w Mińsku Mazowieckim w trakcie realizacji. Celem przedsięwzięcia jest wykonanie domów wolnostojących w cenie mieszkania.</p>
+                                <p className="slide_text">Inwestycja w Mińsku Mazowieckim w trakcie realizacji. Celem przedsięwzięcia jest wykonanie domów wolnostojących w cenie mieszkania.<br/>
+                                <br/>Szczegóły w zakładce INWESTYCJE. </p>
                             </div>
                         </section>
                         <section className="slide slide_2">
                             <div className="slide_content">
                             <a href="/Inwestycje" className="slide_button button-option">Osiedle - Dębowa Aleja</a>
-                                <p className="slide_text">Inwestycja w Mińsku Mazowieckim w trakcie realizacji. Celem przedsięwzięcia jest wykonanie domów wolnostojących w cenie mieszkania.</p>
+                                <p className="slide_text">Inwestycja w Mińsku Mazowieckim w trakcie realizacji. Celem przedsięwzięcia jest wykonanie domów wolnostojących w cenie mieszkania.<br/>
+                                <br/>Szczegóły w zakładce INWESTYCJE. </p>
                             </div>
                         </section>
                         <section className="slide slide_3">
                             <div className="slide_content">
                             <a href="/Inwestycje" className="slide_button button-option">Osiedle - Dębowa Aleja</a>
-                                <p className="slide_text">Inwestycja w Mińsku Mazowieckim w trakcie realizacji. Celem przedsięwzięcia jest wykonanie domów wolnostojących w cenie mieszkania.</p>
+                                <p className="slide_text">Inwestycja w Mińsku Mazowieckim w trakcie realizacji. Celem przedsięwzięcia jest wykonanie domów wolnostojących w cenie mieszkania.<br/>
+                                <br/>Szczegóły w zakładce INWESTYCJE. </p>
                             </div>
                         </section>
                     </div>

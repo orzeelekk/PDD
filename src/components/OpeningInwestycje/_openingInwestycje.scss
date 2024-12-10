@@ -84,29 +84,26 @@ $background-color-hover: #ffffff; // Solid white background on hover
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
   }
-
-  svg {
-    width: 64px;
-    height: 64px;
-    fill: currentColor;
-    transition: transform $transition-duration ease;
-  }
 }
 
 .ChoseOption_icon.green svg {
   stroke: $main-green;
-  stroke-width: 15; 
-  fill: #28a745; 
-  margin-bottom: 10px;
-  height: 60px;
-  width: 90px;
+  stroke-width: 15;
+  fill: #28a745;
+  padding: 10px;
+  height: 60px; // Ensure height is set
+  width: 60px; // Ensure width is set
+  box-sizing: content-box; // Prevent clipping due to padding
+  display: block; // Prevent inline behavior
+  overflow: visible; // Ensure no part of the SVG is trimmed
   &:hover {
     fill: $main-greenyellow;
   }
 }
 .photobox_inwerstycje {
   background-color: $main-green3;
-  padding: 90px 0;
+  padding: 40px 0;
+  margin-bottom: 30px;
   position: relative;
   width: 100%; // Set the container width as needed
   height: 100%; // Set the container height as needed
@@ -140,6 +137,9 @@ $background-color-hover: #ffffff; // Solid white background on hover
     color: #fff;
   
   }
+}
+.photo {
+  margin-bottom: 40px;
 }
 
 

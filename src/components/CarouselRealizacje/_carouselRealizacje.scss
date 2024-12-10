@@ -2,7 +2,7 @@
 
 .photosbox {
   background-color: $main-green3;
-  padding: 90px 0;
+  padding: 50px 0;
   position: relative;
   width: 100%; // Set the container width as needed
   height: 100%; // Set the container height as needed
@@ -21,7 +21,6 @@
     background-color: rgba(117, 133, 62, 0.9); // Corrected color format (rgba) with 80% opacity
     z-index: -1;
   }
-  
   &_opener {
     font-weight: bold;
     font-size: 1.2rem;

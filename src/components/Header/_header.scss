@@ -8,13 +8,13 @@
   top: 0;
   left: 0;
   height: 100px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
-  border-bottom: 2.5px solid $main-green2;
+  border-bottom: 2.5px solid $main-green;
 
   &_container {
     display: flex;

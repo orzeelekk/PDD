@@ -47,7 +47,9 @@ const Sectionto = () => {
                         </a>
                         <h3 className="sectionto_description">
                             Poza nowoczesnym designem domy są<br />
-                            wyposażone w pompę ciepła i system rekuperacji.<br />
+                            wyposażone w pompę ciepła wraz z <br />
+                            możliwością wykonania systemu rekuperacji, <br />
+                            klimatyzacji oraz instalacji fotowoltaiki.<br />
                             Dzięki tym rozwiązaniom możesz cieszyć się<br />
                             niższymi rachunkami za energię.
                         </h3>
@@ -61,8 +63,8 @@ const Sectionto = () => {
                         <h3 className="sectionto_description">
                             Naszym głównym celem jest budowa<br />
                             domów w cenie mieszkania w centrum.<br />
-                            Ceny mieszkań wahają się między<br />
-                            800 tys. zł a 900 tys. zł.
+                            Ceny domow wahają się między<br />
+                            830 tys. zł a 930 tys. zł.
                         </h3>
                     </div>
                 </div>

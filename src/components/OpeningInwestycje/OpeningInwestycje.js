@@ -74,9 +74,9 @@ const PhotosRealizacje = () => {
 
     <>
         <section className="openingInwestycje">
-                <div className="photosbox ">
-                <h1 className="photosbox_opener container">Poznaj inwestycję OSIEDLE - DĘBOWA ALEJA</h1>
-                <h3 className="photosbox_text container">W tej sekcji przedstawiamy naszą najnowszą inwestycję, Osiedle - Dębowa Aleja, która łączy w sobie nowoczesne budownictwo, atrakcyjne ceny oraz komfort życia w spokojnej okolicy. Poniżej znajdziesz szczegółowe informacje o kluczowych aspektach tej wyjątkowej inwestycji, wraz ze zdjęciami, które obrazują każdy etap realizacji.</h3>
+                <div className="photosbox">
+                  <h1 className="photosbox_opener container">OSIEDLE - DĘBOWA ALEJA</h1>
+                  <h3 className="photosbox_text container">W tej sekcji przedstawiamy naszą najnowszą inwestycję, Osiedle - Dębowa Aleja, która łączy w sobie nowoczesne budownictwo, atrakcyjne ceny oraz komfort życia w spokojnej okolicy. Poniżej znajdziesz szczegółowe informacje o kluczowych aspektach tej wyjątkowej inwestycji, wraz ze zdjęciami, które obrazują każdy etap realizacji.</h3>
                 </div>
                 <div className="openingInwestycje_container container">
                         <div className="ChoseOption">
@@ -120,9 +120,10 @@ const PhotosRealizacje = () => {
             {descriptionGroups.map((group, groupIndex) => (
                 <div key={groupIndex} className="description-container">
                 <div className="description-group">
-                    <h2 className="description-header">{group.header}</h2>
-                    <p className="description-text">{group.description}</p>
-                    
+                  <div className="photobox_inwerstycje">
+                    <h2 className="photobox_inwerstycje_opener">{group.header}</h2>
+                    <p className="photobox_inwerstycje_text">{group.description}</p>
+                  </div>
                     <div className="photo-container">
                     <div className="photos">
                         {group.photos.map((photo, index) => (
