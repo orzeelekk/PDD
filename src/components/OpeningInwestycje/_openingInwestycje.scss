@@ -102,7 +102,7 @@ $background-color-hover: #ffffff; // Solid white background on hover
 }
 .photobox_inwerstycje {
   background-color: $main-green3;
-  padding: 40px 0;
+  padding: 40px 20px;
   margin-bottom: 30px;
   position: relative;
   width: 100%; // Set the container width as needed
@@ -121,6 +121,7 @@ $background-color-hover: #ffffff; // Solid white background on hover
     height: 100%;
     background-color: rgba(117, 133, 62, 0.9); // Corrected color format (rgba) with 80% opacity
     z-index: -1;
+    border-radius: 30px;
   }
   
   &_opener {

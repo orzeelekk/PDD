@@ -1,11 +1,13 @@
 import React, { useState,useRef } from 'react';
 import './_openingInwestycje.scss';
 
-import Zlota1 from '../Assets/ZLOTA1.jpg';
-import Zlota2 from '../Assets/ZLOTA2.jpg';
-import Zlota3 from '../Assets/ZLOTA3.jpg';
-import Zlota4 from '../Assets/ZLOTA4.jpg';
-import Zlota5 from '../Assets/ZLOTA5.jpg';
+import BUD2 from '../Assets/BUD2.jpg';
+import BUD4 from '../Assets/BUD4.jpg';
+import BUD5 from '../Assets/BUD5.jpg';
+import BUD6 from '../Assets/BUD6.jpg';
+import BUD7 from '../Assets/BUD7.jpg';
+import BUD8 from '../Assets/BUD8.jpg';
+import BUD9 from '../Assets/BUD9.jpg';
 
 import DROGA1 from '../Assets/DROGA1.jpg';
 import DROGA2 from '../Assets/DROGA2.jpg';
@@ -13,16 +15,45 @@ import DROGA3 from '../Assets/DROGA3.jpg';
 import DROGA4 from '../Assets/DROGA4.jpg';
 import DROGA5 from '../Assets/DROGA5.jpg';
 
+import BOISKO1 from '../Assets/BOISKO1.jpg';
+import BOISKO2 from '../Assets/BOISKO2.jpg';
+import BOISKO3 from '../Assets/BOISKO3.jpg';
+import BOISKO4 from '../Assets/BOISKO4.jpg';
+import BOISKO5 from '../Assets/BOISKO5.jpg';
+
+import PLAC1 from '../Assets/PLAC1.jpg';
+import PLAC2 from '../Assets/PLAC2.jpg';
+import PLAC3 from '../Assets/PLAC3.jpg';
+import PLAC4 from '../Assets/PLAC4.jpg';
+import PLAC5 from '../Assets/PLAC5.jpg';
+
 const descriptionGroups = [
   {
     header: 'Dziennik Budowy',
     description: 'Nasze prace są realizowane zgodnie z najwyższymi standardami sztuki budowlanej...',
-    photos: [Zlota1, Zlota2, Zlota3, Zlota4, Zlota5]
+    photos: [BUD2, BUD4, BUD5, BUD6, BUD7, BUD8, BUD9]
   },
   {
-    header: 'Droga Dojazdowa',
-    description: 'Osiedle ma wygodny dostęp dzięki świeżo wybudowanej asfaltowej drodze...',
+    header: 'Niska Cena',
+    description: 'Dzięki ponad 20 letniemu doświadczeniu budowlanym jesteśmy w stanie znalezc najlepszych dostawców / podwykonawców w dobrej cenie.',
     photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5]
+  },
+  {
+    header: 'Nowoczesne budownictwo',
+    description: 'W standardzie montujemy w domu pompę ciepła. Budynek jest dostosowany do montażu rekuperacji, klimatyzacji oraz fotowoltaiki według potrzeb kupującego. Ponadto bryła budynku jest nowoczesna wraz z dużą ilościa przeszkleń i nowoczesnym ogrodzeniem (w najbliższym czasie dodamy również ogrodzenie do wizualizacji). Wszystkie domki posiadają garaż z nowoczesnym mechanizmem bramy Somfy wraz z parkingiem zewnętrznym.',
+    photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5]
+  },
+  {
+    className: 'okolicaRef',
+    header: 'Okolica',
+    description: 'Obok osiedla mamy nowy nowoczesny plac zabaw dla dzieci oraz duże boiska do gry w siatkówkę oraz piłkę nożną. Osiedle a centrum handlowe Mińska Mazowieckiego dzieli jedynie 1,5km odglegości. Na osiedlu powstanie plac zabaw oraz dodatkowe miejsce parkingowe. Wszystkie udogodnienia zostaly przedstawione na mapie ponizej.',
+    photos: [BOISKO1, BOISKO2, BOISKO3, BOISKO4, BOISKO5,PLAC1, PLAC2, PLAC3, PLAC4, PLAC5]
+  },
+  {
+    className: 'drogaRef',
+    header: 'Droga Dojazdowa',
+    description: 'Drogi dojazdowe do osiedla są bardzo dobrym stanie. Droga od Gminy Dębę Wielkie została na nowo wykonana w tym roku (tj. 2024), droga do Mińska Mazowieckiego również dopiero co była modernizowana. Ponadto w przyszłości całe osiedle będzie posiadało dojazd od strony Arynowa.',
+    photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5],
   },
 ];
 
