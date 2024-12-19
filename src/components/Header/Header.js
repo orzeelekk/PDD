@@ -8,7 +8,6 @@ const Header = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    // Function to handle smooth scrolling with offset
     const handleScrollToSection = (id) => {
         const section = document.getElementById(id);
         const yOffset = -100; // Offset for fixed header

@@ -139,10 +139,45 @@ $background-color-hover: #ffffff; // Solid white background on hover
   
   }
 }
-.photo {
+.photos {
   margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to the next line */
+  gap: 10px; /* Optional: Add spacing between items */
+  justify-content: center; /* Optional: Center items horizontally */
 }
 
-
+.photo_inwestycje {
+  padding: 5px;
+  max-width: 240px;
+  height: 190px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  border-radius: 10%;
+  background: none;
+  appearance: none;
+  border-width: 1px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -1px, #D6D6E7 0 -1px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
 
 

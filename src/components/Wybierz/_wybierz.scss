@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("../Assets/osiedlepodklad.jpg");
+  background-image: url("../Assets/googlemapsy.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,7 +17,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(117, 133, 62, 0.9); // Overlay color with 90% opacity
+    background-color: rgba(117, 133, 62, 0.6); // Overlay color with 90% opacity
     z-index: -1;
   }
 
@@ -116,11 +116,16 @@ $background-color-hover: #ffffff; // Solid white background on hover
   &:focus {
     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   }
-  
+  h1 {
+    color: #ffffff;
+  }
   &:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
     background-color: $background-color-hover; // Solid white background on hover
+    h1 {
+      color: $main-green4;
+    }
   }
   
   &:active {
@@ -269,10 +274,12 @@ $background-color-hover: #ffffff; // Solid white background on hover
   }
 }
 .menu-items {
+  color: #ffffff;
   padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.1); /* Optional styling */
   margin-bottom: 10px; /* Space between dropdown items */
 }
+
 
 
 
