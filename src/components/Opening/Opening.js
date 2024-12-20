@@ -9,11 +9,11 @@ const Opening = () => {
             <section className="opening" id="opening">
                 <div className="opening_container container">
                     <div className="opening_left">
-                        <h1 className="opening_header">Szukasz rzetelnego realizatora inwestycji budowlanej?</h1>
+                        <h1 className="opening_header">Szukasz solidnego partnera do realizacji inwestycji budowlanej?</h1>
                         <h3 className="opening_text">
-                            Jesteśmy działającą od wielu lat firma budowlaną zajmujacą sie profesjonalną obsługą inwestycji budowlanych.<br/>
-                            W swoim portfolio mamy takie inwestrycje jak wykończenie pod klucz prestiżowych mieszkań na Złotej 44 w centrum Warszawy czy wykonanie stanu developerskiego na osiedlu Ejsmonda w Józefowie oraz wiele innych.<br/>
-                            Jednak naszym głównym przedsięwzięciem jest budowa domów wolnostojących. Aktualnie wykonujemy osiedle w Choszcówce Stojeckiego w Giminie Dębe Wielkie.<br/>
+                        Jesteśmy firmą budowlaną z wieloletnim doświadczeniem, specjalizującą się w kompleksowej obsłudze inwestycji budowlanych..<br/>
+                        W naszym portfolio znajdują się realizacje takie jak wykończenie pod klucz prestiżowych mieszkań na Złotej 44 w centrum Warszawy, wykonanie stanu deweloperskiego na osiedlu Ejsmonda w Józefowie oraz wiele innych.<br/>
+                        Naszą główną specjalizacją jest jednak budowa domów wolnostojących. Obecnie realizujemy osiedle w Choszczówce Stojeckiej w Gminie Dębe Wielkie.<br/>
                         </h3>
                         <h1 className="opening_header">
                             Jak pracujemy?

@@ -38,28 +38,29 @@ const CarouselRealizacje = () => {
                     >
                         <section className="slide slide_realizacje_1">
                             <div className="slide_content">
-                                <a href="/realizacje" className="slide_button button-option">Kliniki Focus Clinic w Warszawie i Mińsku Mazowieckim</a>
-                                <p className="slide_text">Kompleksowe remonty i wykończenie w klinikach Focus Clinic. Między innymi w Warszawie na ul. Niekłańska 41 oraz w Mińsku Mazowieckim na ul. Warszawskiej 141 i Konstytucji 3 Maja.</p>
+                                <a href="/realizacje" className="slide_button button-option">Dom na ul. Winogronowej</a>
+                                <p className="slide_text">Realizacja budowy i wykończenia domu pod klucz przy ul. Winogronowej</p>
                             </div>
                         </section>
                         <section className="slide slide_realizacje_2">
                             <div className="slide_content">
-                                <a href="/realizacje" className="slide_button button-option">Aparatamenty w prestiżowym wieżowcu Złota 44</a>
-                                <p className="slide_text">Wykończenie pod klucz mieszkań w wieżowcu Złota 44 w centrum Warszawy.</p>
+                                <a href="/realizacje" className="slide_button button-option">Dom na ul. Lubominowej</a>
+                                <p className="slide_text"> Kompleksowe wykonanie budowy oraz wykończenia domu przy ulicy Lubominowej.                                .</p>
                             </div>
                         </section>
                         <section className="slide slide_realizacje_3">
                             <div className="slide_content">
-                                <a href="/realizacje" className="slide_button button-option">Osiedle domów wolnostojących na prestiżowym osiedlu w Emilanowie Leśnym</a>
-                                <p className="slide_text">Wykonanie stanu developerskiego domów na prestiżowym osiedlu w Emilianowie w Józefowie pod Warszawą</p>
+                                <a href="/realizacje" className="slide_button button-option">Domy na osiedlu Emilianów Leśny</a>
+                                <p className="slide_text">Przebudowa budynków i wykończenie pod klucz na osiedlu Emilianów Leśny.</p>
                             </div>
                         </section>
                         <section className="slide slide_realizacje_4">
                             <div className="slide_content">
-                                <a href="/realizacje" className="slide_button button-option">Osiedle domów w Kołobrzegu</a>
-                                <p className="slide_text">Kompleksowa budowa domów wraz z wykończeniem pod klucz w Kołobrzegu.</p>
+                                <a href="/realizacje" className="slide_button button-option">Kliniki Focus Clinic w Warszawie i Mińsku Mazowieckim</a>
+                                <p className="slide_text"> Między innymi w Warszawie na ul. Niekłańska 41 oraz w Mińsku Mazowieckim na ul. Warszawskiej 141 i Konstytucji 3 Maja.</p>
                             </div>
                         </section>
+
                     </div>
                 </div>
                     <svg onClick={next} id="rightArrow" className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">

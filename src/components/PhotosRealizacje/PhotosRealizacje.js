@@ -1,6 +1,24 @@
 import React, { useState } from 'react';
 import './_photosRealizacje.scss';
 
+import FOCUS1 from '../Assets/FOCUS1.jpg';
+import FOCUS2 from '../Assets/FOCUS2.jpg';
+// import FOCUS2 from '../Assets/FOCUS2.jpg';
+// import FOCUS2 from '../Assets/FOCUS2.jpg';
+// import FOCUS2 from '../Assets/FOCUS2.jpg';
+
+import WINOGRONOWA1 from '../Assets/WINOGRONOWA1.jpg';
+import WINOGRONOWA2 from '../Assets/WINOGRONOWA2.jpg';
+import WINOGRONOWA3 from '../Assets/WINOGRONOWA3.jpg';
+import WINOGRONOWA4 from '../Assets/WINOGRONOWA4.jpg';
+import WINOGRONOWA5 from '../Assets/WINOGRONOWA5.jpg';
+
+import ZWYCIEZCOW1 from '../Assets/ZWYCIEZCOW1.jpg';
+import ZWYCIEZCOW2 from '../Assets/ZWYCIEZCOW2.jpg';
+import ZWYCIEZCOW3 from '../Assets/ZWYCIEZCOW3.jpg';
+import ZWYCIEZCOW4 from '../Assets/ZWYCIEZCOW4.jpg';
+import ZWYCIEZCOW5 from '../Assets/ZWYCIEZCOW5.jpg';
+
 import Zlota1 from '../Assets/ZLOTA1.jpg';
 import Zlota2 from '../Assets/ZLOTA2.jpg';
 import Zlota3 from '../Assets/ZLOTA3.jpg';
@@ -13,47 +31,57 @@ import EMILIANOW3 from '../Assets/EMILIANOWLESNY3.jpg';
 import EMILIANOW4 from '../Assets/EMILIANOWLESNY4.jpg';
 import EMILIANOW5 from '../Assets/EMILIANOWLESNY5.jpg';
 
-import FOCUS1 from '../Assets/FOCUS1.jpg';
-import FOCUS2 from '../Assets/FOCUS2.jpg';
-// import FOCUS2 from '../Assets/FOCUS2.jpg';
-// import FOCUS2 from '../Assets/FOCUS2.jpg';
-// import FOCUS2 from '../Assets/FOCUS2.jpg';
-
-import KOLOBRZEG1 from '../Assets/KOLOBRZEG1.jpg';
-import KOLOBRZEG2 from '../Assets/KOLOBRZEG2.jpg';
-import KOLOBRZEG3 from '../Assets/KOLOBRZEG3.jpg';
-import KOLOBRZEG4 from '../Assets/KOLOBRZEG4.jpg';
-import KOLOBRZEG5 from '../Assets/KOLOBRZEG5.jpg';
+import LUBOMIN1 from '../Assets/LUBOMIN1.jpg';
+import LUBOMIN2 from '../Assets/LUBOMIN2.jpg';
+import LUBOMIN3 from '../Assets/LUBOMIN3.jpg';
+import LUBOMIN4 from '../Assets/LUBOMIN4.jpg';
+import LUBOMIN5 from '../Assets/LUBOMIN5.jpg';
 
 const photoGroups = {
-  FocusClinic: [
-    FOCUS1,
-    FOCUS2,
-    FOCUS2,
-    FOCUS2,
-    FOCUS2,
+  'Realizacja budowy i wykończenia domu pod klucz przy ul. Winogronowej': [
+    WINOGRONOWA1,
+    WINOGRONOWA2,
+    WINOGRONOWA3,
+    WINOGRONOWA4,
+    WINOGRONOWA5,
   ],
-  Zlota44: [
-    Zlota1,
-    Zlota2,
-    Zlota3,
-    Zlota4,
-    Zlota5
+  'Kompleksowe wykonanie budowy oraz wykończenia domu przy ulicy Lubinowej.': [
+    LUBOMIN1,
+    LUBOMIN2,
+    LUBOMIN3,
+    LUBOMIN4,
+    LUBOMIN5,
   ],
-  EmilianowLesny: [
+  'Przebudowa budynku i wykończenie pod klucz na osiedlu Emilianów Leśny': [
     EMILIANOW1,
     EMILIANOW2,
     EMILIANOW3,
     EMILIANOW4,
     EMILIANOW5,
   ],
-  Kolobrzeg: [
-    KOLOBRZEG1,
-    KOLOBRZEG2,
-    KOLOBRZEG3,
-    KOLOBRZEG4,
-    KOLOBRZEG5,
+  'Przebudowa i remont klinik dentystycznych FocusClinic': [
+    FOCUS1,
+    FOCUS2,
+    FOCUS2,
+    FOCUS2,
+    FOCUS2,
   ],
+  'Pełne wykończenie luksusowych apartamentów pod adresem Złota 44.': [
+    Zlota1,
+    Zlota2,
+    Zlota3,
+    Zlota4,
+    Zlota5
+  ],
+  'Całościowe wykończenie mieszkania pod klucz na ulicy Zwycięzców.': [
+    ZWYCIEZCOW1,
+    ZWYCIEZCOW2,
+    ZWYCIEZCOW3,
+    ZWYCIEZCOW4,
+    ZWYCIEZCOW5,
+  ],
+
+
 };
 
 const PhotosRealizacje = () => {
@@ -84,7 +112,7 @@ const PhotosRealizacje = () => {
   };
 
   return (
-    <div className="photo-container container">
+    <div className="photo-container realizacje-container">
       {Object.keys(photoGroups).map((groupName) => (
         <div className="photo-group" key={groupName}>
           <h2 className="group-name">{groupName}</h2>

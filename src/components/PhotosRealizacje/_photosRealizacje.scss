@@ -1,8 +1,31 @@
 @import "./src/main.scss";
 
-.photo-container {
+.realizacje-container{
+  background-image: url("../Assets/Realizacja.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 238, 219, 0.8); // Overlay color with 90% opacity
+    z-index: -1;
+  }
+}
+
+.realizacje-container{
     display: flex;
     flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
   }
   
   .photo-group {

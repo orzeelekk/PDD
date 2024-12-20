@@ -3,7 +3,7 @@ export const daneTechniczne = [
         title: 'Dom wolonostojący',
         submenu: [
             {
-                powierzchnia_terenu: '520-530m2',
+                powierzchnia_terenu: '500-580m2',
                 powierzchnia_zabudowy: '99m2',
                 powierzchnia_uzytkowa: '140m2',
                 kubatura: '757m3',
@@ -12,7 +12,7 @@ export const daneTechniczne = [
         ],
     },
     {
-        title: 'Dom wolnostojący typu blizniak (w kolejnych etapach realizacji)',
+        title: 'Dom wolnostojący typu blizniak (w kolejnych etapach realizacji, najprawdopodobniej pod koniec 2025 roku).',
         submenu: [
             {
                 powierzchnia_terenu: '530-550m2',

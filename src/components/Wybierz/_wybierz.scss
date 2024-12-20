@@ -162,7 +162,7 @@ $background-color-hover: #ffffff; // Solid white background on hover
 // Dół to zdjecie osiedla
 .house_image {
   position: absolute;
-  bottom: -50px;
+  bottom: -30px;
   right: 0;
   width: 400px;
   height: auto;
@@ -173,6 +173,7 @@ $background-color-hover: #ffffff; // Solid white background on hover
 .houseinfo {
   padding-bottom: 50px;
   &_header {
+    margin-top: 20px;
     font-size: 1.5em;
     font-weight: bold;
     color: #ffffff;

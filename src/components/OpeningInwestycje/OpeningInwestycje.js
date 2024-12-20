@@ -24,6 +24,8 @@ import DROGA3 from '../Assets/DROGA3.jpg';
 import DROGA4 from '../Assets/DROGA4.jpg';
 import DROGA5 from '../Assets/DROGA5.jpg';
 
+import GALERIA from '../Assets/GALERIAPARTNER.jpg'
+
 import BOISKO1 from '../Assets/BOISKO1.jpg';
 import BOISKO2 from '../Assets/BOISKO2.jpg';
 import BOISKO3 from '../Assets/BOISKO3.jpg';
@@ -58,8 +60,8 @@ const descriptionGroups = [
   {
     id: 'Okolica',
     header: 'Okolica',
-    description: 'Obok osiedla mamy nowy nowoczesny plac zabaw dla dzieci oraz duże boiska do gry w siatkówkę oraz piłkę nożną. Osiedle a centrum handlowe Mińska Mazowieckiego dzieli jedynie 1,5km odglegości. Na osiedlu powstanie plac zabaw oraz dodatkowe miejsce parkingowe. Wszystkie udogodnienia zostaly przedstawione na mapie ponizej.',
-    photos: [BOISKO1, BOISKO2, BOISKO3, BOISKO4, BOISKO5,PLAC1, PLAC2, PLAC3, PLAC4, PLAC5]
+    description: 'Obok osiedla mamy nowy nowoczesny plac zabaw dla dzieci oraz duże boiska do gry w siatkówkę oraz piłkę nożną. Osiedle a centrum handlowe Mińska Mazowieckiego dzieli jedynie 1,5km odglegości. Na osiedlu powstanie plac zabaw oraz dodatkowe miejsce parkingowe. Wszystkie udogodnienia zostaly przedstawione na mapie w dolnej części tej strony.',
+    photos: [BOISKO1, BOISKO2, BOISKO3, BOISKO4, BOISKO5,PLAC1, PLAC2, PLAC3, PLAC4, GALERIA]
   },
   {
     id: 'DrogaDojazdowa',
