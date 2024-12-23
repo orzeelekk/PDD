@@ -2,13 +2,18 @@
 
 .wybierz {
   position: relative;
-  width: 100%; /* Full width */
-  max-width: 100vw; /* Constrain to the viewport width */
-  height: auto; /* Adjust height proportionally */
+  width: 100%;
+  /* Full width */
+  max-width: 100vw;
+  /* Constrain to the viewport width */
+  height: auto;
+  /* Adjust height proportionally */
   background-image: url("../Assets/googlemapsy.jpg");
-  background-size: cover; /* Maintain the aspect ratio */
+  background-size: cover;
+  /* Maintain the aspect ratio */
   background-repeat: no-repeat;
-  background-position: center center; /* Center the background image */
+  background-position: center center;
+  /* Center the background image */
   z-index: 0;
 
   &::before {
@@ -27,7 +32,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 100vw; 
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: flex-end;
@@ -50,7 +55,7 @@
   justify-content: space-around;
 }
 
-.wybierz_container  {
+.wybierz_container {
   color: white;
   padding: 20px 0;
   display: flex;
@@ -73,7 +78,7 @@
   padding: 20px;
 }
 
-.ChoseHouse_bottom{
+.ChoseHouse_bottom {
   display: flex;
   align-items: center;
 }
@@ -92,12 +97,12 @@ $background-color-hover: #ffffff; // Solid white background on hover
   position: relative;
   transition: transform $transition-duration ease, background $transition-duration ease;
   padding: 10px;
-  margin:0 10px;
+  margin: 0 10px;
   border-radius: 10%; // Make the background circular
   background: none;
   appearance: none;
   border-width: 1px;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -1px,#D6D6E7 0 -1px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -1px, #D6D6E7 0 -1px 0 inset;
   box-sizing: border-box;
   color: #36395A;
   cursor: pointer;
@@ -108,27 +113,30 @@ $background-color-hover: #ffffff; // Solid white background on hover
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow .15s, transform .15s;
   user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
 
   &:focus {
     box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   }
+
   h1 {
     color: #ffffff;
   }
+
   &:hover {
     box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
     transform: translateY(-2px);
     background-color: $background-color-hover; // Solid white background on hover
+
     h1 {
       color: $main-green4;
     }
   }
-  
+
   &:active {
     box-shadow: #D6D6E7 0 3px 7px inset;
     transform: translateY(2px);
@@ -139,25 +147,25 @@ $background-color-hover: #ffffff; // Solid white background on hover
     height: 64px;
     fill: currentColor;
     transition: transform $transition-duration ease;
-}
+  }
 }
 
 .house_icon.green svg {
   stroke: $main-green;
-  stroke-width: 2; 
-  fill: #28a745; 
+  stroke-width: 2;
+  fill: #28a745;
 }
 
 .house_icon.yellow svg {
   stroke: $main-green;
-  stroke-width: 2; 
-  fill: #ffc107; 
+  stroke-width: 2;
+  fill: #ffc107;
 }
 
 .house_icon.red svg {
   stroke: $main-green;
-  stroke-width: 2; 
-  fill: #dc3545; 
+  stroke-width: 2;
+  fill: #dc3545;
 }
 
 // Dół to zdjecie osiedla
@@ -167,25 +175,30 @@ $background-color-hover: #ffffff; // Solid white background on hover
   right: 0;
   width: 400px;
   height: auto;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Shadow for the image */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  /* Shadow for the image */
   z-index: 1;
 }
 
 .houseinfo {
   padding-bottom: 50px;
+
   &_header {
     margin-top: 20px;
     font-size: 1.5em;
     font-weight: bold;
     color: #ffffff;
     display: flex;
-    justify-content: center; /* Horizontally center */
+    justify-content: center;
+    /* Horizontally center */
   }
+
   &_box {
     display: flex;
     flex-direction: column;
   }
 }
+
 .button_spec {
   margin-top: 20px;
   align-items: center;
@@ -213,6 +226,7 @@ $background-color-hover: #ffffff; // Solid white background on hover
   vertical-align: baseline;
   width: auto;
 }
+
 .button_spec:hover,
 .button_spec:focus {
   background-color: $main-green2;
@@ -229,59 +243,64 @@ $background-color-hover: #ffffff; // Solid white background on hover
 
 .green-highlight {
   position: absolute;
-  width: 90px; // Adjust as necessary
-  height: 90px; // Adjust as necessary
-  border-radius: 50%;
-  background-color: rgba(0, 255, 0, 0.3); 
+  width: 120px;
+  height: 70px;
+  border-radius: 20%;
+  background-color: rgba(0, 255, 0, 0.3);
   z-index: 1;
-  top: 53.2%;   // 50% of the viewport height
-  left: 79.5%;  // 70% of the viewport width
+  top: 51%;
+  left: 79.5%;
   transform: rotate(14.9deg);
   transform-origin: center;
 }
+
 .yellow-highlight {
   position: absolute;
-  width: 90px; // Adjust as necessary
-  height: 90px; // Adjust as necessary
-  border-radius: 50%;
-  background-color: rgba(255, 217, 0, 0.3); // Green color with 80% opacity
-  z-index: 1; // Ensure it appears above the house plan image
+  width: 120px;
+  height: 70px;
+  border-radius: 20%;
+  background-color: rgba(255, 217, 0, 0.3);
+  z-index: 1;
   transform: rotate(14.9deg);
-  top: 48.8%;   // 50% of the viewport height
-  left: 70.5%;  // 70% of the viewport width
+  top: 45%;
+  left: 67.5%;
   transform: rotate(14.9deg);
   transform-origin: center;
 }
+
 .red-highlight {
   position: absolute;
-  width: 90px; // Adjust as necessary
-  height: 90px; // Adjust as necessary
-  border-radius: 50%;
-  background-color: rgba(255, 0, 0, 0.3); // Green color with 80% opacity
-  z-index: 1; // Ensure it appears above the house plan image
-  top: 44.2%;   // 50% of the viewport height
-  left: 60.8%;  // 70% of the viewport width
+  width: 120px;
+  height: 70px;
+  border-radius: 20%;
+  background-color: rgba(255, 0, 0, 0.3);
+  z-index: 1;
+  top: 40.8%;
+  left: 58.8%;
   transform: rotate(14.9deg);
   transform-origin: center;
 }
 
 .dropdown {
-  max-height: 0; /* Initially hide the dropdown */
-  overflow: hidden; /* Prevent content from overflowing */
-  transition: max-height 0.5s ease-out; /* Add a smooth transition effect */
-  
+  max-height: 0;
+  /* Initially hide the dropdown */
+  overflow: hidden;
+  /* Prevent content from overflowing */
+  transition: max-height 0.5s ease-out;
+  /* Add a smooth transition effect */
+
   &.show {
-    max-height: 500px; /* Set a maximum height when the dropdown is visible (adjust this value as necessary) */
+    max-height: 500px;
+    /* Set a maximum height when the dropdown is visible (adjust this value as necessary) */
     overflow: visible;
   }
 }
+
 .menu-items {
   color: #ffffff;
   padding: 10px 15px;
-  background-color: rgba(0, 0, 0, 0.1); /* Optional styling */
-  margin-bottom: 10px; /* Space between dropdown items */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Optional styling */
+  margin-bottom: 10px;
+  /* Space between dropdown items */
 }
-
-
-
-
