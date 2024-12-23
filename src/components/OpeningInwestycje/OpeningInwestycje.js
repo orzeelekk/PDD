@@ -47,7 +47,6 @@ import PLAC1 from '../Assets/PLAC1.jpg';
 import PLAC2 from '../Assets/PLAC2.jpg';
 import PLAC3 from '../Assets/PLAC3.jpg';
 import PLAC4 from '../Assets/PLAC4.jpg';
-import PLAC5 from '../Assets/PLAC5.jpg';
 
 const descriptionGroups = [
   {
