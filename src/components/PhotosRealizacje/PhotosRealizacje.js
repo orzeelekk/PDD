@@ -3,9 +3,9 @@ import './_photosRealizacje.scss';
 
 import FOCUS1 from '../Assets/FOCUS1.jpg';
 import FOCUS2 from '../Assets/FOCUS2.jpg';
-// import FOCUS2 from '../Assets/FOCUS2.jpg';
-// import FOCUS2 from '../Assets/FOCUS2.jpg';
-// import FOCUS2 from '../Assets/FOCUS2.jpg';
+import FOCUS3 from '../Assets/FOCUS3.jpg';
+import FOCUS4 from '../Assets/FOCUS4.jpg';
+import FOCUS5 from '../Assets/FOCUS5.jpg';
 
 import WINOGRONOWA1 from '../Assets/WINOGRONOWA1.jpg';
 import WINOGRONOWA2 from '../Assets/WINOGRONOWA2.jpg';
@@ -45,7 +45,7 @@ const photoGroups = {
     WINOGRONOWA4,
     WINOGRONOWA5,
   ],
-  'Kompleksowe wykonanie budowy oraz wykończenia domu przy ulicy Lubinowej.': [
+  'Kompleksowe wykonanie budowy oraz wykończenia domu w Lubominie': [
     LUBOMIN1,
     LUBOMIN2,
     LUBOMIN3,
@@ -62,18 +62,18 @@ const photoGroups = {
   'Przebudowa i remont klinik dentystycznych FocusClinic': [
     FOCUS1,
     FOCUS2,
-    FOCUS2,
-    FOCUS2,
-    FOCUS2,
+    FOCUS3,
+    FOCUS4,
+    FOCUS5,
   ],
-  'Pełne wykończenie luksusowych apartamentów pod adresem Złota 44.': [
+  'Pełne wykończenie luksusowych apartamentów pod adresem Złota 44': [
     Zlota1,
     Zlota2,
     Zlota3,
     Zlota4,
     Zlota5
   ],
-  'Całościowe wykończenie mieszkania pod klucz na ulicy Zwycięzców.': [
+  'Całościowe wykończenie mieszkania pod klucz na ulicy Zwycięzców': [
     ZWYCIEZCOW1,
     ZWYCIEZCOW2,
     ZWYCIEZCOW3,
