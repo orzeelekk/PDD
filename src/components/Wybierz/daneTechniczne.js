@@ -12,7 +12,7 @@ export const daneTechniczne = [
         ],
     },
     {
-        title: 'Dom wolnostojący typu blizniak (w kolejnych etapach realizacji, najprawdopodobniej pod koniec 2025 roku).',
+        title: 'Dom wolnostojący typu blizniak (przewidywany w kolejnych etapach realizacji)',
         submenu: [
             {
                 powierzchnia_terenu: '530-550m2',

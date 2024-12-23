@@ -5,18 +5,29 @@ import BUD1 from '../Assets/BUD1.jpg';
 import BUD2 from '../Assets/BUD2.jpg';
 import BUD3 from '../Assets/BUD3.jpg';
 import BUD4 from '../Assets/BUD4.jpg';
+import BUD5 from '../Assets/BUD5.jpg';
 import BUD6 from '../Assets/BUD6.jpg';
 import BUD7 from '../Assets/BUD7.jpg';
 import BUD8 from '../Assets/BUD8.jpg';
 import BUD9 from '../Assets/BUD9.jpg';
 import BUD10 from '../Assets/BUD10.jpg';
 import BUD11 from '../Assets/BUD11.jpg';
+import BUD12 from '../Assets/BUD12.jpg';
+import BUD13 from '../Assets/BUD13.jpg';
+import BUD14 from '../Assets/BUD14.jpg';
+import BUD15 from '../Assets/BUD15.jpg';
 
 import CEN1 from '../Assets/CEN1.jpg';
 import CEN2 from '../Assets/CEN2.jpg';
 import CEN3 from '../Assets/CEN3.jpg';
 import CEN4 from '../Assets/CEN4.jpg';
 import CEN5 from '../Assets/CEN5.jpg';
+
+import NOW1 from '../Assets/NOW1.jpg';
+import NOW2 from '../Assets/NOW2.jpg';
+import NOW3 from '../Assets/NOW3.jpg';
+import NOW4 from '../Assets/NOW4.jpg';
+import NOW5 from '../Assets/NOW5.jpg';
 
 import DROGA1 from '../Assets/DROGA1.jpg';
 import DROGA2 from '../Assets/DROGA2.jpg';
@@ -42,20 +53,21 @@ const descriptionGroups = [
   {
     id: 'DziennikBudowy',
     header: 'Dziennik Budowy',
-    description: 'Nasze prace są realizowane zgodnie z najwyższymi standardami sztuki budowlanej...',
-    photos: [BUD1, BUD2, BUD3, BUD11, BUD4, BUD6, BUD7, BUD8, BUD9, BUD10, ]
+    description: 'Zdjęcia poniżej przedstawiają kolejne etapy realizacji naszych domów. Postaramy się uaktualniać tę sekcję na bieżąco, aby odzwierciedlać postępy prac.',
+    photos: [BUD1, BUD2, BUD3, BUD4, BUD5, BUD6, BUD7, BUD8, BUD9, BUD10, BUD11, BUD12, BUD13, BUD14, BUD15]
   },
   {
     id: 'Cena',
     header: 'Niska Cena',
-    description: 'W cenie domu otrzymują państwo: - Dużą powierzchnię działki: od 500 m² do 580 m² - Nowoczesne ogrodzenie w stylu amerykańskim: pełny mur z przodu budynku oraz ogrodzenie z siatki wokół całej posesji - Kompletny system rekuperacji: zapewniający efektywną wentylację i oszczędność energii. - Nowoczesną pompę ciepła zapewniającą efektywne ogrzewanie podłogowe, które równomiernie rozprowadza ciepło po całym domu, gwarantując komfort i oszczędność energii.',
+    description:
+    'Przede wszystkim jesteśmy małą, rzetelną firmą z bogatym doświadczeniem, dzięki czemu możemy zaoferować najlepszy stosunek jakości do ceny. Poniżej przedstawiamy kilka kluczowych elementów, które są zawarte w cenie domu: - Duża powierzchnia działki: od 500 m² do 580 m² - Nowoczesne ogrodzenie w stylu amerykańskim: pełny mur z przodu budynku oraz ogrodzenie z siatki wokół całej posesji (wkrótce wstawimy wizualizacje lub zdjęcia z realizacji) - Miejsce garażowe wewnątrz budynku oraz miejsce garażowe na zewnątrz. Ponadto w przyszłości osiedla będzie posiadało osobny parking - Kompletny system rekuperacji: zapewniający efektywną wentylację i oszczędność energii - Nowoczesna pompa ciepła: gwarantująca efektywne ogrzewanie podłogowe, które równomiernie rozprowadza ciepło po całym domu, zapewniając komfort i oszczędność energii',
     photos: [CEN1, CEN2, CEN3, CEN4, CEN5]
   },
   {
     id: 'NowoczesneBudownictwo',
     header: 'Nowoczesne budownictwo',
-    description: 'W standardzie montujemy w domu pompę ciepła. Budynek jest dostosowany do montażu rekuperacji, klimatyzacji oraz fotowoltaiki według potrzeb kupującego. Ponadto bryła budynku jest nowoczesna wraz z dużą ilościa przeszkleń i nowoczesnym ogrodzeniem (w najbliższym czasie dodamy również ogrodzenie do wizualizacji). Wszystkie domki posiadają garaż z nowoczesnym mechanizmem bramy Somfy wraz z parkingiem zewnętrznym.',
-    photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5]
+    description: 'Nowoczesna stylistyka budynku to dopiero początek. Dzięki ponadprzeciętnym parametrom przenikalności cieplnej, w połączeniu z zaawansowanym systemem rekuperacji oraz pompą ciepła, nasze domy spełniają wymagania budynków niskoenergetycznych. Dodatkowo oferujemy możliwość wykonania instalacji klimatyzacji oraz fotowoltaiki, aby zapewnić maksymalny komfort użytkowania. W standardzie każdy dom posiada również instalację przystosowaną do ładowarki dla samochodów elektrycznych.',
+    photos: [NOW1, NOW2, NOW3, NOW4, NOW5]
   },
   {
     id: 'Okolica',

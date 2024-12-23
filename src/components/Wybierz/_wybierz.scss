@@ -2,12 +2,13 @@
 
 .wybierz {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100%; /* Full width */
+  max-width: 100vw; /* Constrain to the viewport width */
+  height: auto; /* Adjust height proportionally */
   background-image: url("../Assets/googlemapsy.jpg");
-  background-size: cover;
+  background-size: cover; /* Maintain the aspect ratio */
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center; /* Center the background image */
   z-index: 0;
 
   &::before {
@@ -25,7 +26,7 @@
     background-image: url("../Assets/OsiedlePRZYKLADDOWYMIANY+OPIS.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     width: 100vw; 
     height: 100vh;
     display: flex;
