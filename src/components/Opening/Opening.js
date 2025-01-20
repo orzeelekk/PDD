@@ -11,7 +11,7 @@ const Opening = () => {
                     <div className="opening_left">
                         <h1 className="opening_header">Szukasz solidnego partnera do realizacji inwestycji budowlanej?</h1>
                         <h3 className="opening_text">
-                        Jesteśmy firmą budowlaną z wieloletnim doświadczeniem, specjalizującą się w kompleksowej obsłudze inwestycji budowlanych..<br/>
+                        Jesteśmy firmą budowlaną z wieloletnim doświadczeniem, specjalizującą się w kompleksowej obsłudze inwestycji budowlanych.<br/>
                         W naszym portfolio znajdują się realizacje takie jak wykończenie pod klucz prestiżowych mieszkań na Złotej 44 w centrum Warszawy, wykonanie stanu deweloperskiego na osiedlu Ejsmonda w Józefowie oraz wiele innych.<br/>
                         Naszą główną specjalizacją jest jednak budowa domów wolnostojących. Obecnie realizujemy osiedle w Choszczówce Stojeckiej w Gminie Dębe Wielkie.<br/>
                         </h3>

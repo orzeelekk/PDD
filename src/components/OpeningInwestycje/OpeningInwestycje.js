@@ -16,6 +16,9 @@ import BUD12 from '../Assets/BUD12.jpg';
 import BUD13 from '../Assets/BUD13.jpg';
 import BUD14 from '../Assets/BUD14.jpg';
 import BUD15 from '../Assets/BUD15.jpg';
+import BUD2_1 from '../Assets/BUD2 1.jpg';
+import BUD2_2 from '../Assets/BUD2 2.jpg';
+import BUD2_3 from '../Assets/BUD2 3.jpg';
 
 import CEN1 from '../Assets/CEN1.jpg';
 import CEN2 from '../Assets/CEN2.jpg';
@@ -28,6 +31,8 @@ import NOW2 from '../Assets/NOW2.jpg';
 import NOW3 from '../Assets/NOW3.jpg';
 import NOW4 from '../Assets/NOW4.jpg';
 import NOW5 from '../Assets/NOW5.jpg';
+import NOW6 from '../Assets/NOW6.jpg';
+import NOW7 from '../Assets/NOW7.jpg';
 
 import DROGA1 from '../Assets/DROGA1.jpg';
 import DROGA2 from '../Assets/DROGA2.jpg';
@@ -53,7 +58,7 @@ const descriptionGroups = [
     id: 'DziennikBudowy',
     header: 'Dziennik Budowy',
     description: 'Zdjęcia poniżej przedstawiają kolejne etapy realizacji naszych domów. Postaramy się uaktualniać tę sekcję na bieżąco, aby odzwierciedlać postępy prac.',
-    photos: [BUD1, BUD2, BUD3, BUD4, BUD5, BUD6, BUD7, BUD8, BUD9, BUD10, BUD11, BUD12, BUD13, BUD14, BUD15]
+    photos: [BUD1, BUD2, BUD3, BUD4, BUD5, BUD6, BUD7, BUD8, BUD9, BUD10, BUD11, BUD12, BUD13, BUD14, BUD15, BUD2_1, BUD2_2, BUD2_3]
   },
   {
     id: 'Cena',
@@ -66,7 +71,7 @@ const descriptionGroups = [
     id: 'NowoczesneBudownictwo',
     header: 'Nowoczesne budownictwo',
     description: 'Nowoczesna stylistyka budynku to dopiero początek. Dzięki ponadprzeciętnym parametrom przenikalności cieplnej, w połączeniu z zaawansowanym systemem rekuperacji oraz pompą ciepła, nasze domy spełniają wymagania budynków niskoenergetycznych. Dodatkowo oferujemy możliwość wykonania instalacji klimatyzacji oraz fotowoltaiki, aby zapewnić maksymalny komfort użytkowania. W standardzie każdy dom posiada również instalację przystosowaną do ładowarki dla samochodów elektrycznych.',
-    photos: [NOW1, NOW2, NOW3, NOW4, NOW5]
+    photos: [NOW1, NOW2, NOW3, NOW4, NOW5, NOW6, NOW7]
   },
   {
     id: 'Okolica',
@@ -77,7 +82,7 @@ const descriptionGroups = [
   {
     id: 'DrogaDojazdowa',
     header: 'Droga Dojazdowa',
-    description: 'Drogi dojazdowe do osiedla są bardzo dobrym stanie. Droga od Gminy Dębę Wielkie została na nowo wykonana w tym roku (tj. 2024), droga do Mińska Mazowieckiego również dopiero co była modernizowana. Ponadto w przyszłości całe osiedle będzie posiadało dojazd od strony Arynowa.',
+    description: 'Drogi dojazdowe do osiedla są bardzo dobrym stanie. Droga od Gminy Dębę Wielkie została na nowo wykonana w tym roku (tj. 2024), droga do Mińska Mazowieckiego również dopiero co była modernizowana. Ponadto w przyszłości całe osiedle będzie posiadało dojazd od strony Arynowa. Ponadto wewnętrzna droga osiedla będzie miała szerokość 7 m, co z pewnością przełoży się na wysoki komfort użytkowania.',
     photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5],
   },
 ];
@@ -86,6 +91,7 @@ const PhotosRealizacje = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [photoGroup, setPhotoGroup] = useState([]);
+  const [isFading, setIsFading] = useState(false);
 
 
   const yOffset = -150;
@@ -108,12 +114,26 @@ const PhotosRealizacje = () => {
     setSelectedImage(null);
   };
 
+  const handleImageTransition = (newIndex) => {
+    setIsFading(true);
+    setTimeout(() => {
+      setCurrentImageIndex(newIndex);
+      setSelectedImage(photoGroup[newIndex]);
+      setIsFading(false);
+    }, 500); // Match fade animation duration
+  };
+
   const nextImage = () => {
+    const newIndex = (currentImageIndex + 1) % photoGroup.length;
+    handleImageTransition(newIndex);
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % photoGroup.length);
     setSelectedImage(photoGroup[(currentImageIndex + 1) % photoGroup.length]);
   };
 
   const prevImage = () => {
+    const newIndex =
+    (currentImageIndex - 1 + photoGroup.length) % photoGroup.length;
+  handleImageTransition(newIndex);
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + photoGroup.length) % photoGroup.length);
     setSelectedImage(photoGroup[(currentImageIndex - 1 + photoGroup.length) % photoGroup.length]);
   };
@@ -201,11 +221,13 @@ const PhotosRealizacje = () => {
                     </g>
                 </svg>
 
-                <img
-                    src={selectedImage}
-                    alt="Selected Realisation"
-                    className="selected-image"
-                />
+
+                <div
+                  className={`image-wrapper ${isFading ? "fade" : ""}`}
+                >
+                  <img src={selectedImage} alt="Selected Realisation" />
+                </div>
+          
 
                 <svg onClick={nextImage} id="rightArrow" className="arrow right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                     <g strokeLinejoin="round" strokeLinecap="round">

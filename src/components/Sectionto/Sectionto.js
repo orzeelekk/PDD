@@ -5,7 +5,7 @@ const Sectionto = () => {
     return (
         <>
             <section className="sectionto container">
-                <h1 className="sectionto_h1 opening_header">Co nas wyróżnia?</h1>
+                <h1 className="sectionto_h1 opening_header">Poniżej znajduje się krótka sekcja z opisem naszej aktualnej inwestycji. <br/>Szczgółowy opis znajduje się w zakładce "INWESTYCJE".</h1>
                 <div className="sectionto_elements">
                     {/* Element 1 */}
                     <div className="button-to sectionto_1">

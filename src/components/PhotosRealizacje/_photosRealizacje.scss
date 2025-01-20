@@ -145,3 +145,33 @@
   z-index: 10;
   color: black;
 }
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+
+  &.fade {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  img {
+    max-width: 90vw;
+    max-height: 70vh;
+    object-fit: contain;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &.fade img {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -88,6 +88,7 @@ const PhotosRealizacje = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [photoGroup, setPhotoGroup] = useState([]);
+  const [isFading, setIsFading] = useState(false);
 
   const openViewer = (groupName, index) => {
     setPhotoGroup(photoGroups[groupName]);
@@ -99,16 +100,24 @@ const PhotosRealizacje = () => {
     setSelectedImage(null);
   };
 
+  const handleImageTransition = (newIndex) => {
+    setIsFading(true);
+    setTimeout(() => {
+      setCurrentImageIndex(newIndex);
+      setSelectedImage(photoGroup[newIndex]);
+      setIsFading(false);
+    }, 500); // Match fade animation duration
+  };
+
   const nextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % photoGroup.length);
-    setSelectedImage(photoGroup[(currentImageIndex + 1) % photoGroup.length]);
+    const newIndex = (currentImageIndex + 1) % photoGroup.length;
+    handleImageTransition(newIndex);
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      (prevIndex - 1 + photoGroup.length) % photoGroup.length
-    );
-    setSelectedImage(photoGroup[(currentImageIndex - 1 + photoGroup.length) % photoGroup.length]);
+    const newIndex =
+      (currentImageIndex - 1 + photoGroup.length) % photoGroup.length;
+    handleImageTransition(newIndex);
   };
 
   return (
@@ -143,11 +152,13 @@ const PhotosRealizacje = () => {
             </g>
           </svg>
 
-          <img
-            src={selectedImage}
-            alt="Selected_Realizacje"
-            className="selected-image"
-          />
+          
+
+          <div
+            className={`image-wrapper ${isFading ? "fade" : ""}`}
+          >
+            <img src={selectedImage} alt="Selected Realisation" />
+          </div>
           
           <svg onClick={nextImage} id="rightArrow" className="arrow right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
             <g strokeLinejoin="round" strokeLinecap="round">
