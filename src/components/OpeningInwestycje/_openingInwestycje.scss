@@ -1,5 +1,36 @@
 @import "./src/main.scss";
 
+.openingInwestycje_background {
+  position: relative; // Add this to ensure stacking context for the ::before element
+  background-image: url("../Assets/BUD3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  padding-bottom: 5px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(222, 238, 219, 0.6); // Semi-transparent overlay
+    z-index: 1; // Ensure the overlay is above the background image
+  }
+}
+
+.openingInwestycje {
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+}
+
 .openingInwestycje_container  {
   color: white;
   padding: 50px 0;
@@ -49,8 +80,8 @@ $background-color-hover: #ffffff; // Solid white background on hover
   text-decoration: none;
   position: relative;
   transition: transform $transition-duration ease, background $transition-duration ease;
-  padding: 30px;
-  margin:30px;
+  padding: 10px;
+  margin: 10px;
   border-radius: 10%; // Make the background circular
   background: none;
   appearance: none;
@@ -112,6 +143,8 @@ $background-color-hover: #ffffff; // Solid white background on hover
   background-repeat: no-repeat;
   background-position: center;
   z-index: 0;
+  border-radius: 30px;
+
   &::before {
     content: '';
     position: absolute;
@@ -119,12 +152,15 @@ $background-color-hover: #ffffff; // Solid white background on hover
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(117, 133, 62, 0.9); // Corrected color format (rgba) with 80% opacity
-    z-index: -1;
-    border-radius: 30px;
+    background-color: rgba(117, 133, 62, 0.9); // Semi-transparent overlay
+    z-index: 1; // Place the overlay on top of the background image but behind content
+    border-radius: 30px; // Match parent border-radius
+    pointer-events: none; // Ensure this pseudo-element doesn’t interfere with interactions
   }
   
   &_opener {
+    position: relative;
+    z-index: 2; // Bring inner content above the pseudo-element
     font-weight: bold;
     font-size: 1.2rem;
     text-align: center;
@@ -133,6 +169,8 @@ $background-color-hover: #ffffff; // Solid white background on hover
   
   }
   &_text {
+    position: relative;
+    z-index: 2; // Bring inner content above the pseudo-element
     font-size: 1rem;
     text-align: center;
     color: #fff;
