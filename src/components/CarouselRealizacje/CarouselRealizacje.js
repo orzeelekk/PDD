@@ -44,7 +44,7 @@ const CarouselRealizacje = () => {
                         </section>
                         <section className="slide slide_realizacje_2">
                             <div className="slide_content">
-                                <a href="/realizacje" className="slide_button button-option">Dom W Lubominie</a>
+                                <a href="/realizacje" className="slide_button button-option">Dom w Lubominie</a>
                                 <p className="slide_text"> Kompleksowe wykonanie budowy oraz wykończenia domu w Lubominie.</p>
                             </div>
                         </section>
