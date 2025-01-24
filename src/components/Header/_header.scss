@@ -20,10 +20,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 100%;
   }
 
   &_logo {
+    flex-shrink: 0;
+
     img {
       height: 80px;
     }
@@ -32,7 +35,6 @@
   &_navi {
     display: flex;
     align-items: center;
-    z-index: 1;
 
     &_link {
       font-family: $font-header;
@@ -42,16 +44,16 @@
       margin-left: 20px;
       cursor: pointer;
       padding-bottom: 5px;
-      text-decoration: none; // Remove underline to mimic button
-      padding: 10px 15px; // Add padding to mimic button shape
-      border: 2px solid transparent; // Add a transparent border
-      border-radius: 5px; // Optional, add border radius for button feel
-      transition: all 0.3s ease; // Smooth transition effect
+      text-decoration: none;
+      padding: 10px 15px;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: all 0.3s ease;
 
       &:hover {
         color: $main-green3;
-        background-color: rgba(0, 0, 0, 0.05); // Simulate hover effect of a button
-        border-color: $main-green3; // Simulate button border change
+        background-color: rgba(0, 0, 0, 0.05);
+        border-color: $main-green3;
       }
 
       &::after {
@@ -75,10 +77,118 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    flex-shrink: 0;
+
     img {
       height: 30px;
       margin-right: 10px;
+    }
+  }
+
+  /* Burger menu */
+  &_burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $main-green;
+      margin-bottom: 5px;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    &:hover span {
+      background-color: $main-green3; // Change to green on hover
+    }
+
+    &.open {
+      span:nth-child(1) {
+        transform: rotate(45deg) translateY(10px);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-10px);
+      }
+    }
+  }
+
+  /* Dropdown menu animation */
+  &_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+
+    opacity: 0;
+    transform: translateY(-50px); // Start higher for smooth animation
+    transition: opacity 2s ease, transform 2s ease; // Smooth scroll down
+
+    &_link {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: black;
+      padding: 10px 15px;
+      text-align: center;
+      width: 80%;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $main-green3; // Fill effect
+        color: white; // Text contrast
+      }
+    }
+  }
+
+  &.menu-open .header_menu {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0); // Smooth scroll-down effect
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { // Tablet and below
+  .header {
+    &_navi {
+      display: none; // Hide regular navigation
+    }
+
+    &_burger {
+      display: flex; // Show burger menu
+    }
+  }
+}
+
+@media (max-width: 768px) { // Phone
+  .header {
+    &_logo {
+      img {
+        height: 60px;
+      }
+    }
+
+    &_socialmedia {
+      img {
+        height: 25px;
+      }
     }
   }
 }
@@ -91,14 +201,4 @@
 
 .facebook-icon:hover {
   fill: $main-green3;
-}
-
-.header_logo {
-  fill: black;
-  transition: fill 0.3s ease;
-  cursor: pointer;
-}
-
-.header_logo:hover {
-  fill: red;
 }
