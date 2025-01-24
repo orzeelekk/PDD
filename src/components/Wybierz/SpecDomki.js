@@ -37,7 +37,11 @@ SpecDomki.propTypes = {
                 powierzchnia_zabudowy: PropTypes.string.isRequired,
                 powierzchnia_uzytkowa: PropTypes.string.isRequired,
                 kubatura: PropTypes.string.isRequired,
-                zabudowa: PropTypes.string.isRequired,
+                ściany_nośne_zewnętrzne_i_wewnętrzne: PropTypes.string.isRequired,
+                instalacja_grzewcza: PropTypes.string.isRequired,
+                wentylacja: PropTypes.string.isRequired,
+                ogrodzenie: PropTypes.string.isRequired,
+                oprogramowanie: PropTypes.string.isRequired,
             })
         ).isRequired, // Expect submenu to be an array of objects
     }).isRequired, // Expect items to be an object
