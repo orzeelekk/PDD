@@ -1,30 +1,51 @@
 @import "./src/main.scss";
+
 .opening {
   &_container {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* Keep side-by-side on PC */
     padding-top: 20px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column; /* Stack content on mobile/tablets */
+      align-items: center;
+    }
+
   }
   &_left {
     width: 50%;
+    @media (max-width: 1024px) {
+      width: 80vw; /* Full-width for smaller screens */
+      text-align: center; /* Center-align text */
+    }
   }
   &_header {
     font-size: 1.5rem;
     font-weight: bold;
     margin: 10px 0;
   }
+
   &_text {
     font-size: 1.1rem;
     text-align: justify;
-  }
 
+    @media (max-width: 1024px) {
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  }
   &_right{
     display: flex;
     width: 60%;
     justify-content: space-around;
     margin: 0 30px;
-
+    @media (max-width: 1024px) {
+      width: 100%; /* Full-width for smaller screens */
+      flex-direction: column; /* Stack photos vertically */
+      align-items: center;
+    }
   }
+
   &_photo {
     background-position: center;
     background-repeat: no-repeat;
@@ -37,7 +58,13 @@
     position: absolute;
     z-index: 0;
     margin: 20px 10px;
+    @media (max-width: 1024px) {
+       /* Reduce photo width for smaller screens */
+      height: 80vh; /* Maintain aspect ratio */
+      margin-bottom: 25px; /* Center the photo horizontally */
+    }
   }
+
   .bmw {
     background-image: url("../Assets/DOMEKBASEN.jpg");
     position: relative;
@@ -46,11 +73,19 @@
     background-image: url("../Assets/Realizacja.png");
     position: relative;
   }
+  
   .button-AboutMe {
     margin-top: 30px;
     display: flex;
+    @media (max-width: 1024px) {
+      width: 90%; /* Button spans most of the width on smaller screens */
+    }
   }
-}
+  }
+
+
+
+  
 
 
 
