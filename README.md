@@ -1,8 +1,6 @@
 # Opis projektu
 
-Projekt w kreatywny sposób
-przedstawia moje wyprawy
-motocyklowe.
+Projekt przedstawia inwestycje i realizacje naszej firmy developerskiej PDD SP. Z O.O.
 
 ## Zastosowane technologie:
 
