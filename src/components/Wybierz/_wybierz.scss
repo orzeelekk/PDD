@@ -37,6 +37,13 @@
     display: flex;
     align-items: flex-end;
     position: relative; // Allows positioning inside the houseplan
+      @media (max-width: 1024px) {
+        height: 60vh;
+      };
+      @media (max-width: 768px) {
+        height: 42vh;
+      }
+      
   }
 
   &_info {
@@ -81,6 +88,9 @@
 .ChoseHouse_bottom {
   display: flex;
   align-items: center;
+  @media (max-width: 1024px), (max-width: 768px) {
+    display: none;
+  }
 }
 
 $transition-duration: 0.3s;
@@ -181,8 +191,6 @@ $background-color-hover: #ffffff; // Solid white background on hover
 }
 
 .houseinfo {
-  padding-bottom: 50px;
-
   &_header {
     margin-top: 20px;
     font-size: 1.5em;
@@ -228,12 +236,12 @@ $background-color-hover: #ffffff; // Solid white background on hover
 }
 
 .button_spec:hover,
-.button_spec:focus {
+.button_spec:active {
   background-color: $main-green2;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
-.button_spec:hover {
+.button_spec:active {
   transform: translateY(-1px);
 }
 
@@ -283,15 +291,11 @@ $background-color-hover: #ffffff; // Solid white background on hover
 
 .dropdown {
   max-height: 0;
-  /* Initially hide the dropdown */
   overflow: hidden;
-  /* Prevent content from overflowing */
   transition: max-height 0.5s ease-out;
-  /* Add a smooth transition effect */
 
   &.show {
     max-height: 500px;
-    /* Set a maximum height when the dropdown is visible (adjust this value as necessary) */
     overflow: visible;
   }
 }
@@ -300,7 +304,5 @@ $background-color-hover: #ffffff; // Solid white background on hover
   color: #ffffff;
   padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.1);
-  /* Optional styling */
   margin-bottom: 10px;
-  /* Space between dropdown items */
 }

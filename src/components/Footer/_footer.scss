@@ -66,4 +66,41 @@
     cursor: pointer;
     color: $main-green2;
 }
+@media (max-width: 1024px) {
+  &_info {
+    flex-direction: column; // Stack the left and right sections
+    align-items: center;
+    gap: 20px; // Add spacing between stacked sections
+  }
+
+  &_info_left {
+    align-items: center; // Center-align the left section's content
+    text-align: center; // Center-align text for consistency
+  }
+}
+
+@media (max-width: 768px) {
+  &_info {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &_info_left {
+    align-items: center;
+    text-align: center;
+    max-width: 100%; // Allow content to span full width if needed
+  }
+
+  .footer_item {
+    flex-direction: row; // Ensure items stay in a row
+    justify-content: center; // Center items horizontally
+    gap: 10px; // Maintain spacing between icon and text
+  }
+
+  .icon {
+    width: 20px; // Reduce icon size for mobile
+    height: 20px;
+  }
+}
 }

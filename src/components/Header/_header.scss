@@ -105,7 +105,7 @@
       transition: all 0.3s ease;
     }
 
-    &:hover span {
+    &:active span {
       background-color: $main-green3; // Change to green on hover
     }
 
