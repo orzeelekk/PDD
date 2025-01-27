@@ -1,32 +1,56 @@
 @import "./src/main.scss";
 
 .sectionto {
+  display: flex;
+  flex-direction: column; /* Default to column formation */
+  align-items: center;
+  width: 100%; /* Full width to adjust to the screen size */
+  padding: 20px;
 
   &_button {
     display: flex;
     justify-content: center;
-
+    width: 100%;
   }
 
   &_elements {
     display: flex;
+    flex-direction: row; /* Default: side by side */
     justify-content: space-between;
     margin: 30px 0;
+    width: 100%;
+
+    @media (max-width: 1024px) {
+      flex-direction: column; /* Stack elements in a column */
+      align-items: center; /* Center-align elements */
+      gap: 20px; /* Add spacing between elements */
+    }
+
+    @media (max-width: 768px) {
+      width: 90%; /* Further adjust width on smaller screens */
+      gap: 15px; /* Adjust spacing */
+    }
   }
 
   &_description {
-
     background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
     padding: 10px 20px;
-    margin: 5px;
+    margin: 10px 0; /* Add spacing between descriptions */
     border-radius: 30px; /* Rounded corners for a cloud-like shape */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
     max-width: 400px;
     text-align: center;
     backdrop-filter: blur(10px); /* Optional: Apply a blur effect for a more glass-like appearance */
     font-size: 13px;
+    width: 100%; /* Full width to adjust with the screen */
 
+    @media (max-width: 1024px) {
+      max-width: 90%; /* Adjust the max width for smaller screens */
+    }
 
+    @media (max-width: 768px) {
+      max-width: 100%; /* Full width on very small screens */
+    }
   }
 
   .button-to {
@@ -35,37 +59,65 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    &_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    &_text {
       font-weight: bold;
       color: black;
       background-color: white;
       padding: 5px;
       border-radius: 3px;
       border: none;
+      text-align: center;
+
       &:hover {
         color: $main-green2;
       }
     }
-  }
-  &_1 {
-    background-image: url("../Assets/Mapa dojazd.jpg");
-    display: flex;
-    flex-direction: column;
-  }
-  &_2 {
-    background-image: url("../Assets/WIZ 3 kopia.jpg");
-    display: flex;
-    flex-direction: column;
-  }
-  &_3 {
-    background-image: url("../Assets/pompaciepla.jpg");
-    display: flex;
-    flex-direction: column;
-  }
-  &_4 {
-    background-image: url("../Assets/shakehand.jpg");
-    display: flex;
-    flex-direction: column;
+
+    @media (max-width: 1024px) {
+      width: 80vw; /* Adjust to full width on tablets */
+      height: auto; /* Allow height to adjust dynamically */
+    }
+
+    @media (max-width: 768px) {
+      width: 100%; /* Full width on smaller screens */
+      height: auto; /* Dynamic height */
+    }
   }
 
+  &_1, &_2, &_3, &_4 {
+    background-image: url("../Assets/Mapa dojazd.jpg"); /* Example for _1 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 400px;
+
+    @media (max-width: 1024px) {
+      width: 100%; /* Adjust to full width on smaller screens */
+      height: auto; /* Dynamic height */
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &_2 {
+    background-image: url("../Assets/WIZ 3 kopia.jpg");
+  }
+
+  &_3 {
+    background-image: url("../Assets/pompaciepla.jpg");
+  }
+
+  &_4 {
+    background-image: url("../Assets/shakehand.jpg");
+  }
 }

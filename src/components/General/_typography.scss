@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: $font-main;
 }
+
 a {
   color: black;
   text-decoration: none;
@@ -14,12 +16,22 @@ header, footer {
 }
 
 .container {
-  width: 1352px;
+  width: 1352px; /* This remains fixed for PC, no changes */
   margin: 0 auto;
+  
+  @media (max-width: 1024px) {
+    width: 90%; /* Adjust container width for tablets */
+  }
+
+  @media (max-width: 768px) {
+    width: 100%; /* Full width for mobile screens */
+  }
 }
+
 .email:hover, .logo:hover {
-  color:$main-green2;
+  color: $main-green2;
 }
+
 .box {
   display: flex;
   flex-direction: column;
@@ -36,16 +48,19 @@ header, footer {
   flex-grow: 1;
   font-weight: 600;
   padding: 10px;
+
   &_image {
     width: 100%;
     border-radius: 5%;
     max-height: 500px;
   }
+
   &_header {
     font-size: 1.2rem;
     color: $main-green2;
     margin: 10px 0;
   }
+
   &_link {
     background-color: white;
     display: flex;
@@ -58,11 +73,13 @@ header, footer {
     padding: 5px;
   }
 }
+
 .box:focus,
 .box:hover {
   background-color: #fb8332;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
+
 .box:hover {
   transform: translateY(-5px);
 }
@@ -73,3 +90,30 @@ header, footer {
   transform: translateY(0);
 }
 
+@media (max-width: 1024px) {
+  /* Adjust box layout for tablet screens */
+  .box {
+    flex-direction: column;
+    width: 100%; /* Full width for smaller screens */
+    max-width: 100%;
+    margin: 10px 0; /* Ensure spacing is consistent */
+  }
+  
+  .box _image {
+    height: auto; /* Adjust image height on smaller screens */
+    max-height: none; /* Remove max-height restriction */
+  }
+}
+
+@media (max-width: 768px) {
+  /* For mobile screens, make the box take full width */
+  .box {
+    margin: 15px 0; /* Adjust margins for small screens */
+    padding: 15px;
+  }
+
+  .box _image {
+    height: auto;
+    max-height: none;
+  }
+}

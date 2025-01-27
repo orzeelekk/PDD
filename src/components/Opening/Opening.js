@@ -27,12 +27,12 @@ const Opening = () => {
                     <div className="opening_right">
                         <div style={{
 
-                        }} className="opening_photo ktm">
+                        }} className="opening_photo realizacje1">
                             
                         </div>
                         <div style={{
 
-                        }}  className="opening_photo bmw"></div>
+                        }}  className="opening_photo realizacje2"></div>
                     </div>
                 </div>
             </section>
