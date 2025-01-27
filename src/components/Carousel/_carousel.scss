@@ -54,7 +54,7 @@
 #leftArrow {
   left: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024) {
     left: 10px; /* Adjust for smaller screens */
   }
 }

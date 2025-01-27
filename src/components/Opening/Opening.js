@@ -27,7 +27,9 @@ const Opening = () => {
                     <div className="opening_right">
                         <div style={{
 
-                        }} className="opening_photo ktm"></div>
+                        }} className="opening_photo ktm">
+                            
+                        </div>
                         <div style={{
 
                         }}  className="opening_photo bmw"></div>
