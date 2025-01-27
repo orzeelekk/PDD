@@ -7,6 +7,10 @@
   width: 100%; /* Full width to adjust to the screen size */
   padding: 20px;
 
+  &_header {
+    text-align: center;  /* Centers the text horizontally */
+  }
+
   &_button {
     display: flex;
     justify-content: center;
@@ -24,6 +28,7 @@
       flex-direction: column; /* Stack elements in a column */
       align-items: center; /* Center-align elements */
       gap: 20px; /* Add spacing between elements */
+      width: 90%; /* Further adjust width on smaller screens */
     }
 
     @media (max-width: 768px) {
@@ -79,13 +84,11 @@
     }
 
     @media (max-width: 1024px) {
-      width: 80vw; /* Adjust to full width on tablets */
-      height: auto; /* Allow height to adjust dynamically */
-    }
+      width: 80vw;
+  }
 
     @media (max-width: 768px) {
-      width: 100%; /* Full width on smaller screens */
-      height: auto; /* Dynamic height */
+      width: 80vw;
     }
   }
 

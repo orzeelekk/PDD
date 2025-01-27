@@ -5,14 +5,15 @@ const Sectionto = () => {
     return (
         <>
             <section className="sectionto container">
-                <h1 className="sectionto_h1 opening_header">Poniżej znajduje się krótka sekcja z opisem naszej aktualnej inwestycji. <br/>Szczgółowy opis znajduje się w zakładce "INWESTYCJE".</h1>
+                <h1 className="sectionto_header opening_header">Poniżej znajduje się krótka sekcja z opisem naszej aktualnej inwestycji.</h1>
+                <h3 className="opening_text">Szczgółowy opis znajduje się w zakładce "INWESTYCJE". </h3>
                 <div className="sectionto_elements">
                     {/* Element 1 */}
                     <div className="button-to sectionto_1">
-                        <a 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            href="https://maps.app.goo.gl/yCMyntkBxhTtviXX8" 
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://maps.app.goo.gl/yCMyntkBxhTtviXX8"
                             className="button-to_text"
                         >
                             Lokalizacja
