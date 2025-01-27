@@ -3,17 +3,24 @@
 .opening {
   &_container {
     display: flex;
-    align-items: center;
-    justify-content: space-between; /* Keep side-by-side on PC */
-    padding-top: 20px;
+    align-items: flex-start;
+    justify-content: center; /* Center-align content horizontally */
+    padding: 20px;
+    width: 100%; /* Ensure full width of parent */
+    max-width: 1024px; /* Limit the container width */
+    margin: 0 auto; /* Center the container on the screen */
 
-    @media (max-width: 960px) {
-      display: flex;
-      flex-direction: column; /* Stack content on mobile/tablets */
-      align-items: center;
-      height: auto;
+    @media (max-width: 1024px) { /* For tablet screens */
+      max-width: 1024px; /* Keep container width at 1024px for tablets */
+      flex-direction: column; /* Stack content vertically */
+      padding: 0 15px; /* Add padding for better spacing */
     }
 
+    @media (max-width: 768px) { /* For phone screens */
+      max-width: 768px; /* Restrict container width to 768px */
+      flex-direction: column;
+      padding: 0 10px; /* Add smaller padding for phones */
+    }
   }
   &_left {
     width: 50%;
