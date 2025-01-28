@@ -13,6 +13,7 @@
   /* Maintain the aspect ratio */
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed; // Fix the background image
   /* Center the background image */
   z-index: 0;
 
@@ -198,7 +199,6 @@ $background-color-hover: #ffffff; // Solid white background on hover
     color: #ffffff;
     display: flex;
     justify-content: center;
-    /* Horizontally center */
   }
 
   &_box {
@@ -260,6 +260,16 @@ $background-color-hover: #ffffff; // Solid white background on hover
   left: 79.5%;
   transform: rotate(14.9deg);
   transform-origin: center;
+  @media (max-width: 1500px) {
+    scale:0.8;
+    top: 50%;
+    left: 78.5%;
+  };
+  @media (max-width: 1300px) {
+    scale:0.7;
+    top: 50%;
+    left: 78.5%;
+  }
 }
 
 .yellow-highlight {
@@ -274,6 +284,16 @@ $background-color-hover: #ffffff; // Solid white background on hover
   left: 67.5%;
   transform: rotate(14.9deg);
   transform-origin: center;
+  @media (max-width: 1500px) {
+    scale:0.8;
+    top: 45%;
+    left: 66.5%;
+  };
+  @media (max-width: 1300px) {
+    scale: 0.7;
+    top: 45%;
+    left: 65.5%;
+  }
 }
 
 .red-highlight {
@@ -287,6 +307,16 @@ $background-color-hover: #ffffff; // Solid white background on hover
   left: 58.8%;
   transform: rotate(14.9deg);
   transform-origin: center;
+  @media (max-width: 1500px) {
+    scale:0.8;
+    top: 41.5%;
+    left: 58.2%;
+  };
+  @media (max-width: 1300px) {
+    scale: 0.7;
+    top: 42%;
+    left: 57.5%;
+  }
 }
 
 .dropdown {
@@ -305,4 +335,12 @@ $background-color-hover: #ffffff; // Solid white background on hover
   padding: 10px 15px;
   background-color: rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
 }

@@ -1,7 +1,6 @@
 @import "./src/main.scss";
 
 .footer {
-
   position: relative;
   width: 100%;
   height: 100%;
@@ -46,7 +45,7 @@
       .icon {
         width: 24px;
         height: 24px;
-        margin-right: 10px;
+        margin-right: 5px;
         fill: #ffffff;
       }
     }
@@ -71,11 +70,13 @@
     flex-direction: column; // Stack the left and right sections
     align-items: center;
     gap: 20px; // Add spacing between stacked sections
+    scale: 0.9;
   }
 
   &_info_left {
     align-items: center; // Center-align the left section's content
     text-align: center; // Center-align text for consistency
+    gap: 20px; // Add spacing between stacked sections
   }
 }
 
@@ -95,7 +96,7 @@
   .footer_item {
     flex-direction: row; // Ensure items stay in a row
     justify-content: center; // Center items horizontally
-    gap: 10px; // Maintain spacing between icon and text
+    gap: 1px; // Maintain spacing between icon and text
   }
 
   .icon {

@@ -1,6 +1,8 @@
 @import "./src/main.scss";
 @import "./src/components/General/_colors.scss";
 
+
+
 .header {
   font-size: 1.2rem;
   font-weight: 500;
@@ -15,6 +17,10 @@
   align-items: center;
   z-index: 1000;
   border-bottom: 2.5px solid $main-green;
+
+  .facebook-icon {
+    height: 80px;
+  }
 
   &_container {
     display: flex;
@@ -164,9 +170,19 @@
   }
 }
 
+
 /* Responsive Styles */
 @media (max-width: 1024px) { // Tablet and below
   .header {
+    height: 70px;
+    .facebook-icon {
+      height: 40px;
+    }
+    &_logo {
+      img {
+        height: 60px;
+      }
+    }
     &_navi {
       display: none; // Hide regular navigation
     }
@@ -179,9 +195,13 @@
 
 @media (max-width: 768px) { // Phone
   .header {
+    height: 60px;
+    .facebook-icon {
+      height: 30px;
+    }
     &_logo {
       img {
-        height: 60px;
+        height: 50px;
       }
     }
 
