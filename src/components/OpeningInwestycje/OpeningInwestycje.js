@@ -68,7 +68,7 @@ const descriptionGroups = [
     id: 'Cena',
     header: 'Niska Cena',
     description:
-    'Przede wszystkim jesteśmy małą, rzetelną firmą z bogatym doświadczeniem, dzięki czemu możemy zaoferować najlepszy stosunek jakości do ceny. Poniżej przedstawiamy kilka kluczowych elementów, które są zawarte w cenie domu: - Duża powierzchnia działki: od 500 m² do 580 m² - Nowoczesne ogrodzenie w stylu amerykańskim: pełny mur z przodu budynku oraz ogrodzenie z siatki wokół całej posesji (wkrótce wstawimy wizualizacje lub zdjęcia z realizacji) - Miejsce garażowe wewnątrz budynku oraz miejsce garażowe na zewnątrz. Ponadto w przyszłości osiedla będzie posiadało osobny parking - Kompletny system rekuperacji: zapewniający efektywną wentylację i oszczędność energii - Nowoczesna pompa ciepła: gwarantująca efektywne ogrzewanie podłogowe, które równomiernie rozprowadza ciepło po całym domu, zapewniając komfort i oszczędność energii',
+    'Przede wszystkim jesteśmy małą, rzetelną firmą z bogatym doświadczeniem, dzięki czemu możemy zaoferować najlepszy stosunek jakości do ceny. Poniżej przedstawiamy kilka kluczowych elementów, które są zawarte w cenie domu: - Duża powierzchnia działki: od 500 m² do 580 m² - Nowoczesne ogrodzenie w stylu amerykańskim: pełny mur z przodu budynku oraz ogrodzenie z siatki wokół całej posesji (wkrótce wstawimy wizualizacje lub zdjęcia z realizacji) - Miejsce garażowe wewnątrz budynku oraz miejsce garażowe na zewnątrz. Ponadto w przyszłości osiedle będzie posiadało osobny parking - Kompletny system rekuperacji: zapewniający efektywną wentylację i oszczędność energii - Nowoczesna pompa ciepła: gwarantująca efektywne ogrzewanie podłogowe, które równomiernie rozprowadza ciepło po całym domu, zapewniając komfort i oszczędność energii',
     photos: [CEN1, CEN2, CEN3, CEN4, CEN5]
   },
   {
@@ -80,13 +80,13 @@ const descriptionGroups = [
   {
     id: 'Okolica',
     header: 'Okolica',
-    description: 'Obok osiedla mamy nowy nowoczesny plac zabaw dla dzieci oraz duże boiska do gry w siatkówkę oraz piłkę nożną. Osiedle a centrum handlowe Mińska Mazowieckiego dzieli jedynie 1,5km odglegości. Na osiedlu powstanie plac zabaw oraz dodatkowe miejsce parkingowe. Wszystkie udogodnienia zostaly przedstawione na mapie w dolnej części tej strony.',
+    description: 'Obok osiedla mamy nowy nowoczesny plac zabaw dla dzieci oraz duże boiska do gry w siatkówkę oraz piłkę nożną. Osiedle i centrum handlowe Mińska Mazowieckiego dzieli jedynie 1,5km odglegości. Na osiedlu powstanie plac zabaw oraz dodatkowe miejsce parkingowe. Wszystkie udogodnienia zostały przedstawione na mapie w dolnej części tej strony.',
     photos: [BOISKO1, BOISKO2, BOISKO3, BOISKO4, BOISKO5,PLAC1, PLAC2, PLAC3, PLAC4, GALERIA]
   },
   {
     id: 'DrogaDojazdowa',
     header: 'Droga Dojazdowa',
-    description: 'Drogi dojazdowe do osiedla są bardzo dobrym stanie. Droga od Gminy Dębę Wielkie została na nowo wykonana w tym roku (tj. 2024), droga do Mińska Mazowieckiego również dopiero co była modernizowana. Ponadto w przyszłości całe osiedle będzie posiadało dojazd od strony Arynowa. Ponadto wewnętrzna droga osiedla będzie miała szerokość 7 m, co z pewnością przełoży się na wysoki komfort użytkowania.',
+    description: 'Drogi dojazdowe do osiedla są w bardzo dobrym stanie. Droga od Gminy Dębę Wielkie została wykonana w 2024 roku, droga do Mińska Mazowieckiego również dopiero co była modernizowana. Ponadto w przyszłości całe osiedle będzie posiadało dojazd od strony Arynowa. Ponadto wewnętrzna droga osiedla będzie miała szerokość 7 m, co z pewnością przełoży się na wysoki komfort użytkowania.',
     photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5],
   },
 ];

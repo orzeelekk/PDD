@@ -251,31 +251,31 @@ $background-color-hover: #ffffff; // Solid white background on hover
 
 .green-highlight {
   position: absolute;
-  width: 120px;
-  height: 70px;
+  width: 100px;
+  height: 60px;
   border-radius: 20%;
   background-color: rgba(0, 255, 0, 0.3);
   z-index: 1;
   top: 51%;
-  left: 79.5%;
+  left: 80.5%;
   transform: rotate(14.9deg);
   transform-origin: center;
   @media (max-width: 1500px) {
-    scale:0.8;
-    top: 50%;
-    left: 78.5%;
+    scale:0.9;
+    top: 51%;
+    left: 80.5%;
   };
   @media (max-width: 1300px) {
     scale:0.7;
-    top: 50%;
-    left: 78.5%;
+    top: 49,5%;
+    left: 79.5%;
   }
 }
 
 .yellow-highlight {
   position: absolute;
-  width: 120px;
-  height: 70px;
+  width: 100px;
+  height: 60px;
   border-radius: 20%;
   background-color: rgba(255, 217, 0, 0.3);
   z-index: 1;
@@ -285,21 +285,21 @@ $background-color-hover: #ffffff; // Solid white background on hover
   transform: rotate(14.9deg);
   transform-origin: center;
   @media (max-width: 1500px) {
-    scale:0.8;
+    scale:0.9;
     top: 45%;
-    left: 66.5%;
+    left: 66,2%;
   };
   @media (max-width: 1300px) {
-    scale: 0.7;
+    scale: 0.8;
     top: 45%;
-    left: 65.5%;
+    left: 66.5%;
   }
 }
 
 .red-highlight {
   position: absolute;
-  width: 120px;
-  height: 70px;
+  width: 100px;
+  height: 60px;
   border-radius: 20%;
   background-color: rgba(255, 0, 0, 0.3);
   z-index: 1;
@@ -308,14 +308,14 @@ $background-color-hover: #ffffff; // Solid white background on hover
   transform: rotate(14.9deg);
   transform-origin: center;
   @media (max-width: 1500px) {
-    scale:0.8;
-    top: 41.5%;
-    left: 58.2%;
+    scale:0.9;
+    top: 41%;
+    left: 58.7%;
   };
   @media (max-width: 1300px) {
-    scale: 0.7;
+    scale: 0.8;
     top: 42%;
-    left: 57.5%;
+    left: 57.8%;
   }
 }
 

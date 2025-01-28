@@ -62,8 +62,8 @@ const Sectionto = () => {
                             Niska cena
                         </a>
                         <h3 className="sectionto_description">
-                            Naszym głównym celem jest budowa<br />
-                            domów w cenie mieszkania w centrum.<br />
+                            Naszym głównym celem jest budowa domów<br />
+                             w cenie mieszkania w centrum miasta.<br />
                             Ceny domow wahają się między<br />
                             830 tys. zł a 930 tys. zł.
                         </h3>
