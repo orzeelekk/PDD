@@ -106,7 +106,7 @@ const PhotosRealizacje = () => {
       setCurrentImageIndex(newIndex);
       setSelectedImage(photoGroup[newIndex]);
       setIsFading(false);
-    }, 100); // Match fade animation duration
+    }, 500); // Match fade animation duration
   };
 
   const nextImage = () => {
