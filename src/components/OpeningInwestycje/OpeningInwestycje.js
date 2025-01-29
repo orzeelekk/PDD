@@ -43,6 +43,10 @@ import DROGA2 from '../Assets/DROGA2.jpg';
 import DROGA3 from '../Assets/DROGA3.jpg';
 import DROGA4 from '../Assets/DROGA4.jpg';
 import DROGA5 from '../Assets/DROGA5.jpg';
+import DROGA6 from '../Assets/DROGA6.jpg';
+import DROGA7 from '../Assets/DROGA7.jpg';
+import DROGA8 from '../Assets/DROGA8.jpg';
+import DROGA9 from '../Assets/DROGA9.jpg';
 
 import GALERIA from '../Assets/GALERIAPARTNER.jpg'
 
@@ -86,8 +90,8 @@ const descriptionGroups = [
   {
     id: 'DrogaDojazdowa',
     header: 'Droga Dojazdowa',
-    description: 'Drogi dojazdowe do osiedla są w bardzo dobrym stanie. Droga od Gminy Dębę Wielkie została wykonana w 2024 roku, droga do Mińska Mazowieckiego również dopiero co była modernizowana. Ponadto w przyszłości całe osiedle będzie posiadało dojazd od strony Arynowa. Ponadto wewnętrzna droga osiedla będzie miała szerokość 7 m, co z pewnością przełoży się na wysoki komfort użytkowania.',
-    photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5],
+    description: 'Lokalizacja zapewnia świetny dojazd zarówno samochodowy, jak i kolejowy do Warszawy. Poruszając się drogą ekspresową, możemy dotrzeć z naszego osiedla do stolicy nawet w 30 minut. Dodatkowo, transport kolejowy z Mińska Mazowieckiego/Wrzosowa do Warszawy zapewnia dojazd w zaledwie 37 minut (do stacji Wrzosów dojedziemy samochodem w około 7 minut). Drogi dojazdowe do osiedla są w bardzo dobrym stanie. Droga od Gminy Dębę Wielkie została wykonana w 2024 roku nastomiast droga do Mińska Mazowieckiego niedawno była modernizowana. W przyszłości całe osiedle będzie posiadało dojazd od strony Arynowa. Ponadto wewnętrzna droga osiedla będzie miała szerokość 7 m, zapewniająć wygodną komunikację wewnątrz osiedla.',
+    photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5, DROGA6, DROGA7, DROGA8, DROGA9],
   },
 ];
 
