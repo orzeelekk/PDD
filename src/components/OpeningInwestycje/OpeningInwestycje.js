@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './_openingInwestycje.scss';
 
 import BUD1 from '../Assets/BUD1.jpg';
-import BUD2 from '../Assets/BUD2.jpg';
+// import BUD2 from '../Assets/BUD2.jpg';
 import BUD3 from '../Assets/BUD3.jpg';
 import BUD4 from '../Assets/BUD4.jpg';
 import BUD5 from '../Assets/BUD5.jpg';
@@ -19,6 +19,9 @@ import BUD15 from '../Assets/BUD15.jpg';
 import BUD16 from '../Assets/BUD16.jpg';
 import BUD17 from '../Assets/BUD17.jpg';
 import BUD18 from '../Assets/BUD18.jpg';
+// import BUD19 from '../Assets/BUD19.jpg';
+import BUD20 from '../Assets/BUD20.jpg';
+import BUD21 from '../Assets/BUD21.jpg';
 
 import BUD2_1 from '../Assets/BUD2 1.jpg';
 import BUD2_2 from '../Assets/BUD2 2.jpg';
@@ -47,6 +50,7 @@ import DROGA6 from '../Assets/DROGA6.jpg';
 import DROGA7 from '../Assets/DROGA7.jpg';
 import DROGA8 from '../Assets/DROGA8.jpg';
 import DROGA9 from '../Assets/DROGA9.jpg';
+import DROGA10 from '../Assets/DROGA10.jpg';
 
 import GALERIA from '../Assets/GALERIAPARTNER.jpg'
 
@@ -66,19 +70,19 @@ const descriptionGroups = [
     id: 'DziennikBudowy',
     header: 'Dziennik Budowy',
     description: 'Zdjęcia poniżej przedstawiają kolejne etapy realizacji naszych domów. Postaramy się uaktualniać tę sekcję na bieżąco, aby odzwierciedlać postępy prac.',
-    photos: [BUD1, BUD2, BUD3, BUD4, BUD5, BUD6, BUD7, BUD8, BUD9, BUD10, BUD11, BUD12, BUD13, BUD14, BUD15, BUD16, BUD17, BUD18, BUD2_1, BUD2_2, BUD2_3]
+    photos: [BUD1, BUD3, BUD4, BUD5, BUD6, BUD7, BUD8, BUD9, BUD10, BUD11, BUD12, BUD13, BUD14, BUD15, BUD16, BUD17, BUD18, BUD20, BUD21, BUD2_1, BUD2_2, BUD2_3]
   },
   {
     id: 'Cena',
     header: 'Niska Cena',
     description:
-    'Przede wszystkim jesteśmy małą, rzetelną firmą z bogatym doświadczeniem, dzięki czemu możemy zaoferować najlepszy stosunek jakości do ceny. Poniżej przedstawiamy kilka kluczowych elementów, które są zawarte w cenie domu: - Duża powierzchnia działki: od 500 m² do 580 m² - Nowoczesne ogrodzenie w stylu amerykańskim: pełny mur z przodu budynku oraz ogrodzenie z siatki wokół całej posesji (wkrótce wstawimy wizualizacje lub zdjęcia z realizacji) - Miejsce garażowe wewnątrz budynku oraz miejsce garażowe na zewnątrz. Ponadto w przyszłości osiedle będzie posiadało osobny parking - Kompletny system rekuperacji: zapewniający efektywną wentylację i oszczędność energii - Nowoczesna pompa ciepła: gwarantująca efektywne ogrzewanie podłogowe, które równomiernie rozprowadza ciepło po całym domu, zapewniając komfort i oszczędność energii',
+    'Przede wszystkim jesteśmy małą, rzetelną firmą z bogatym doświadczeniem, dzięki czemu możemy zaoferować najlepszy stosunek jakości do ceny. Poniżej przedstawiamy kilka kluczowych elementów, które są zawarte w cenie domu: - Duża powierzchnia działki: od 500 m² do 580 m² - Nowoczesne ogrodzenie: pełny mur od frontu budynku wraz z ogrodzeniem z siatki wokół całej posesji (wkrótce wstawimy wizualizacje lub zdjęcia z realizacji) - Miejsce garażowe wewnątrz budynku oraz miejsce garażowe na zewnątrz budynku. Ponadto w przyszłości osiedle będzie posiadało osobny parking - Kompletny system rekuperacji: zapewniający efektywną wentylację i oszczędność energii - Nowoczesna pompa ciepła: gwarantująca efektywne ogrzewanie podłogowe, które równomiernie rozprowadza ciepło po całym domu, zapewniając komfort i oszczędność energii',
     photos: [CEN1, CEN2, CEN3, CEN4, CEN5]
   },
   {
     id: 'NowoczesneBudownictwo',
     header: 'Nowoczesne budownictwo',
-    description: 'Nowoczesna stylistyka budynku to dopiero początek. Dzięki ponadprzeciętnym parametrom przenikalności cieplnej, w połączeniu z zaawansowanym systemem rekuperacji oraz pompą ciepła, nasze domy spełniają wymagania budynków niskoenergetycznych. Dodatkowo oferujemy możliwość wykonania instalacji klimatyzacji oraz fotowoltaiki, aby zapewnić maksymalny komfort użytkowania. W standardzie każdy dom posiada również instalację przystosowaną do ładowarki dla samochodów elektrycznych.',
+    description: 'Nowoczesna stylistyka budynku to dopiero początek. Dzięki ponadprzeciętnym parametrom przenikalności cieplnej, w połączeniu z zaawansowanym systemem rekuperacji oraz pompą ciepła nasze domy spełniają wymagania budynków niskoenergetycznych. Dodatkowo oferujemy możliwość wykonania instalacji klimatyzacji oraz fotowoltaiki, aby zapewnić maksymalny komfort użytkowania. W standardzie każdy dom posiada również instalację przystosowaną do ładowarki dla samochodów elektrycznych.',
     photos: [NOW1, NOW2, NOW3, NOW4, NOW5, NOW6, NOW7]
   },
   {
@@ -90,8 +94,8 @@ const descriptionGroups = [
   {
     id: 'DrogaDojazdowa',
     header: 'Droga Dojazdowa',
-    description: 'Lokalizacja zapewnia świetny dojazd zarówno samochodowy, jak i kolejowy do Warszawy. Poruszając się drogą ekspresową, możemy dotrzeć z naszego osiedla do stolicy nawet w 30 minut. Dodatkowo, transport kolejowy z Mińska Mazowieckiego/Wrzosowa do Warszawy zapewnia dojazd w zaledwie 37 minut (do stacji Wrzosów dojedziemy samochodem w około 7 minut). Drogi dojazdowe do osiedla są w bardzo dobrym stanie. Droga od Gminy Dębę Wielkie została wykonana w 2024 roku nastomiast droga do Mińska Mazowieckiego niedawno była modernizowana. W przyszłości całe osiedle będzie posiadało dojazd od strony Arynowa. Ponadto wewnętrzna droga osiedla będzie miała szerokość 7 m, zapewniająć wygodną komunikację wewnątrz osiedla.',
-    photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5, DROGA6, DROGA7, DROGA8, DROGA9],
+    description: 'Lokalizacja zapewnia świetny dojazd do Warszawy zarówno samochodowy jak i kolejowy. Poruszając się autem drogą ekspresową, możemy dotrzeć z naszego osiedla do stolicy nawet w 30 minut (Zaznaczony punkt docelowy to metro stacja Warszawa Ursynów). Transport kolejowy z Mińska Mazowieckiego/Wrzosowa do Warszawy zapewnia dojazd nawet w 30 minut (dojazd samochodem do stacji to dodatkowe 8minut). Ponadto drogi dojazdowe do osiedla są w bardzo dobrym stanie. Droga od Gminy Dębę Wielkie została wykonana w 2024 roku nastomiast droga do Mińska Mazowieckiego niedawno była modernizowana. W przyszłości całe osiedle będzie posiadało również dojazd od strony Arynowa. Wewnętrzna droga osiedla będzie miała szerokość 7 m, zapewniająć wygodną komunikację wewnątrz osiedla.',
+    photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5, DROGA6, DROGA7, DROGA8, DROGA9, DROGA10],
   },
 ];
 

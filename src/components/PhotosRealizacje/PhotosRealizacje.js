@@ -38,7 +38,7 @@ import LUBOMIN4 from '../Assets/LUBOMIN4.jpg';
 import LUBOMIN5 from '../Assets/LUBOMIN5.jpg';
 
 const photoGroups = {
-  'Realizacja budowy i wykończenia domu pod klucz przy ul. Winogronowej': [
+  'Realizacja budowy i wykończenia domu pod klucz na Wilanowie': [
     WINOGRONOWA1,
     WINOGRONOWA2,
     WINOGRONOWA3,
@@ -73,7 +73,7 @@ const photoGroups = {
     Zlota4,
     Zlota5
   ],
-  'Całościowe wykończenie mieszkania pod klucz na ulicy Zwycięzców': [
+  'Całościowe wykończenie mieszkania pod klucz na Saskiej Kępie': [
     ZWYCIEZCOW1,
     ZWYCIEZCOW2,
     ZWYCIEZCOW3,
