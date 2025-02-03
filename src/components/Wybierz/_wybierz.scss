@@ -38,13 +38,17 @@
     display: flex;
     align-items: flex-end;
     position: relative; // Allows positioning inside the houseplan
-      @media (max-width: 1024px) {
-        height: 60vh;
-      };
-      @media (max-width: 768px) {
-        height: 42vh;
-      }
-      
+
+    @media (max-width: 1024px) {
+      height: 60vh;
+    }
+
+    ;
+
+    @media (max-width: 768px) {
+      height: 42vh;
+    }
+
   }
 
   &_info {
@@ -89,7 +93,9 @@
 .ChoseHouse_bottom {
   display: flex;
   align-items: center;
-  @media (max-width: 1024px), (max-width: 768px) {
+
+  @media (max-width: 1024px),
+  (max-width: 768px) {
     display: none;
   }
 }
@@ -251,22 +257,24 @@ $background-color-hover: #ffffff; // Solid white background on hover
 
 .highlight00 {
   display: flex;
-  flex-direction: column;  /* Places each highlight one below another */
+  flex-direction: column;
+  /* Places each highlight one below another */
   align-items: center;
-  gap: 20px;  /* Adds spacing between highlight groups */
-  gap: 10px;
+  gap: 20px;
+  /* Adds spacing between highlight groups */
 }
 
-.highlight01 {
+.highlight00 {
   display: flex;
-  flex-direction: column;  /* Places each highlight one below another */
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
   padding: 10px;
   border-radius: 20px;
   width: fit-content;
   min-width: 120px;
+  margin: 10px;
 }
-
 
 /* Colors */
 .green-highlight00 {
@@ -290,6 +298,7 @@ $background-color-hover: #ffffff; // Solid white background on hover
 
 
 
+
 .green-highlight1 {
   display: flex;
   align-items: center;
@@ -305,22 +314,28 @@ $background-color-hover: #ffffff; // Solid white background on hover
   left: 67%;
   transform: rotate(14.9deg);
   transform-origin: center;
+
   @media (max-width: 1650px) {
     scale: 0.9;
     top: 45%;
     left: 66.5%;
   }
+
   @media (max-width: 1500px) {
-    scale:0.9;
+    scale: 0.9;
     top: 45%;
-    left: 66,2%;
-  };
+    left: 66, 2%;
+  }
+
+  ;
+
   @media (max-width: 1300px) {
     scale: 0.8;
     top: 45%;
     left: 66.5%;
   }
 }
+
 .green-highlight2 {
   display: flex;
   align-items: center;
@@ -336,22 +351,28 @@ $background-color-hover: #ffffff; // Solid white background on hover
   left: 15%;
   transform: rotate(14.9deg);
   transform-origin: center;
+
   @media (max-width: 1650px) {
     scale: 0.9;
     top: 21%;
     left: 12.5%;
   }
+
   @media (max-width: 1500px) {
-    scale:0.9;
+    scale: 0.9;
     top: 24%;
-    left: 66,2%;
-  };
+    left: 66, 2%;
+  }
+
+  ;
+
   @media (max-width: 1300px) {
-    scale:0.8;
+    scale: 0.8;
     top: 28%;
-    left: 66,2%;
+    left: 66, 2%;
   }
 }
+
 .green-highlight3 {
   display: flex;
   align-items: center;
@@ -367,18 +388,23 @@ $background-color-hover: #ffffff; // Solid white background on hover
   left: 6%;
   transform: rotate(14.9deg);
   transform-origin: center;
+
   @media (max-width: 1650px) {
     scale: 0.9;
     top: 17%;
     left: 3.5%;
   }
+
   @media (max-width: 1500px) {
-    scale:0.9;
+    scale: 0.9;
     top: 51%;
     left: 80.5%;
-  };
+  }
+
+  ;
+
   @media (max-width: 1300px) {
-    scale:0.7;
+    scale: 0.7;
     top: 50%;
     left: 79.5%;
   }
@@ -412,18 +438,23 @@ $background-color-hover: #ffffff; // Solid white background on hover
   left: 80.5%;
   transform: rotate(14.9deg);
   transform-origin: center;
+
   @media (max-width: 1650px) {
     scale: 0.9;
     top: 51%;
     left: 79.5%;
   }
+
   @media (max-width: 1500px) {
-    scale:0.9;
+    scale: 0.9;
     top: 20%;
     left: 3.5%;
-  };
+  }
+
+  ;
+
   @media (max-width: 1300px) {
-    scale:0.8;
+    scale: 0.8;
     top: 24%;
     left: 3.0%;
   }
@@ -445,20 +476,25 @@ $background-color-hover: #ffffff; // Solid white background on hover
   left: 21%;
   transform: rotate(14.9deg);
   transform-origin: center;
+
   @media (max-width: 1650px) {
     scale: 0.9;
     top: 24%;
     left: 19.5%;
   }
+
   @media (max-width: 1500px) {
-    scale:0.9;
+    scale: 0.9;
     top: 27%;
-    left: 66,2%;
-  };
+    left: 66, 2%;
+  }
+
+  ;
+
   @media (max-width: 1300px) {
-    scale:0.8;
+    scale: 0.8;
     top: 30%;
-    left: 66,2%;
+    left: 66, 2%;
   }
 }
 
@@ -484,20 +520,25 @@ $background-color-hover: #ffffff; // Solid white background on hover
   border-radius: 20%;
   background-color: rgba(255, 0, 0, 0.3);
   z-index: 1;
-    top: 40.8%;
-    left: 59.5%;
+  top: 40.8%;
+  left: 59.5%;
   transform: rotate(14.9deg);
   transform-origin: center;
+
   @media (max-width: 1650px) {
     scale: 0.9;
     top: 40.8%;
     left: 58.8%;
   }
+
   @media (max-width: 1500px) {
-    scale:0.9;
+    scale: 0.9;
     top: 41%;
     left: 58.7%;
-  };
+  }
+
+  ;
+
   @media (max-width: 1300px) {
     scale: 0.8;
     top: 42%;

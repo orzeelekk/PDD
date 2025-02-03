@@ -54,10 +54,9 @@ const Wybierz = () => {
                             </svg>
                             <h1>Sprzedane</h1>
                         </span>
-                        <div className='highlight00'>
                         {highlightGreen && (
                         <>
-                            <div className="highlight01 green-highlight00">
+                            <div className="highlight00 green-highlight00">
                                 <h1>Dom B-1</h1>
                                 <h1>Dom C-1</h1>
                                 <h1>Dom C-2</h1>
@@ -66,18 +65,17 @@ const Wybierz = () => {
                             )}
                         {highlightYellow && (
                         <>
-                            <div className="highlight01 yellow-highlight00">
+                            <div className="highlight00 yellow-highlight00">
                                 <h1>Dom B-2</h1>
                                 <h1>Dom C-2</h1>
                             </div>                        
                         </>
                             )}
                         {highlightRed && (
-                            <div className="highlight01 red-highlight00">
+                            <div className="highlight00 red-highlight00">
                                 <h1>Dom A-1</h1>
                             </div>
                         )}
-                        </div>
                     </div>
                 </div>
             </div>
