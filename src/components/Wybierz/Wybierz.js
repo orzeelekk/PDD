@@ -54,6 +54,7 @@ const Wybierz = () => {
                             </svg>
                             <h1>Sprzedane</h1>
                         </span>
+                      
                         {highlightGreen && (
                         <>
                             <div className="highlight00 green-highlight00">
@@ -76,12 +77,14 @@ const Wybierz = () => {
                                 <h1>Dom A-1</h1>
                             </div>
                         )}
+                              
+                        </div>
                     </div>
                 </div>
-            </div>
 
             <div className="houseplan">
                     {/* Green button adds 4 divs */}
+                    <div className="housemedia">
                     {highlightGreen && (
                         <>
                             <div className="highlight green-highlight1"><h1>Dom B-1</h1></div>
@@ -101,6 +104,7 @@ const Wybierz = () => {
 
                     {/* Red button adds 1 div */}
                     {highlightRed && <div className="highlight red-highlight"><h1>Dom A-1</h1></div>}
+                    </div>
                 </div>
 
                 <div className="houseinfo container">

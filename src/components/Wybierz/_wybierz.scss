@@ -94,6 +94,9 @@
   display: flex;
   align-items: center;
 
+
+}
+.housemedia {
   @media (max-width: 1024px),
   (max-width: 768px) {
     display: none;
@@ -410,17 +413,6 @@ $background-color-hover: #ffffff; // Solid white background on hover
   }
 }
 
-// .yellow-highlight00 {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   gap: 10px;
-//   padding: 10px;
-//   border-radius: 20%;
-//   background-color: rgba(255, 217, 0, 0.3);
-//   z-index: 1;
-//   margin:10px;
-// }
 
 .yellow-highlight1 {
   display: flex;
@@ -497,17 +489,6 @@ $background-color-hover: #ffffff; // Solid white background on hover
     left: 66, 2%;
   }
 }
-
-// .red-highlight00 {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   gap: 10px;
-//   padding: 10px;
-//   border-radius: 20%;
-//   background-color: rgba(255, 0, 0, 0.3);
-//   z-index: 1;
-// }
 
 .red-highlight {
   display: flex;
