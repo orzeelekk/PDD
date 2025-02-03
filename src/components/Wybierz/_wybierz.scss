@@ -256,8 +256,38 @@ $background-color-hover: #ffffff; // Solid white background on hover
   border-radius: 20%;
   background-color: rgba(0, 255, 0, 0.3);
   z-index: 1;
-  // top: 51%;
-  // left: 80.5%;
+  top: 45%;
+  left: 68%;
+  transform: rotate(14.9deg);
+  transform-origin: center;
+  @media (max-width: 1650px) {
+    scale: 0.9;
+    top: 45%;
+    left: 66.5%;
+  }
+  @media (max-width: 1500px) {
+    scale:0.9;
+    top: 45%;
+    left: 66,2%;
+  };
+  @media (max-width: 1300px) {
+    scale: 0.8;
+    top: 45%;
+    left: 66.5%;
+  }
+
+}
+
+.yellow-highlight {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  border-radius: 20%;
+  background-color: rgba(255, 217, 0, 0.3);
+  z-index: 1;
+  transform: rotate(14.9deg);
+  // top: 45%;
+  // left: 67.5%;
   top: 52%;
   left: 81.5%;
   transform: rotate(14.9deg);
@@ -279,37 +309,6 @@ $background-color-hover: #ffffff; // Solid white background on hover
   }
 }
 
-.yellow-highlight {
-  position: absolute;
-  width: 100px;
-  height: 60px;
-  border-radius: 20%;
-  background-color: rgba(255, 217, 0, 0.3);
-  z-index: 1;
-  transform: rotate(14.9deg);
-  // top: 45%;
-  // left: 67.5%;
-  top: 45%;
-  left: 68%;
-  transform: rotate(14.9deg);
-  transform-origin: center;
-  @media (max-width: 1650px) {
-    scale: 0.9;
-    top: 45%;
-    left: 67%;
-  }
-  @media (max-width: 1500px) {
-    scale:0.9;
-    top: 45%;
-    left: 66,2%;
-  };
-  @media (max-width: 1300px) {
-    scale: 0.8;
-    top: 45%;
-    left: 66.5%;
-  }
-}
-
 .red-highlight {
   position: absolute;
   width: 100px;
@@ -317,8 +316,8 @@ $background-color-hover: #ffffff; // Solid white background on hover
   border-radius: 20%;
   background-color: rgba(255, 0, 0, 0.3);
   z-index: 1;
-  top: 41.8%;
-  left: 59.8%;
+    top: 41.8%;
+    left: 59.8%;
   transform: rotate(14.9deg);
   transform-origin: center;
   @media (max-width: 1650px) {
