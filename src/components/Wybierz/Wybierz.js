@@ -54,26 +54,66 @@ const Wybierz = () => {
                             </svg>
                             <h1>Sprzedane</h1>
                         </span>
+                        <div className='highlight00'>
+                        {highlightGreen && (
+                        <>
+                            <div className="highlight01 green-highlight00">
+                                <h1>Dom B-1</h1>
+                                <h1>Dom C-1</h1>
+                                <h1>Dom C-2</h1>
+                            </div>
+                        </>
+                            )}
+                        {highlightYellow && (
+                        <>
+                            <div className="highlight01 yellow-highlight00">
+                                <h1>Dom B-2</h1>
+                                <h1>Dom C-2</h1>
+                            </div>                        
+                        </>
+                            )}
+                        {highlightRed && (
+                            <div className="highlight01 red-highlight00">
+                                <h1>Dom A-1</h1>
+                            </div>
+                        )}
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div className="houseplan">
-                {/* Conditionally render the highlights for the selected houses */}
-                {highlightGreen && <div className="highlight green-highlight"></div>}
-                {highlightYellow && <div className="highlight yellow-highlight"></div>}
-                {highlightRed && <div className="highlight red-highlight"></div>}
-            </div>
+                    {/* Green button adds 4 divs */}
+                    {highlightGreen && (
+                        <>
+                            <div className="highlight green-highlight1"><h1>Dom B-1</h1></div>
+                            <div className="highlight green-highlight2"><h1>Dom C-2</h1></div>
+                            <div className="highlight green-highlight3"><h1>Dom C-1</h1></div>
+                            <div className="highlight green-highlight4"><h1>Dom D-1</h1></div>
+                        </>
+                    )}
 
-            <div className="houseinfo container">
-                <h1 className="houseinfo_header">Szczegółowa specyfikacja domów</h1>
-                <div className="houseinfo_box">
-                    {daneTechniczne.map((menu, index) => {
-                        return <SpecDomki items={menu} key={index} />;
-                    })}
+                    {/* Yellow button adds 2 divs */}
+                    {highlightYellow && (
+                        <>
+                            <div className="highlight yellow-highlight1"><h1>Dom B-2</h1></div>
+                            <div className="highlight yellow-highlight2"><h1>Dom C-3</h1></div>
+                        </>
+                    )}
+
+                    {/* Red button adds 1 div */}
+                    {highlightRed && <div className="highlight red-highlight"><h1>Dom A-1</h1></div>}
                 </div>
-            </div>
-        </section>
+
+                <div className="houseinfo container">
+                    <h1 className="houseinfo_header">Szczegółowa specyfikacja domów</h1>
+                    <div className="houseinfo_box">
+                        {daneTechniczne.map((menu, index) => (
+                            <SpecDomki items={menu} key={index} />
+                        ))}
+                    </div>
+                </div>
+            </section>
         </>
     );
 };
