@@ -71,7 +71,7 @@ const Wybierz = () => {
                         <>
                             <div className="highlight00 yellow-highlight00">
                                 <h1>Dom B-2</h1>
-                                <h1>Dom C-2</h1>
+                                <h1>Dom C-3</h1>
                             </div>                        
                         </>
                             )}
