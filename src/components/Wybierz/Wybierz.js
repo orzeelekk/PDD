@@ -31,6 +31,7 @@ const Wybierz = () => {
                         Wybierz swój dom 
                     </div>
                     <div className="ChoseHouse_bottom">
+                        <div className="house_svg">
                         {/* Green House Icon */}
                         <span className={`house_icon green ${highlightGreen ? 'selected' : ''}`} onClick={toggleGreenHighlight}>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -54,6 +55,8 @@ const Wybierz = () => {
                             </svg>
                             <h1>Sprzedane</h1>
                         </span>
+                        </div>
+                        <div className="house_avaliable">
                       
                         {highlightGreen && (
                         <>
@@ -77,7 +80,8 @@ const Wybierz = () => {
                                 <h1>Dom A-1</h1>
                             </div>
                         )}
-                              
+                                      
+                        </div>
                         </div>
                     </div>
                 </div>
