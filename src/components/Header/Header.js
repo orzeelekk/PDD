@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./_header.scss";
 import { headerItems } from './headerItems';
 import logo from "../Assets/PDDLogov3.png";
@@ -28,17 +28,24 @@ const Header = () => {
         }
     };
 
+    useEffect(() => {
+        // Load Google Analytics script dynamically
+        const script = document.createElement('script');
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-XNSQYERKFC";
+        script.async = true;
+        document.head.appendChild(script);
+
+        // Initialize Google Analytics
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ window.dataLayer.push(arguments); }
+        
+        gtag('js', new Date());
+        gtag('config', 'G-XNSQYERKFC');
+    }, []);
+
     return (
         
         <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
-            <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNSQYERKFC"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date());
-
-        gtag('config', 'G-XNSQYERKFC');
-        </script>
             <div className="header_container container">
                 <a className="header_logo" href="/">
                     <img src={logo} alt="Logo" height="100" />
