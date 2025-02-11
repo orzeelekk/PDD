@@ -29,7 +29,16 @@ const Header = () => {
     };
 
     return (
+        
         <header className={`header ${menuOpen ? 'menu-open' : ''}`}>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNSQYERKFC"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+
+        gtag('config', 'G-XNSQYERKFC');
+        </script>
             <div className="header_container container">
                 <a className="header_logo" href="/">
                     <img src={logo} alt="Logo" height="100" />
