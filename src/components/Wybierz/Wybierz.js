@@ -70,14 +70,15 @@ const Wybierz = () => {
                         {highlightYellow && (
                         <>
                             <div className="highlight00 yellow-highlight00">
-                                <h1>Dom B-2</h1>
                                 <h1>Dom C-3</h1>
+                              
                             </div>                        
                         </>
                             )}
                         {highlightRed && (
                             <div className="highlight00 red-highlight00">
                                 <h1>Dom A-1</h1>
+                                <h1>Dom B-2</h1>
                             </div>
                         )}
                                       
