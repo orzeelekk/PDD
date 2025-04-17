@@ -32,37 +32,43 @@ const CarouselRealizacje = () => {
                     <polyline points="60 25, 30 50, 60 75" ></polyline>
                 </g>
             </svg>
-                <div className="carousel-content-wrapper">
-                    <div className="carousel-content"
-                         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-                    >
-                        <section className="slide slide_realizacje_1">
-                            <div className="slide_content">
-                                <a href="/realizacje" className="slide_button button-option">Dom na Wilanowie</a>
-                                <p className="slide_text">Realizacja budowy i wykończenia domu pod klucz na Wilanowie.</p>
-                            </div>
-                        </section>
-                        <section className="slide slide_realizacje_2">
-                            <div className="slide_content">
-                                <a href="/realizacje" className="slide_button button-option">Dom w Lubominie</a>
-                                <p className="slide_text"> Kompleksowe wykonanie budowy oraz wykończenia domu w Lubominie.</p>
-                            </div>
-                        </section>
-                        <section className="slide slide_realizacje_3">
-                            <div className="slide_content">
-                                <a href="/realizacje" className="slide_button button-option">Domy na osiedlu Emilianów Leśny</a>
-                                <p className="slide_text">Przebudowa budynków i wykończenie pod klucz na osiedlu Emilianów Leśny.</p>
-                            </div>
-                        </section>
-                        <section className="slide slide_realizacje_4">
-                            <div className="slide_content">
-                                <a href="/realizacje" className="slide_button button-option">Kliniki Focus Clinic w Warszawie i Mińsku Mazowieckim</a>
-                                <p className="slide_text"> Między innymi w Warszawie na ul. Niekłańska 41 oraz w Mińsku Mazowieckim na ul. Warszawskiej 141 i Konstytucji 3 Maja.</p>
-                            </div>
-                        </section>
-
-                    </div>
-                </div>
+            <div className="carousel-content-wrapper">
+  <div className="carousel-content">
+    {[1, 2, 3, 4].map((num, index) => (
+      <section
+        key={num}
+        className={`slide slide_realizacje_${num} ${currentIndex === index ? 'active' : 'inactive'}`}
+      >
+        <div className="slide_content">
+          {num === 1 && (
+            <>
+              <a href="/realizacje" className="slide_button button-option">Dom na Wilanowie</a>
+              <p className="slide_text">Realizacja budowy i wykończenia domu pod klucz na Wilanowie.</p>
+            </>
+          )}
+          {num === 2 && (
+            <>
+              <a href="/realizacje" className="slide_button button-option">Dom w Lubominie</a>
+              <p className="slide_text">Kompleksowe wykonanie budowy oraz wykończenia domu w Lubominie.</p>
+            </>
+          )}
+          {num === 3 && (
+            <>
+              <a href="/realizacje" className="slide_button button-option">Domy na osiedlu Emilianów Leśny</a>
+              <p className="slide_text">Przebudowa budynków i wykończenie pod klucz na osiedlu Emilianów Leśny.</p>
+            </>
+          )}
+          {num === 4 && (
+            <>
+              <a href="/realizacje" className="slide_button button-option">Kliniki Focus Clinic w Warszawie i Mińsku Mazowieckim</a>
+              <p className="slide_text">Między innymi w Warszawie na ul. Niekłańska 41 oraz w Mińsku Mazowieckim na ul. Warszawskiej 141 i Konstytucji 3 Maja.</p>
+            </>
+          )}
+        </div>
+      </section>
+    ))}
+  </div>
+</div>
                     <svg onClick={next} id="rightArrow" className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                         <g strokeLinejoin="round" strokeLinecap="round" >
                             <circle r="46" cx="50" cy="50" />
