@@ -23,6 +23,9 @@ import BUD18 from '../Assets/BUD18.jpg';
 import BUD20 from '../Assets/BUD20.jpg';
 import BUD21 from '../Assets/BUD21.jpg';
 import BUD22 from '../Assets/BUD22.jpg';
+// import BUD23 from '../Assets/BUD23.jpg';
+import BUD24 from '../Assets/BUD24.jpg';
+import BUD25 from '../Assets/BUD25.jpg';
 
 import BUD2_1 from '../Assets/BUD2 1.jpg';
 import BUD2_2 from '../Assets/BUD2 2.jpg';
@@ -75,7 +78,8 @@ const descriptionGroups = [
     id: 'DziennikBudowy',
     header: 'Dziennik Budowy',
     description: 'Zdjęcia poniżej przedstawiają kolejne etapy realizacji naszych domów. Postaramy się uaktualniać tę sekcję na bieżąco, aby odzwierciedlać postępy prac.',
-    photos: [BUD1, BUD3, BUD4, BUD5, BUD6, BUD7, BUD8, BUD9, BUD10, BUD11, BUD12, BUD13, BUD14, BUD15, BUD16, BUD17, BUD18, BUD20, BUD21, BUD22, BUDa0, BUD2_1, BUD2_2, BUD2_3, BUDa1, BUDa2]
+    photos: [BUD1, BUD3, BUD4, BUD5, BUD6, BUD7, BUD8, BUD9, BUD10, BUD11, BUD12, BUD13, BUD14, BUD15, BUD16, 
+      BUD17, BUD18, BUD20, BUD21, BUD22, BUDa0, BUD2_1, BUD2_2, BUD2_3, BUDa1, BUDa2, BUD24, BUD25]
   },
   {
     id: 'Cena',
