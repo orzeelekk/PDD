@@ -26,6 +26,7 @@ import BUD22 from '../Assets/BUD22.jpg';
 // import BUD23 from '../Assets/BUD23.jpg';
 import BUD24 from '../Assets/BUD24.jpg';
 import BUD25 from '../Assets/BUD25.jpg';
+import BUD26 from '../Assets/BUD26.jpg';
 
 import BUD2_1 from '../Assets/BUD2 1.jpg';
 import BUD2_2 from '../Assets/BUD2 2.jpg';
@@ -48,6 +49,10 @@ import NOW4 from '../Assets/NOW4.jpg';
 import NOW5 from '../Assets/NOW5.jpg';
 import NOW6 from '../Assets/NOW6.jpg';
 import NOW7 from '../Assets/NOW7.jpg';
+import NOW8 from '../Assets/WIZ1.png';
+import NOW9 from '../Assets/WIZ2.png';
+import NOW10 from '../Assets/WIZ3.jpg';
+
 
 import DROGA1 from '../Assets/DROGA1.jpg';
 import DROGA2 from '../Assets/DROGA2.jpg';
@@ -79,7 +84,7 @@ const descriptionGroups = [
     header: 'Dziennik Budowy',
     description: 'Zdjęcia poniżej przedstawiają kolejne etapy realizacji naszych domów. Postaramy się uaktualniać tę sekcję na bieżąco, aby odzwierciedlać postępy prac.',
     photos: [BUD1, BUD3, BUD4, BUD5, BUD6, BUD7, BUD8, BUD9, BUD10, BUD11, BUD12, BUD13, BUD14, BUD15, BUD16, 
-      BUD17, BUD18, BUD20, BUD21, BUD22, BUDa0, BUD2_1, BUD2_2, BUD2_3, BUDa1, BUDa2, BUD24, BUD25]
+      BUD17, BUD18, BUD20, BUD21, BUD22, BUDa0, BUD2_1, BUD2_2, BUD2_3, BUDa1, BUDa2, BUD24, BUD25, BUD26]
   },
   {
     id: 'Cena',
@@ -92,7 +97,7 @@ const descriptionGroups = [
     id: 'NowoczesneBudownictwo',
     header: 'Nowoczesne budownictwo',
     description: 'Nowoczesna stylistyka budynku to dopiero początek. Dzięki ponadprzeciętnym parametrom przenikalności cieplnej, w połączeniu z zaawansowanym systemem rekuperacji oraz pompą ciepła nasze domy spełniają wymagania budynków niskoenergetycznych. Dodatkowo oferujemy możliwość wykonania instalacji klimatyzacji oraz fotowoltaiki, aby zapewnić maksymalny komfort użytkowania. W standardzie każdy dom posiada również instalację przystosowaną do ładowarki dla samochodów elektrycznych.',
-    photos: [NOW1, NOW2, NOW3, NOW4, NOW5, NOW6, NOW7]
+    photos: [NOW1, NOW2, NOW3, NOW4, NOW5, NOW6, NOW7, NOW8, NOW9, NOW10]
   },
   {
     id: 'Okolica',
@@ -141,7 +146,7 @@ const PhotosRealizacje = () => {
       setCurrentImageIndex(newIndex);
       setSelectedImage(photoGroup[newIndex]);
       setIsFading(false);
-    }, 500); // Match fade animation duration
+    }, 500); 
   };
 
   const nextImage = () => {
