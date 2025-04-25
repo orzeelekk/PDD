@@ -50,8 +50,12 @@ import NOW5 from '../Assets/NOW5.jpg';
 import NOW6 from '../Assets/NOW6.jpg';
 import NOW7 from '../Assets/NOW7.jpg';
 import NOW8 from '../Assets/WIZ1.png';
-import NOW9 from '../Assets/WIZ2.png';
+import NOW9 from '../Assets/WIZ2.jpg';
 import NOW10 from '../Assets/WIZ3.jpg';
+import NOW11 from '../Assets/WIZ4.jpg';
+import NOW12 from '../Assets/WIZ5.jpg';
+import NOW13 from '../Assets/WIZ6.jpg';
+import NOW14 from '../Assets/WIZ7.jpg';
 
 
 import DROGA1 from '../Assets/DROGA1.jpg';
@@ -97,7 +101,7 @@ const descriptionGroups = [
     id: 'NowoczesneBudownictwo',
     header: 'Nowoczesne budownictwo',
     description: 'Nowoczesna stylistyka budynku to dopiero początek. Dzięki ponadprzeciętnym parametrom przenikalności cieplnej, w połączeniu z zaawansowanym systemem rekuperacji oraz pompą ciepła nasze domy spełniają wymagania budynków niskoenergetycznych. Dodatkowo oferujemy możliwość wykonania instalacji klimatyzacji oraz fotowoltaiki, aby zapewnić maksymalny komfort użytkowania. W standardzie każdy dom posiada również instalację przystosowaną do ładowarki dla samochodów elektrycznych.',
-    photos: [NOW1, NOW2, NOW3, NOW4, NOW5, NOW6, NOW7, NOW8, NOW9, NOW10]
+    photos: [NOW1, NOW2, NOW5, NOW6, NOW7, NOW8, NOW9, NOW10, NOW11, NOW12, NOW13, NOW14]
   },
   {
     id: 'Okolica',
