@@ -44,20 +44,21 @@ import CEN5 from '../Assets/CEN5.jpg';
 
 import NOW1 from '../Assets/NOW1.jpg';
 import NOW2 from '../Assets/NOW2.jpg';
-// import NOW3 from '../Assets/NOW3.jpg';
-// import NOW4 from '../Assets/NOW4.jpg';
+import NOW3 from '../Assets/NOW3.jpg';
+import NOW4 from '../Assets/NOW4.jpg';
 import NOW5 from '../Assets/NOW5.jpg';
 import NOW6 from '../Assets/NOW6.jpg';
 import NOW7 from '../Assets/NOW7.jpg';
-import NOW8 from '../Assets/WIZ1.png';
-import NOW9 from '../Assets/WIZ2.jpg';
-import NOW10 from '../Assets/WIZ3.jpg';
-import NOW11 from '../Assets/WIZ4.jpg';
-import NOW12 from '../Assets/WIZ5.jpg';
-import NOW13 from '../Assets/WIZ6.jpg';
-import NOW14 from '../Assets/WIZ7.jpg';
-import VAR7 from '../Assets/VAR7.jpg'
-import VAR8 from '../Assets/VAR8.jpg'
+
+import AR1 from '../Assets/AR1.jpg';
+import AR2 from '../Assets/AR2.jpg';
+import AR3 from '../Assets/AR3.jpg';
+import AR4 from '../Assets/AR4.jpg';
+import AR5 from '../Assets/AR5.jpg';
+import AR6 from '../Assets/AR6.jpg';
+import AR7 from '../Assets/AR7.jpg';
+import AR8 from '../Assets/AR8.jpg';
+import AR9 from '../Assets/AR9.jpg';
 
 
 import DROGA1 from '../Assets/DROGA1.jpg';
@@ -103,7 +104,13 @@ const descriptionGroups = [
     id: 'NowoczesneBudownictwo',
     header: 'Nowoczesne budownictwo',
     description: 'Nowoczesna stylistyka budynku to dopiero początek. Dzięki ponadprzeciętnym parametrom przenikalności cieplnej, w połączeniu z zaawansowanym systemem rekuperacji oraz pompą ciepła nasze domy spełniają wymagania budynków niskoenergetycznych. Dodatkowo oferujemy możliwość wykonania instalacji klimatyzacji oraz fotowoltaiki, aby zapewnić maksymalny komfort użytkowania. W standardzie każdy dom posiada również instalację przystosowaną do ładowarki dla samochodów elektrycznych.',
-    photos: [NOW1, NOW2, NOW5, NOW6, NOW7, NOW8, NOW9, VAR7, VAR8, NOW10, NOW11, NOW12, NOW13, NOW14]
+    photos: [NOW1, NOW2, NOW3, NOW4, NOW5, NOW6, NOW7]
+  },
+  {
+    id: 'Architektura',
+    header: 'Architektura',
+    description: 'Na wczesnym etapie budowy domu oferujemy możliwość wyboru własnej aranżacji wnętrz z dostosowaniem do indywidualnych potrzeb. Poniżej prezentujemy przykładowe wizualizacje naszego domu, które różnią się zarówno układem pomieszczeń, jak i rozmieszczeniem budynku na działce (z uwzględnieniem różnych orientacji względem stron świata – północnej i południowej).',
+    photos: [AR1, AR2, AR3, AR4, AR5, AR6, AR7, AR8, AR9]
   },
   {
     id: 'Okolica',
@@ -118,6 +125,8 @@ const descriptionGroups = [
     photos: [DROGA1, DROGA2, DROGA3, DROGA4, DROGA5, DROGA6, DROGA7, DROGA8, DROGA9, DROGA10],
   },
 ];
+
+
 
 const PhotosRealizacje = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -201,6 +210,11 @@ const PhotosRealizacje = () => {
                                       </svg>
                                       <h1 className="ChoseOption_Text">Nowoczesne Budownictwo</h1>
                                   </span>
+                                  <span className="ChoseOption_icon green architektura" onClick={() => { handleScrollToSection('Architektura'); }}>
+                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25" height="25" fill="currentColor">
+                                    <path d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"/>                                  </svg>
+                                  <h1 className="ChoseOption_Text">Architektura</h1>
+                                </span>
                                   <span className="ChoseOption_icon green okolica" onClick={() => { handleScrollToSection('Okolica'); }}>
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                       <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
@@ -213,10 +227,12 @@ const PhotosRealizacje = () => {
                                       </svg>
                                       <h1 className="ChoseOption_Text">Droga Dojazdowa</h1>
                                   </span> 
+  
                           </div>
                       </div>
                   </div>
-       
+
+
             </section>
     
             <div className="container">
