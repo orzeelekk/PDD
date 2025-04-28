@@ -109,7 +109,7 @@ const descriptionGroups = [
   {
     id: 'Architektura',
     header: 'Architektura',
-    description: 'Na wczesnym etapie budowy domu oferujemy możliwość wyboru własnej aranżacji wnętrz z dostosowaniem do indywidualnych potrzeb. Poniżej prezentujemy przykładowe wizualizacje naszego domu, które różnią się zarówno układem pomieszczeń, jak i rozmieszczeniem budynku na działce (z uwzględnieniem różnych orientacji względem stron świata – północnej i południowej).',
+    description: 'Na wczesnym etapie budowy domu oferujemy możliwość wyboru własnej aranżacji wnętrz z dostosowaniem do indywidualnych potrzeb. Poniżej prezentujemy klika wizualizacji naszego domu. Ostatnie wizualicaje różnią się układem budynku na działce.',
     photos: [AR1, AR2, AR3, AR4, AR5, AR6, AR7, AR8, AR9]
   },
   {
