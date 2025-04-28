@@ -44,8 +44,8 @@ import CEN5 from '../Assets/CEN5.jpg';
 
 import NOW1 from '../Assets/NOW1.jpg';
 import NOW2 from '../Assets/NOW2.jpg';
-import NOW3 from '../Assets/NOW3.jpg';
-import NOW4 from '../Assets/NOW4.jpg';
+// import NOW3 from '../Assets/NOW3.jpg';
+// import NOW4 from '../Assets/NOW4.jpg';
 import NOW5 from '../Assets/NOW5.jpg';
 import NOW6 from '../Assets/NOW6.jpg';
 import NOW7 from '../Assets/NOW7.jpg';
@@ -56,6 +56,8 @@ import NOW11 from '../Assets/WIZ4.jpg';
 import NOW12 from '../Assets/WIZ5.jpg';
 import NOW13 from '../Assets/WIZ6.jpg';
 import NOW14 from '../Assets/WIZ7.jpg';
+import VAR7 from '../Assets/VAR7.jpg'
+import VAR8 from '../Assets/VAR8.jpg'
 
 
 import DROGA1 from '../Assets/DROGA1.jpg';
@@ -101,7 +103,7 @@ const descriptionGroups = [
     id: 'NowoczesneBudownictwo',
     header: 'Nowoczesne budownictwo',
     description: 'Nowoczesna stylistyka budynku to dopiero początek. Dzięki ponadprzeciętnym parametrom przenikalności cieplnej, w połączeniu z zaawansowanym systemem rekuperacji oraz pompą ciepła nasze domy spełniają wymagania budynków niskoenergetycznych. Dodatkowo oferujemy możliwość wykonania instalacji klimatyzacji oraz fotowoltaiki, aby zapewnić maksymalny komfort użytkowania. W standardzie każdy dom posiada również instalację przystosowaną do ładowarki dla samochodów elektrycznych.',
-    photos: [NOW1, NOW2, NOW5, NOW6, NOW7, NOW8, NOW9, NOW10, NOW11, NOW12, NOW13, NOW14]
+    photos: [NOW1, NOW2, NOW5, NOW6, NOW7, NOW8, NOW9, VAR7, VAR8, NOW10, NOW11, NOW12, NOW13, NOW14]
   },
   {
     id: 'Okolica',
