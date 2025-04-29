@@ -112,7 +112,7 @@ const Wybierz = () => {
                 </div>
 
                 <div className="houseinfo container">
-                    <h1 className="houseinfo_header">Szczegółowa specyfikacja domów</h1>
+                    <h1 className="houseinfo_header">Dane techniczne domów</h1>
                     <div className="houseinfo_box">
                         {daneTechniczne.map((menu, index) => (
                             <SpecDomki items={menu} key={index} />
