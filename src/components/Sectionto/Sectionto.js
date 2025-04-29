@@ -6,7 +6,6 @@ const Sectionto = () => {
         <>
             <section className="sectionto container">
                 <h1 className="sectionto_header opening_header">Poniżej znajduje się krótka sekcja z opisem naszej aktualnej inwestycji.</h1>
-                <h3 className="opening_text">Szczgółowy opis znajduje się w zakładce "INWESTYCJE". </h3>
                 <div className="sectionto_elements">
                     {/* Element 1 */}
                     <div className="button-to sectionto_1">
@@ -69,6 +68,7 @@ const Sectionto = () => {
                         </h3>
                     </div>
                 </div>
+                <a href="/Inwestycje" className="button-AboutMe button-option">Szczgóły w zakładce "INWESTYCJE".</a>
             </section>
         </>
     );
