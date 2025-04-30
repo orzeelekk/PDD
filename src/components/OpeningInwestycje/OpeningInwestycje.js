@@ -107,8 +107,8 @@ const descriptionGroups = [
     photos: [NOW1, NOW2, NOW3, NOW4, NOW5, NOW6, NOW7]
   },
   {
-    id: 'Architektura',
-    header: 'Architektura',
+    id: 'Wizualizacje',
+    header: 'Wizualizacje',
     description: 'Na wczesnym etapie budowy domu oferujemy możliwość wyboru własnej aranżacji wnętrz z dostosowaniem do indywidualnych potrzeb. Poniżej prezentujemy klika wizualizacji naszego domu. Ostatnie wizualicaje różnią się układem budynku na działce.',
     photos: [AR1, AR2, AR3, AR4, AR5, AR6, AR7, AR8, AR9]
   },
@@ -210,10 +210,10 @@ const PhotosRealizacje = () => {
                                       </svg>
                                       <h1 className="ChoseOption_Text">Nowoczesne Budownictwo</h1>
                                   </span>
-                                  <span className="ChoseOption_icon green architektura" onClick={() => { handleScrollToSection('Architektura'); }}>
+                                  <span className="ChoseOption_icon green Wizualizacje" onClick={() => { handleScrollToSection('Wizualizacje'); }}>
                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="25" height="25" fill="currentColor">
                                     <path d="M469.3 19.3l23.4 23.4c25 25 25 65.5 0 90.5l-56.4 56.4L322.3 75.7l56.4-56.4c25-25 65.5-25 90.5 0zM44.9 353.2L299.7 98.3 413.7 212.3 158.8 467.1c-6.7 6.7-15.1 11.6-24.2 14.2l-104 29.7c-8.4 2.4-17.4 .1-23.6-6.1s-8.5-15.2-6.1-23.6l29.7-104c2.6-9.2 7.5-17.5 14.2-24.2zM249.4 103.4L103.4 249.4 16 161.9c-18.7-18.7-18.7-49.1 0-67.9L94.1 16c18.7-18.7 49.1-18.7 67.9 0l19.8 19.8c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1l45.1 45.1zM408.6 262.6l45.1 45.1c-.3 .3-.7 .6-1 .9l-64 64c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0l64-64c.3-.3 .6-.7 .9-1L496 350.1c18.7 18.7 18.7 49.1 0 67.9L417.9 496c-18.7 18.7-49.1 18.7-67.9 0l-87.4-87.4L408.6 262.6z"/>                                  </svg>
-                                  <h1 className="ChoseOption_Text">Architektura</h1>
+                                  <h1 className="ChoseOption_Text">Wizualizacje</h1>
                                 </span>
                                   <span className="ChoseOption_icon green okolica" onClick={() => { handleScrollToSection('Okolica'); }}>
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">

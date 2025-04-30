@@ -62,7 +62,6 @@ const Wybierz = () => {
                         <>
                             <div className="highlight00 green-highlight00">
                                 <h1>Dom B-1</h1>
-                                <h1>Dom C-2</h1>
                             </div>
                         </>
                             )}
@@ -70,6 +69,7 @@ const Wybierz = () => {
                         <>
                             <div className="highlight00 yellow-highlight00">
                                 <h1>Dom C-1</h1>
+                                <h1>Dom C-2</h1>
                             </div>                        
                         </>
                             )}
@@ -87,8 +87,7 @@ const Wybierz = () => {
                 </div>
 
             <div className="houseplan">
-                    {/* Green button adds 4 divs */}
-                    <div className="housemedia">
+                    {/* <div className="housemedia">
                     {highlightGreen && (
                         <>
                             <div className="highlight green-highlight1"><h1>Dom B-1</h1></div>
@@ -97,18 +96,14 @@ const Wybierz = () => {
                             <div className="highlight green-highlight4"><h1>Dom D-1</h1></div>
                         </>
                     )}
-
-                    {/* Yellow button adds 2 divs */}
                     {highlightYellow && (
                         <>
                             <div className="highlight yellow-highlight1"><h1>Dom B-2</h1></div>
                             <div className="highlight yellow-highlight2"><h1>Dom C-3</h1></div>
                         </>
                     )}
-
-                    {/* Red button adds 1 div */}
                     {highlightRed && <div className="highlight red-highlight"><h1>Dom A-1</h1></div>}
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="houseinfo container">
