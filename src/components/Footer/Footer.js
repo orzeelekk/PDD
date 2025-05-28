@@ -29,7 +29,7 @@ const Footer = () => {
                             <span className="footer_info_address">Adres biura sprzedaży: Mińsk Mazowiecki, Warszawska 66/7, 05-300</span>
                         </div>
                     </div>
-                        <span className="footer_copy"> © 2024 PDD, All Rights Reserved</span>
+                        <span className="footer_copy"> © 2025 PDD, All Rights Reserved</span>
                     </div>
                 </div>
             </footer>
