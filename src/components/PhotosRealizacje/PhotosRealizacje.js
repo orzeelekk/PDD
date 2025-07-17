@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './_photosRealizacje.scss';
 
+import { useLanguage } from '../LanguageContext'; // ✅ use language context
+
 import FOCUS1 from '../Assets/FOCUS1.jpg';
 import FOCUS2 from '../Assets/FOCUS2.jpg';
 import FOCUS3 from '../Assets/FOCUS3.jpg';
@@ -38,61 +40,89 @@ import LUBOMIN4 from '../Assets/LUBOMIN4.jpg';
 import LUBOMIN5 from '../Assets/LUBOMIN5.jpg';
 
 const photoGroups = {
-  'Realizacja budowy i wykończenia domu pod klucz na Wilanowie': [
+  winogronowa: [
     WINOGRONOWA1,
     WINOGRONOWA2,
     WINOGRONOWA3,
     WINOGRONOWA4,
     WINOGRONOWA5,
   ],
-  'Kompleksowe wykonanie budowy oraz wykończenia domu w Lubominie': [
+  lubomin: [
     LUBOMIN1,
     LUBOMIN2,
     LUBOMIN3,
     LUBOMIN4,
     LUBOMIN5,
   ],
-  'Przebudowa budynku i wykończenie pod klucz na osiedlu Emilianów Leśny': [
+  emilianowLesny: [
     EMILIANOW1,
     EMILIANOW2,
     EMILIANOW3,
     EMILIANOW4,
     EMILIANOW5,
   ],
-  'Przebudowa i remont klinik dentystycznych FocusClinic': [
+  focusClinic: [
     FOCUS1,
     FOCUS2,
     FOCUS3,
     FOCUS4,
     FOCUS5,
   ],
-  'Pełne wykończenie luksusowych apartamentów pod adresem Złota 44': [
+  zlota44: [
     Zlota1,
     Zlota2,
     Zlota3,
     Zlota4,
-    Zlota5
+    Zlota5,
   ],
-  'Całościowe wykończenie mieszkania pod klucz na Saskiej Kępie': [
+  zwyciezcow: [
     ZWYCIEZCOW1,
     ZWYCIEZCOW2,
     ZWYCIEZCOW3,
     ZWYCIEZCOW4,
     ZWYCIEZCOW5,
   ],
-
-
 };
 
 const PhotosRealizacje = () => {
+  const { language } = useLanguage();
+
+  // Translation keys for photo group titles
+  const titles = {
+    winogronowa: {
+      pl: 'Realizacja budowy i wykończenia domu pod klucz na Wilanowie',
+      en: 'Turnkey house construction and finishing project in Wilanów',
+    },
+    lubomin: {
+      pl: 'Kompleksowe wykonanie budowy oraz wykończenia domu w Lubominie',
+      en: 'Complete construction and finishing of a house in Lubomin',
+    },
+    emilianowLesny: {
+      pl: 'Przebudowa budynku i wykończenie pod klucz na osiedlu Emilianów Leśny',
+      en: 'Renovation and turnkey finishing in Emilianów Leśny estate',
+    },
+    focusClinic: {
+      pl: 'Przebudowa i remont klinik dentystycznych FocusClinic',
+      en: 'Renovation and remodeling of FocusClinic dental clinics',
+    },
+    zlota44: {
+      pl: 'Pełne wykończenie luksusowych apartamentów pod adresem Złota 44',
+      en: 'Complete finishing of luxury apartments at Złota 44',
+    },
+    zwyciezcow: {
+      pl: 'Całościowe wykończenie mieszkania pod klucz na Saskiej Kępie',
+      en: 'Full turnkey apartment finishing at Saska Kępa',
+    },
+  };
+
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [photoGroup, setPhotoGroup] = useState([]);
   const [isFading, setIsFading] = useState(false);
 
-  const openViewer = (groupName, index) => {
-    setPhotoGroup(photoGroups[groupName]);
-    setSelectedImage(photoGroups[groupName][index]);
+  const openViewer = (groupKey, index) => {
+    setPhotoGroup(photoGroups[groupKey]);
+    setSelectedImage(photoGroups[groupKey][index]);
     setCurrentImageIndex(index);
   };
 
@@ -122,17 +152,17 @@ const PhotosRealizacje = () => {
 
   return (
     <div className="photo-container realizacje-container">
-      {Object.keys(photoGroups).map((groupName) => (
-        <div className="photo-group" key={groupName}>
-          <h2 className="group-name">{groupName}</h2>
+      {Object.keys(photoGroups).map((groupKey) => (
+        <div className="photo-group" key={groupKey}>
+          <h2 className="group-name">{titles[groupKey][language]}</h2>
           <div className="photos">
-            {photoGroups[groupName].map((photo, index) => (
+            {photoGroups[groupKey].map((photo, index) => (
               <img
                 src={photo}
-                alt={"Photo_realisation"} 
+                alt="Photo_realisation"
                 key={index}
                 className="photo"
-                onClick={() => openViewer(groupName, index)}
+                onClick={() => openViewer(groupKey, index)}
               />
             ))}
           </div>
@@ -144,23 +174,31 @@ const PhotosRealizacje = () => {
           <button className="close-btn" onClick={closeViewer}>
             &times;
           </button>
-          
-          <svg onClick={prevImage} id="leftArrow" className="arrow left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+          <svg
+            onClick={prevImage}
+            id="leftArrow"
+            className="arrow left"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+          >
             <g strokeLinejoin="round" strokeLinecap="round">
               <circle r="46" cx="50" cy="50" />
               <polyline points="60 25, 30 50, 60 75"></polyline>
             </g>
           </svg>
 
-          
-
-          <div
-            className={`image-wrapper ${isFading ? "fade" : ""}`}
-          >
+          <div className={`image-wrapper ${isFading ? 'fade' : ''}`}>
             <img src={selectedImage} alt="Selected Realisation" />
           </div>
-          
-          <svg onClick={nextImage} id="rightArrow" className="arrow right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+
+          <svg
+            onClick={nextImage}
+            id="rightArrow"
+            className="arrow right"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 100 100"
+          >
             <g strokeLinejoin="round" strokeLinecap="round">
               <circle r="46" cx="50" cy="50" />
               <polyline points="40 25, 70 50, 40 75"></polyline>

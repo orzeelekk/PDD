@@ -1,22 +1,22 @@
 export const headerItems = [
     {
-        title: 'OFERTA',
+        title: { pl: 'OFERTA', en: 'OFFER' },
         url: '/',
     },
     {
-        title: 'REALIZACJE',
+        title: { pl: 'REALIZACJE', en: 'PROJECTS' },
         url: '/Realizacje',
     },
     {
-        title: 'INWESTYCJE',
+        title: { pl: 'INWESTYCJE', en: 'INVESTMENTS' },
         url: '/Inwestycje',
     },
     {
-        title: 'O NAS',
-        sectionId: 'opening', // ID of the Opening section
+        title: { pl: 'O NAS', en: 'ABOUT US' },
+        sectionId: 'opening',
     },
     {
-        title: 'KONTAKT',
-        sectionId: 'contact', // ID of the Form section
+        title: { pl: 'KONTAKT', en: 'CONTACT' },
+        sectionId: 'contact',
     },
 ];

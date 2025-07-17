@@ -7,16 +7,21 @@ import Realizacje from "./components/pages/Realizacje"
 import Inwestycje from "./components/pages/Inwestycje";
 
 
+import { LanguageProvider } from "./components/LanguageContext"; // 👈 import the context
+
+
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home /> } />
-        <Route path="/Map" element={<Map /> } />
-        <Route path="/Realizacje" element={<Realizacje /> } />
-        <Route path="/Inwestycje" element={<Inwestycje /> } />
-      </Routes>
-    </BrowserRouter>
+    <LanguageProvider> 
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Map" element={<Map />} />
+          <Route path="/Realizacje" element={<Realizacje />} />
+          <Route path="/Inwestycje" element={<Inwestycje />} />
+        </Routes>
+      </BrowserRouter>
+    </LanguageProvider>
   );
 }
 
