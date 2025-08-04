@@ -40,6 +40,7 @@ import BUDa3 from "../Assets/BUD99.jpg"
 import BUDa4 from "../Assets/BUD98.jpg"
 import BUDa5 from "../Assets/BUDa5.jpg"
 import BUDa6 from "../Assets/BUDa6.jpg"
+import BUDa7 from "../Assets/BUDa7.jpg"
 
 import CEN1 from '../Assets/CEN1.jpg';
 import CEN2 from '../Assets/CEN2.jpg';
@@ -102,7 +103,7 @@ const descriptionGroups = [
       en: 'Photos below show successive stages of our house construction. We’ll try to update this section regularly to reflect the progress.',
     },
     photos: [BUD1, BUD3, BUD4, BUD5, BUD6, BUD7, BUD8, BUD9, BUD10, BUD11, BUD12, BUD13, BUD14, BUD15, BUD16, 
-      BUD17, BUD18, BUD20, BUD21, BUD22, BUDa0, BUD2_1, BUD2_2, BUD2_3, BUDa1, BUDa2, BUDa3, BUDa4, BUD24, BUDa6, BUD25, BUD26, BUDa5]
+      BUD17, BUD18, BUD20, BUD21, BUD22, BUDa0, BUD2_1, BUD2_2, BUD2_3, BUDa1, BUDa2, BUDa3, BUDa4, BUD24, BUDa6, BUD25, BUD26, BUDa5, BUDa6]
   },
   {
     id: 'Cena',
